@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-26T16:40:53.176Z",
+  "generatedAt": "2026-03-02T09:05:07.645Z",
   "aliases": {
     "accessibility-compliance-audit": "accessibility-compliance-accessibility-audit",
     "active directory attacks": "active-directory-attacks",
@@ -45,8 +45,11 @@
     "dependency-management-audit": "dependency-management-deps-audit",
     "deployment-validation-validate": "deployment-validation-config-validate",
     "distributed-debugging-trace": "distributed-debugging-debug-trace",
+    "docx": "document-skills/docx",
+    "pdf": "document-skills/pdf",
+    "pptx": "document-skills/pptx",
+    "xlsx": "document-skills/xlsx",
     "documentation-generation-generate": "documentation-generation-doc-generate",
-    "docx": "docx-official",
     "error-debugging-analysis": "error-debugging-error-analysis",
     "error-debugging-review": "error-debugging-multi-agent-review",
     "error-diagnostics-analysis": "error-diagnostics-error-analysis",
@@ -91,14 +94,13 @@
     "observability-monitoring-setup": "observability-monitoring-monitor-setup",
     "observability-monitoring-implement": "observability-monitoring-slo-implement",
     "obsidian-clipper-creator": "obsidian-clipper-template-creator",
-    "pdf": "pdf-official",
     "pentest checklist": "pentest-checklist",
     "pentest commands": "pentest-commands",
     "performance-testing-ai": "performance-testing-review-ai-review",
     "performance-testing-agent": "performance-testing-review-multi-agent-review",
     "supabase-postgres-best-practices": "postgres-best-practices",
-    "pptx": "pptx-official",
     "privilege escalation methods": "privilege-escalation-methods",
+    "pymc-bayesian-modeling": "pymc",
     "python-development-scaffold": "python-development-python-scaffold",
     "vercel-react-best-practices": "react-best-practices",
     "red team tools and methodology": "red-team-tools",
@@ -118,10 +120,10 @@
     "systems-programming-project": "systems-programming-rust-project",
     "team-collaboration-notes": "team-collaboration-standup-notes",
     "top 100 web vulnerabilities reference": "top-web-vulnerabilities",
+    "torch-geometric": "torch_geometric",
     "windows privilege escalation": "windows-privilege-escalation",
     "wireshark network traffic analysis": "wireshark-analysis",
     "wordpress penetration testing": "wordpress-penetration-testing",
-    "xlsx": "xlsx-official",
     "cross-site scripting and html injection testing": "xss-html-injection"
   }
 }
