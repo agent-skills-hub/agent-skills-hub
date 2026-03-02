@@ -1,6 +1,6 @@
 {
   "name": "agent-skills-hub",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "The central hub for AI agent skills, supporting OpenClaw, Antigravity, Claude Code, and more.",
   "license": "MIT",
   "scripts": {

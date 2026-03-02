@@ -46,6 +46,7 @@ function parseArgs() {
   let tagArg = null;
   let skillName = null;
   let cursor = false, claude = false, gemini = false, codex = false, openclaw = false;
+  let kiro = false, antigravity = false, opencode = false, adal = false;
 
   for (let i = 0; i < a.length; i++) {
     if (a[i] === '--help' || a[i] === '-h') return { help: true };
@@ -58,11 +59,15 @@ function parseArgs() {
     if (a[i] === '--gemini') { gemini = true; continue; }
     if (a[i] === '--codex') { codex = true; continue; }
     if (a[i] === '--openclaw') { openclaw = true; continue; }
+    if (a[i] === '--kiro') { kiro = true; continue; }
+    if (a[i] === '--antigravity') { antigravity = true; continue; }
+    if (a[i] === '--opencode') { opencode = true; continue; }
+    if (a[i] === '--adal') { adal = true; continue; }
     if (a[i] === 'install') continue;
     if (!a[i].startsWith('-') && !skillName) { skillName = a[i]; continue; }
   }
 
-  return { pathArg, versionArg, tagArg, skillName, cursor, claude, gemini, codex, openclaw };
+  return { pathArg, versionArg, tagArg, skillName, cursor, claude, gemini, codex, openclaw, kiro, antigravity, opencode, adal };
 }
 
 function defaultDir(opts) {
@@ -76,11 +81,10 @@ function defaultDir(opts) {
     return path.join(HOME, '.codex', 'skills');
   }
   if (opts.openclaw) return path.join(HOME, '.openclaw', 'skills');
-  if (opts.codex) {
-    const codexHome = process.env.CODEX_HOME;
-    if (codexHome) return path.join(codexHome, 'skills');
-    return path.join(HOME, '.codex', 'skills');
-  }
+  if (opts.kiro) return path.join(HOME, '.kiro', 'skills');
+  if (opts.antigravity) return path.join(HOME, '.gemini', 'antigravity', 'skills');
+  if (opts.opencode) return path.join(HOME, '.agents', 'skills');
+  if (opts.adal) return path.join(HOME, '.adal', 'skills');
   return path.join(HOME, '.agent', 'skills');
 }
 
@@ -93,20 +97,25 @@ agent-skills-hub — installer
   Clones the skills repo or installs a specific skill.
 
 Options:
-  --cursor    Install to ~/.cursor/skills (Cursor)
-  --claude    Install to ~/.claude/skills (Claude Code)
-  --gemini    Install to ~/.gemini/skills (Gemini CLI)
-  --codex     Install to ~/.codex/skills (Codex CLI)
-  --openclaw  Install to ~/.openclaw/skills (OpenClaw)
-  --path <dir> Install to <dir> (default: ~/.agent/skills)
+  --cursor       Install to ~/.cursor/skills (Cursor IDE)
+  --claude       Install to ~/.claude/skills (Claude Code CLI)
+  --gemini       Install to ~/.gemini/skills (Gemini CLI)
+  --codex        Install to ~/.codex/skills (Codex CLI)
+  --openclaw     Install to ~/.openclaw/skills (OpenClaw)
+  --kiro         Install to ~/.kiro/skills (Kiro CLI/IDE)
+  --antigravity  Install to ~/.gemini/antigravity/skills (Antigravity IDE)
+  --opencode     Install to ~/.agents/skills (OpenCode CLI)
+  --adal         Install to ~/.adal/skills (AdaL CLI)
+  --path <dir>   Install to <dir> (default: ~/.agent/skills)
   --version <ver>  After clone, checkout tag v<ver> (e.g. 4.6.0 -> v4.6.0)
   --tag <tag>      After clone, checkout this tag (e.g. v4.6.0)
 
 Examples:
   npx agent-skills-hub
   npx agent-skills-hub --cursor
-  npx agent-skills-hub install react-patterns --cursor
-  npx agent-skills-hub --openclaw
+  npx agent-skills-hub --kiro
+  npx agent-skills-hub install react-patterns --claude
+  npx agent-skills-hub --antigravity
   npx agent-skills-hub --version 4.6.0
   npx agent-skills-hub --path ./my-skills
 `);

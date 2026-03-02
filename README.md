@@ -1,7 +1,4 @@
-
-
 <a id="readme-top"></a>
-
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -20,7 +17,7 @@
   <p align="center">
     The universal registry of agentic skills for AI coding agents.
     <br />
-    <strong>631+ skills</strong> for OpenClaw, Claude Code, Cursor, Gemini, and other agent frameworks.
+    <strong>790+ skills</strong> for Claude Code, Gemini, Cursor, Kiro, Codex, Antigravity, OpenCode, and other agent frameworks.
     <br />
     <br />
     <a href="#getting-started"><strong>Install Now »</strong></a>
@@ -35,8 +32,6 @@
     <a href="https://github.com/legendaryabhi/agent-skills-hub/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -64,56 +59,52 @@
   </ol>
 </details>
 
-
-
 ## About The Project
 
-**Agent Skills Hub** is a centralized, open-source registry of **agentic skills** — reusable, structured instructions that teach AI agents *how to actually do things correctly*.
+**Agent Skills Hub** is a centralized, open-source registry of **agentic skills** — reusable, structured instructions that teach AI agents _how to actually do things correctly_.
 
 Think of skills as **plugins for reasoning**:
+
 - They encode **best practices**
 - They define **tool usage**
 - They enforce **project-specific workflows**
 
 This repository is shipped as an **NPX-first CLI**, making skills instantly installable into popular agent environments.
 
-> If prompts are *what* to do,  
-> **skills are *how* to do it right.**
+> If prompts are _what_ to do,  
+> **skills are _how_ to do it right.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Why Agent Skills?
 
 Modern AI agents are powerful generalists, but they lack:
 
-- Repo-specific context  
-- Tooling conventions  
-- Deployment workflows  
-- Organizational standards  
+- Repo-specific context
+- Tooling conventions
+- Deployment workflows
+- Organizational standards
 
 **Agent Skills solve this gap.**
 
 Each skill is a Markdown-based definition that can teach an agent:
+
 - How to write production-ready code
 - How to use a specific CLI or API
 - How to follow your internal processes
 - How to reason consistently across tasks
 
-Skills work across **OpenClaw, Claude Code, Cursor, Gemini CLI**, and more.
+Skills work across **Claude Code, Gemini CLI, Cursor, Kiro, Codex, Antigravity, OpenCode, AdaL**, and more.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [![JavaScript][javascript-shield]][javascript-url]
-* [![Node.js][nodejs-shield]][nodejs-url]
-* [![Python][python-shield]][python-url]
-* [![Shell][shell-shield]][shell-url]
-* [![Markdown][markdown-shield]][markdown-url]
+- [![JavaScript][javascript-shield]][javascript-url]
+- [![Node.js][nodejs-shield]][nodejs-url]
+- [![Python][python-shield]][python-url]
+- [![Shell][shell-shield]][shell-url]
+- [![Markdown][markdown-shield]][markdown-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,8 +115,6 @@ Skills work across **OpenClaw, Claude Code, Cursor, Gemini CLI**, and more.
 - Node.js
 - npm / npx
 - Any supported agent framework (optional)
-
-
 
 ### Installation
 
@@ -138,7 +127,6 @@ npx agent-skills-hub
 ```
 
 This installs the full skill registry in a global location that most agents can read from.
-
 
 ### Project-Local Skills (Recommended)
 
@@ -158,27 +146,51 @@ Supported agents will **automatically detect and load local skills at runtime**,
 > **Priority rule:**
 > Project-local skills override global skills when both exist.
 
-
-
 ### Targeted Installs
 
 Install skills directly into agent-specific locations:
 
 ```bash
-# Cursor
-npx agent-skills-hub --cursor
-
 # Claude Code
 npx agent-skills-hub --claude
 
-# OpenClaw
-npx agent-skills-hub --openclaw
-
 # Gemini CLI
 npx agent-skills-hub --gemini
+
+# Cursor IDE
+npx agent-skills-hub --cursor
+
+# Kiro CLI/IDE
+npx agent-skills-hub --kiro
+
+# Codex CLI
+npx agent-skills-hub --codex
+
+# Antigravity IDE
+npx agent-skills-hub --antigravity
+
+# OpenCode CLI
+npx agent-skills-hub --opencode
+
+# AdaL CLI
+npx agent-skills-hub --adal
+
+# OpenClaw
+npx agent-skills-hub --openclaw
 ```
 
-
+| Tool         | Flag            | Install Path                    |
+| ------------ | --------------- | ------------------------------- |
+| Claude Code  | `--claude`      | `~/.claude/skills/`             |
+| Gemini CLI   | `--gemini`      | `~/.gemini/skills/`             |
+| Cursor IDE   | `--cursor`      | `~/.cursor/skills/`             |
+| Kiro CLI/IDE | `--kiro`        | `~/.kiro/skills/`               |
+| Codex CLI    | `--codex`       | `~/.codex/skills/`              |
+| Antigravity  | `--antigravity` | `~/.gemini/antigravity/skills/` |
+| OpenCode     | `--opencode`    | `~/.agents/skills/`             |
+| AdaL CLI     | `--adal`        | `~/.adal/skills/`               |
+| OpenClaw     | `--openclaw`    | `~/.openclaw/skills/`           |
+| Custom       | `--path <dir>`  | `<dir>`                         |
 
 ### Install a Specific Skill
 
@@ -188,8 +200,6 @@ npx agent-skills-hub install react-patterns --cursor
 ```
 
 This installs only the requested skill instead of the full registry.
-
-
 
 ### Manual Clone (Advanced)
 
@@ -201,9 +211,9 @@ git clone https://github.com/legendaryabhi/agent-skills-hub.git ~/skills
 
 You can then:
 
-* Symlink skills into agent directories
-* Copy skills into your project’s `skills/` folder
-* Customize skills directly
+- Symlink skills into agent directories
+- Copy skills into your project’s `skills/` folder
+- Customize skills directly
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,6 +253,7 @@ Help me refactor this component using the loaded patterns.
    ```bash
    ~/.cursor/skills
    ```
+
 2. Reference them in chat:
 
    ```text
@@ -253,55 +264,46 @@ Help me refactor this component using the loaded patterns.
 
 Gemini CLI using `react-patterns` skill from Agent Skills Hub
 
-
 ```bash
 npx agent-skills-hub install react-patterns --gemini
 ```
 
 https://github.com/user-attachments/assets/f01c532e-7f21-4543-8bed-ab8a4ecfe288
 
-
-
 > PRs with demos are highly welcome.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## Skill Catalog
 
-We currently maintain **630+ skills** across multiple domains.
+We currently maintain **790+ skills** across multiple domains.
 
- **Browse the full catalog:**
+**Browse the full catalog:**
 [CATALOG.md](CATALOG.md)
 
 ### Category Highlights
 
-* **Architecture**: `system-design`, `c4-model`, `microservices`
-* **Development**: `react-patterns`, `typescript-expert`, `python-optimization`
-* **Security**: `owasp-top-10`, `pentest-checklist`
-* **Ops & Cloud**: `docker-mastery`, `kubernetes-debug`
-* **Business**: `seo-audit`, `startup-analysis`
+- **Architecture**: `system-design`, `c4-model`, `microservices`
+- **Development**: `react-patterns`, `typescript-expert`, `python-optimization`
+- **Security**: `owasp-top-10`, `pentest-checklist`
+- **Ops & Cloud**: `docker-mastery`, `kubernetes-debug`
+- **Business**: `seo-audit`, `startup-analysis`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## Roadmap
 
-* [x] NPX-based installer
-* [x] Multi-agent support
-* [x] 600+ curated skills
-* [ ] Skill versioning
-* [ ] Skill dependency graph
-* [ ] Web catalog explorer
-* [ ] Agent marketplace integrations
+- [x] NPX-based installer
+- [x] Multi-agent support
+- [x] 790+ curated skills
+- [ ] Skill versioning
+- [ ] Skill dependency graph
+- [ ] Web catalog explorer
+- [ ] Agent marketplace integrations
 
 See the [open issues](https://github.com/legendaryabhi/agent-skills-hub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## Contributing
 
@@ -315,8 +317,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## License
 
 Distributed under the **MIT License**.
@@ -324,19 +324,23 @@ See `LICENSE` for details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Aknowledgement 
+## Acknowledgement
 
 This project is built on top of  
 [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) [MIT license](https://github.com/sickn33/antigravity-awesome-skills?tab=MIT-1-ov-file#readme).
 
 On top of the original work, I have added:
-- Support for multiple AI agent workflows (OpenClaw)
+
+- Support for multiple AI agent workflows (Kiro, Antigravity, OpenCode, AdaL, and more)
+- 120+ scientific skills from [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)
+- Marketing skills from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 - A single-file skill download workflow
 - NPX-based installation and agent-specific integrations
-- more are coming soon...
+- More coming soon...
+
+See [ATTRIBUTION.md](ATTRIBUTION.md) for full credits.
 
 Thanks to the original authors for laying the foundation.
- 
 
 <!-- MARKDOWN LINKS -->
 
@@ -352,18 +356,16 @@ Thanks to the original authors for laying the foundation.
 [issues-url]: https://github.com/legendaryabhi/agent-skills-hub/issues
 [license-shield]: https://img.shields.io/github/license/legendaryabhi/agent-skills-hub.svg?style=for-the-badge
 [license-url]: https://github.com/legendaryabhi/agent-skills-hub/blob/main/LICENSE
+
 <!-- Built With Badges -->
+
 [javascript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000
 [javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-
 [nodejs-shield]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
 [nodejs-url]: https://nodejs.org/
-
 [python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://www.python.org/
-
 [shell-shield]: https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white
 [shell-url]: https://www.gnu.org/software/bash/
-
 [markdown-shield]: https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white
 [markdown-url]: https://www.markdownguide.org/
