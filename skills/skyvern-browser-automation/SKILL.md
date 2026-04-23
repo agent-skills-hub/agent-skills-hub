@@ -196,7 +196,7 @@ Status lifecycle: `created -> queued -> running -> completed | failed | canceled
 
 **Login flow:**
 ```bash
-skyvern credential list
+skyvern credential list                          # find credential ID
 skyvern browser session create
 skyvern browser navigate --url "https://login.example.com"
 skyvern browser login --url "https://login.example.com" --credential-id cred_123
@@ -215,22 +215,15 @@ skyvern browser act --prompt "Click the Next page button"
 
 **Debugging:**
 ```bash
-skyvern browser screenshot
+skyvern browser screenshot                       # visual state
 skyvern browser evaluate --expression "document.title"
 skyvern browser evaluate --expression "document.querySelectorAll('table tr').length"
 ```
 
-## Limitations
-
-- Requires a Skyvern API key (`export SKYVERN_API_KEY="your_key"`)
-- Cloud sessions use remote browsers; local sessions require `--local` flag
-- Some sites with aggressive bot detection may require additional configuration
-- `act` has no screenshots in reasoning — use hybrid mode for visually complex targets
-
 ## Agent Mode
 
 All commands accept `--json` for structured output. Set `SKYVERN_NON_INTERACTIVE=1` to prevent prompts.
-Use `skyvern capabilities --json` for full command discovery.
+Use `skyvern capabilities --json` for full command discovery. See [references/agent-mode.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/agent-mode.md).
 
 ## Deep-Dive References
 
@@ -241,8 +234,17 @@ Use `skyvern capabilities --json` for full command discovery.
 | [references/schemas.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/schemas.md) | JSON schema patterns for extraction |
 | [references/pagination.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/pagination.md) | Pagination strategy and guardrails |
 | [references/block-types.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/block-types.md) | Workflow block type details with examples |
+| [references/parameters.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/parameters.md) | Parameter design and variable usage |
+| [references/ai-actions.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/ai-actions.md) | AI action patterns and examples |
+| [references/precision-actions.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/precision-actions.md) | Intent-only, selector-only, hybrid modes |
 | [references/credentials.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/credentials.md) | Credential naming, lifecycle, safety |
 | [references/sessions.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/sessions.md) | Session reuse and freshness decisions |
 | [references/common-failures.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/common-failures.md) | Failure pattern catalog with fixes |
 | [references/screenshots.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/screenshots.md) | Screenshot-led debugging workflow |
-| [references/quick-start-patterns.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/quick-start-patterns.md) | Quick start examples and workflow templates |
+| [references/status-lifecycle.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/status-lifecycle.md) | Run status states and guidance |
+| [references/rerun-playbook.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/rerun-playbook.md) | Rerun procedures and comparison |
+| [references/complex-inputs.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/complex-inputs.md) | Date pickers, uploads, dropdowns |
+| [references/tool-map.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/tool-map.md) | Complete tool inventory by outcome |
+| [references/cli-parity.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/cli-parity.md) | CLI/MCP mapping and agent-aware features |
+| [references/quick-start-patterns.md](https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/quick-start-patterns.md) | Quick start examples, common patterns, and workflow templates |
+
