@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-03-02T09:05:07.645Z
+Generated at: 2026-04-26T06:19:25.360Z
 
-Total skills: 792
+Total skills: 793
 
 ## architecture (64)
 
@@ -116,7 +116,7 @@ Total skills: 792
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (177)
+## data-ai (178)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -273,6 +273,7 @@ Total skills: 792
 | `shap` | Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, comp... | shap | shap, model, interpretability, explainability, shapley, additive, explanations, skill, explaining, machine, learning, predictions |
 | `similarity-search-patterns` | Implement efficient similarity search with vector databases. Use when building semantic search, implementing nearest neighbor queries, or optimizing retrieva... | similarity, search | similarity, search, efficient, vector, databases, building, semantic, implementing, nearest, neighbor, queries, optimizing |
 | `skill-seekers` | -Automatically convert documentation websites, GitHub repositories, and PDFs into Claude AI skills in minutes. | skill, seekers | skill, seekers, automatically, convert, documentation, websites, github, repositories, pdfs, claude, ai, skills |
+| `skyvern-browser-automation` | AI-powered browser automation — navigate sites, fill forms, extract structured data, log in with stored credentials, and build reusable workflows. | skyvern, browser | skyvern, browser, automation, ai, powered, navigate, sites, fill, forms, extract, structured, data |
 | `spark-optimization` | Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tuning. Use when improving Spark performance, debugging slow jobs, or... | spark, optimization | spark, optimization, optimize, apache, jobs, partitioning, caching, shuffle, memory, tuning, improving, performance |
 | `sql-optimization-patterns` | Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically improve database performance and eliminate slow queries. Use when de... | sql, optimization | sql, optimization, query, indexing, explain, analysis, dramatically, improve, database, performance, eliminate, slow |
 | `sqlmap-database-pentesting` | This skill should be used when the user asks to "automate SQL injection testing," "enumerate database structure," "extract database credentials using sqlmap,... | sqlmap, database, pentesting | sqlmap, database, pentesting, penetration, testing, skill, should, used, user, asks, automate, sql |

@@ -5940,6 +5940,15 @@
     "source": "https://github.com/yusufkaraaslan/Skill_Seekers"
   },
   {
+    "id": "skyvern-browser-automation",
+    "path": "skills/skyvern-browser-automation",
+    "category": "uncategorized",
+    "name": "skyvern-browser-automation",
+    "description": "AI-powered browser automation \u2014 navigate sites, fill forms, extract structured data, log in with stored credentials, and build reusable workflows.",
+    "risk": "safe",
+    "source": "Skyvern-AI/skyvern (AGPL-3.0)"
+  },
+  {
     "id": "slack-bot-builder",
     "path": "skills/slack-bot-builder",
     "category": "uncategorized",

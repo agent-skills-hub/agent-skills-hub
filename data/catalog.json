@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-02T09:05:07.645Z",
-  "total": 792,
+  "generatedAt": "2026-04-26T06:19:25.360Z",
+  "total": 793,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -16266,6 +16266,31 @@
         "skills"
       ],
       "path": "skills/skill-seekers/SKILL.md"
+    },
+    {
+      "id": "skyvern-browser-automation",
+      "name": "skyvern-browser-automation",
+      "description": "AI-powered browser automation — navigate sites, fill forms, extract structured data, log in with stored credentials, and build reusable workflows.",
+      "category": "data-ai",
+      "tags": [
+        "skyvern",
+        "browser"
+      ],
+      "triggers": [
+        "skyvern",
+        "browser",
+        "automation",
+        "ai",
+        "powered",
+        "navigate",
+        "sites",
+        "fill",
+        "forms",
+        "extract",
+        "structured",
+        "data"
+      ],
+      "path": "skills/skyvern-browser-automation/SKILL.md"
     },
     {
       "id": "slack-bot-builder",
