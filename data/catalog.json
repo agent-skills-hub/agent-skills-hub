@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-26T06:19:25.360Z",
-  "total": 793,
+  "generatedAt": "2026-05-18T15:12:05.764Z",
+  "total": 794,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -1940,6 +1940,31 @@
         "text"
       ],
       "path": "skills/bgpt-paper-search/SKILL.md"
+    },
+    {
+      "id": "bilig-workpaper",
+      "name": "bilig-workpaper",
+      "description": "Formula WorkPaper runtime and MCP server for AI agents and Node.js services. Use when an agent needs spreadsheet-style formulas, cell edits, recalculation, readback verification, or persisted WorkPaper JSON without driving Excel UI.",
+      "category": "data-ai",
+      "tags": [
+        "bilig",
+        "workpaper"
+      ],
+      "triggers": [
+        "bilig",
+        "workpaper",
+        "formula",
+        "runtime",
+        "mcp",
+        "server",
+        "ai",
+        "agents",
+        "node",
+        "js",
+        "agent",
+        "spreadsheet"
+      ],
+      "path": "skills/bilig-workpaper/SKILL.md"
     },
     {
       "id": "billing-automation",

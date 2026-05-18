@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-04-26T06:19:25.360Z
+Generated at: 2026-05-18T15:12:05.764Z
 
-Total skills: 793
+Total skills: 794
 
 ## architecture (64)
 
@@ -116,7 +116,7 @@ Total skills: 793
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (178)
+## data-ai (179)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -142,6 +142,7 @@ Total skills: 793
 | `behavioral-modes` | AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate). Use to adapt behavior based on task type. | behavioral, modes | behavioral, modes, ai, operational, brainstorm, debug, review, teach, ship, orchestrate, adapt, behavior |
 | `benchling-integration` | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, query Data Warehouse, f... | benchling, integration | benchling, integration, platform, access, registry, dna, proteins, inventory, eln, entries, via, api |
 | `bgpt-paper-search` | Search scientific papers and retrieve structured experimental data extracted from full-text studies via the BGPT MCP server. Returns 25+ fields per paper inc... | bgpt, paper, search | bgpt, paper, search, scientific, papers, retrieve, structured, experimental, data, extracted, full, text |
+| `bilig-workpaper` | Formula WorkPaper runtime and MCP server for AI agents and Node.js services. Use when an agent needs spreadsheet-style formulas, cell edits, recalculation, r... | bilig, workpaper | bilig, workpaper, formula, runtime, mcp, server, ai, agents, node, js, agent, spreadsheet |
 | `biorxiv-database` | Efficient database search tool for bioRxiv preprint server. Use this skill when searching for life sciences preprints by keywords, authors, date ranges, or c... | biorxiv, database | biorxiv, database, efficient, search, preprint, server, skill, searching, life, sciences, preprints, keywords |
 | `bioservices` | Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with con... | bioservices | bioservices, unified, python, interface, 40, bioinformatics, querying, multiple, databases, uniprot, kegg, chembl |
 | `blockrun` | Use when user needs capabilities Claude lacks (image generation, real-time X/Twitter data) or explicitly requests external models ("blockrun", "use grok", "u... | blockrun | blockrun, user, capabilities, claude, lacks, image, generation, real, time, twitter, data, explicitly |
