@@ -720,6 +720,15 @@
     "source": "unknown"
   },
   {
+    "id": "bilig-workpaper",
+    "path": "skills/bilig-workpaper",
+    "category": "uncategorized",
+    "name": "bilig-workpaper",
+    "description": "Formula WorkPaper runtime and MCP server for AI agents and Node.js services. Use when an agent needs spreadsheet-style formulas, cell edits, recalculation, readback verification, or persisted WorkPaper JSON without driving Excel UI.",
+    "risk": "safe",
+    "source": "proompteng/bilig (MIT)"
+  },
+  {
     "id": "billing-automation",
     "path": "skills/billing-automation",
     "category": "uncategorized",
