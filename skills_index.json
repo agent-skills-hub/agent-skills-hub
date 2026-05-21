@@ -6633,6 +6633,15 @@
     "source": "unknown"
   },
   {
+    "id": "tweetclaw",
+    "path": "skills/tweetclaw",
+    "category": "uncategorized",
+    "name": "tweetclaw",
+    "description": "Use TweetClaw for safety-reviewed X/Twitter automation from agent workflows: search tweets, post tweets, manage replies, export followers, monitor accounts, run giveaway draws, and call Xquik from OpenClaw.",
+    "risk": "safe",
+    "source": "https://github.com/Xquik-dev/tweetclaw"
+  },
+  {
     "id": "twilio-communications",
     "path": "skills/twilio-communications",
     "category": "uncategorized",

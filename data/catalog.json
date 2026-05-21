@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T04:54:32.512Z",
-  "total": 797,
+  "generatedAt": "2026-08-12T18:42:53.233Z",
+  "total": 798,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -18076,6 +18076,30 @@
         "progressive"
       ],
       "path": "skills/tutorial-engineer/SKILL.md"
+    },
+    {
+      "id": "tweetclaw",
+      "name": "tweetclaw",
+      "description": "Use TweetClaw for safety-reviewed X/Twitter automation from agent workflows: search tweets, post tweets, manage replies, export followers, monitor accounts, run giveaway draws, and call Xquik from OpenClaw.",
+      "category": "workflow",
+      "tags": [
+        "tweetclaw"
+      ],
+      "triggers": [
+        "tweetclaw",
+        "safety",
+        "reviewed",
+        "twitter",
+        "automation",
+        "agent",
+        "search",
+        "tweets",
+        "post",
+        "replies",
+        "export",
+        "followers"
+      ],
+      "path": "skills/tweetclaw/SKILL.md"
     },
     {
       "id": "twilio-communications",
