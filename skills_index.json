@@ -58,7 +58,7 @@
     "path": "skills/ad-creative",
     "category": "uncategorized",
     "name": "ad-creative",
-    "description": "When the user wants to generate, iterate, or scale ad creative \u2014 headlines, descriptions, primary text, or full ad variations \u2014 for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' or 'ad performance optimization.' This skill covers generating ad creative at scale, iterating based on performance data, and enforcing platform character limits. For campaign strategy and targeting, see paid-ads. For landing page copy, see copywriting.",
+    "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' or 'ad performance optimization.' This skill covers generating ad creative at scale, iterating based on performance data, and enforcing platform character limits. For campaign strategy and targeting, see paid-ads. For landing page copy, see copywriting.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -94,7 +94,7 @@
     "path": "skills/agent-evaluation",
     "category": "uncategorized",
     "name": "agent-evaluation",
-    "description": "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring\u2014where even top agents achieve less than 50% on real-world benchmarks Use when: agent testing, agent evaluation, benchmark agents, agent reliability, test agent.",
+    "description": "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring—where even top agents achieve less than 50% on real-world benchmarks Use when: agent testing, agent evaluation, benchmark agents, agent reliability, test agent.",
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
@@ -301,7 +301,7 @@
     "path": "skills/anndata",
     "category": "uncategorized",
     "name": "anndata",
-    "description": "Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files or integrating with the scverse ecosystem. This is the data format skill\u2014for analysis workflows use scanpy; for probabilistic models use scvi-tools; for population-scale queries use cellxgene-census.",
+    "description": "Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files or integrating with the scverse ecosystem. This is the data format skill—for analysis workflows use scanpy; for probabilistic models use scvi-tools; for population-scale queries use cellxgene-census.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -1606,7 +1606,7 @@
     "path": "skills/copywriting",
     "category": "uncategorized",
     "name": "copywriting",
-    "description": "When the user wants to write, rewrite, or improve marketing copy for any page \u2014 including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" or \"CTA copy.\" For email copy, see email-sequence. For popup copy, see popup-cro.",
+    "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" or \"CTA copy.\" For email copy, see email-sequence. For popup copy, see popup-cro.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -2659,7 +2659,7 @@
     "path": "skills/form-cro",
     "category": "uncategorized",
     "name": "form-cro",
-    "description": "When the user wants to optimize any form that is NOT signup/registration \u2014 including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions \"form optimization,\" \"lead form conversions,\" \"form friction,\" \"form fields,\" \"form completion rate,\" or \"contact form.\" For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.",
+    "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions \"form optimization,\" \"lead form conversions,\" \"form friction,\" \"form fields,\" \"form completion rate,\" or \"contact form.\" For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -2731,7 +2731,7 @@
     "path": "skills/free-tool-strategy",
     "category": "uncategorized",
     "name": "free-tool-strategy",
-    "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes \u2014 lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing tool,\" \"calculator,\" \"generator,\" \"interactive tool,\" \"lead gen tool,\" \"build a tool for leads,\" or \"free resource.\" This skill bridges engineering and marketing \u2014 useful for founders and technical marketers.",
+    "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing tool,\" \"calculator,\" \"generator,\" \"interactive tool,\" \"lead gen tool,\" \"build a tool for leads,\" or \"free resource.\" This skill bridges engineering and marketing — useful for founders and technical marketers.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -3748,7 +3748,7 @@
     "path": "skills/markdown-mermaid-writing",
     "category": "uncategorized",
     "name": "markdown-mermaid-writing",
-    "description": "Comprehensive markdown and Mermaid diagram writing skill that establishes text-based diagrams as the DEFAULT documentation standard. Use this skill when creating ANY scientific document, report, analysis, or visualization \u2014 it ensures all outputs are in version-controlled, token-efficient markdown with embedded Mermaid diagrams as the source of truth, with clear pathways to downstream Python or AI-generated images. Includes full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates ready to use.\n",
+    "description": "Comprehensive markdown and Mermaid diagram writing skill that establishes text-based diagrams as the DEFAULT documentation standard. Use this skill when creating ANY scientific document, report, analysis, or visualization — it ensures all outputs are in version-controlled, token-efficient markdown with embedded Mermaid diagrams as the source of truth, with clear pathways to downstream Python or AI-generated images. Includes full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates ready to use.\n",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -4414,7 +4414,7 @@
     "path": "skills/page-cro",
     "category": "uncategorized",
     "name": "page-cro",
-    "description": "When the user wants to optimize, improve, or increase conversions on any marketing page \u2014 including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the user says \"CRO,\" \"conversion rate optimization,\" \"this page isn't converting,\" \"improve conversions,\" or \"why isn't this page working.\" For signup/registration flows, see signup-flow-cro. For post-signup activation, see onboarding-cro. For forms outside of signup, see form-cro. For popups/modals, see popup-cro.",
+    "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the user says \"CRO,\" \"conversion rate optimization,\" \"this page isn't converting,\" \"improve conversions,\" or \"why isn't this page working.\" For signup/registration flows, see signup-flow-cro. For post-signup activation, see onboarding-cro. For forms outside of signup, see form-cro. For popups/modals, see popup-cro.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -4477,7 +4477,7 @@
     "path": "skills/paywall-upgrade-cro",
     "category": "uncategorized",
     "name": "paywall-upgrade-cro",
-    "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"convert free to paid,\" \"freemium conversion,\" \"trial expiration screen,\" \"limit reached screen,\" \"plan upgrade prompt,\" or \"in-app pricing.\" Distinct from public pricing pages (see page-cro) \u2014 this skill focuses on in-product upgrade moments where the user has already experienced value.",
+    "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"convert free to paid,\" \"freemium conversion,\" \"trial expiration screen,\" \"limit reached screen,\" \"plan upgrade prompt,\" or \"in-app pricing.\" Distinct from public pricing pages (see page-cro) — this skill focuses on in-product upgrade moments where the user has already experienced value.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -5116,7 +5116,7 @@
     "path": "skills/qutip",
     "category": "uncategorized",
     "name": "qutip",
-    "description": "Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing\u2014use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.",
+    "description": "Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing—use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -5953,7 +5953,7 @@
     "path": "skills/skyvern-browser-automation",
     "category": "uncategorized",
     "name": "skyvern-browser-automation",
-    "description": "AI-powered browser automation \u2014 navigate sites, fill forms, extract structured data, log in with stored credentials, and build reusable workflows.",
+    "description": "AI-powered browser automation — navigate sites, fill forms, extract structured data, log in with stored credentials, and build reusable workflows.",
     "risk": "safe",
     "source": "Skyvern-AI/skyvern (AGPL-3.0)"
   },
@@ -6520,7 +6520,7 @@
     "path": "skills/timesfm-forecasting",
     "category": "uncategorized",
     "name": "timesfm-forecasting",
-    "description": "Zero-shot time series forecasting with Google's TimesFM foundation model. Use this skill when forecasting ANY univariate time series \u2014 sales, sensor readings, stock prices, energy demand, patient vitals, weather, or scientific measurements \u2014 without training a custom model. Automatically checks system RAM/GPU before loading the model, supports CSV/DataFrame/array inputs, and returns point forecasts with calibrated prediction intervals. Includes a preflight system checker script that MUST be run before first use to verify the machine can load the model. For classical statistical time series models (ARIMA, SARIMAX, VAR) use statsmodels; for time series classification/clustering use aeon.\n",
+    "description": "Zero-shot time series forecasting with Google's TimesFM foundation model. Use this skill when forecasting ANY univariate time series — sales, sensor readings, stock prices, energy demand, patient vitals, weather, or scientific measurements — without training a custom model. Automatically checks system RAM/GPU before loading the model, supports CSV/DataFrame/array inputs, and returns point forecasts with calibrated prediction intervals. Includes a preflight system checker script that MUST be run before first use to verify the machine can load the model. For classical statistical time series models (ARIMA, SARIMAX, VAR) use statsmodels; for time series classification/clustering use aeon.\n",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -6916,7 +6916,7 @@
     "path": "skills/voice-agents",
     "category": "uncategorized",
     "name": "voice-agents",
-    "description": "Voice agents represent the frontier of AI interaction - humans speaking naturally with AI systems. The challenge isn't just speech recognition and synthesis, it's achieving natural conversation flow with sub-800ms latency while handling interruptions, background noise, and emotional nuance.  This skill covers two architectures: speech-to-speech (OpenAI Realtime API, lowest latency, most natural) and pipeline (STT\u2192LLM\u2192TTS, more control, easier to debug). Key insight: latency is the constraint. Hu",
+    "description": "Voice agents represent the frontier of AI interaction - humans speaking naturally with AI systems. The challenge isn't just speech recognition and synthesis, it's achieving natural conversation flow with sub-800ms latency while handling interruptions, background noise, and emotional nuance.  This skill covers two architectures: speech-to-speech (OpenAI Realtime API, lowest latency, most natural) and pipeline (STT→LLM→TTS, more control, easier to debug). Key insight: latency is the constraint. Hu",
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
@@ -7144,5 +7144,14 @@
     "description": "Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.",
     "risk": "unknown",
     "source": "unknown"
+  },
+  {
+    "id": "nihaixia",
+    "path": "skills/nihaixia",
+    "category": "knowledge",
+    "name": "nihaixia",
+    "description": "倪海厦（1954-2012）台湾经方派中医师视角的AI Agent Skill。覆盖伤寒论129条、金匮23篇、黄帝内经71篇、针灸教程、神农本草经345种、849医案、天纪命理、梁冬对话。",
+    "risk": "unknown",
+    "source": "jangviktor-web"
   }
 ]
