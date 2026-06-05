@@ -3330,6 +3330,15 @@
     "source": "unknown"
   },
   {
+    "id": "infolobby",
+    "path": "skills/infolobby",
+    "category": "uncategorized",
+    "name": "infolobby",
+    "description": "Use when the user wants to read, query, or modify their InfoLobby workspace data \u2014 list spaces and tables, get a table schema, create/update/delete/query records, post comments, or upload/download record attachments. Requires the user's InfoLobby API key, which the skill prompts for once and caches at ~/.infolobby/key.",
+    "risk": "safe",
+    "source": "https://infolobby.com/skill"
+  },
+  {
     "id": "inngest",
     "path": "skills/inngest",
     "category": "uncategorized",

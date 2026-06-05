@@ -296,6 +296,25 @@ function renderCatalogMarkdown(catalog) {
   return lines.join('\n');
 }
 
+function readExistingCatalog(catalogPath) {
+  try {
+    return JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+  } catch (_) {
+    return null;
+  }
+}
+
+function sameCatalogContent(existing, next) {
+  if (!existing) return false;
+  return JSON.stringify({
+    total: existing.total,
+    skills: existing.skills,
+  }) === JSON.stringify({
+    total: next.total,
+    skills: next.skills,
+  });
+}
+
 function buildCatalog() {
   const skillRelPaths = listSkillIdsRecursive(SKILLS_DIR);
   const skills = skillRelPaths.map(relPath => readSkill(SKILLS_DIR, relPath));
@@ -317,19 +336,23 @@ function buildCatalog() {
     });
   }
 
-  const catalog = {
-    generatedAt: new Date().toISOString(),
-    total: catalogSkills.length,
-    skills: catalogSkills.sort((a, b) => a.id.localeCompare(b.id)),
-  };
-
-  const aliases = buildAliases(catalog.skills);
-  const bundleData = buildBundles(catalog.skills);
-
   const catalogPath = path.join(ROOT, 'data', 'catalog.json');
   const catalogMarkdownPath = path.join(ROOT, 'CATALOG.md');
   const bundlesPath = path.join(ROOT, 'data', 'bundles.json');
   const aliasesPath = path.join(ROOT, 'data', 'aliases.json');
+
+  const catalog = {
+    generatedAt: '',
+    total: catalogSkills.length,
+    skills: catalogSkills.sort((a, b) => a.id.localeCompare(b.id)),
+  };
+  const existingCatalog = readExistingCatalog(catalogPath);
+  catalog.generatedAt = sameCatalogContent(existingCatalog, catalog)
+    ? existingCatalog.generatedAt
+    : new Date().toISOString();
+
+  const aliases = buildAliases(catalog.skills);
+  const bundleData = buildBundles(catalog.skills);
 
   fs.writeFileSync(catalogPath, JSON.stringify(catalog, null, 2));
   fs.writeFileSync(catalogMarkdownPath, renderCatalogMarkdown(catalog));
