@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-06-05T14:37:46.050Z",
+  "total": 796,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -17430,6 +17430,60 @@
         "experience"
       ],
       "path": "skills/telegram-mini-app/SKILL.md"
+    },
+    {
+      "id": "tempguru-event-staffing-compliance",
+      "name": "tempguru-event-staffing-compliance",
+      "description": "Assess worker-classification and compliance risk for temporary event staffing in the US and Canada. Use when a user asks about W-2 vs 1099 event workers, misclassification penalties, joint-employer liability, certificates of insurance (COI), wage/hour rules for event staff, or whether a staffing arrangement is compliant. Includes live state-by-state lookups via MCP.",
+      "category": "security",
+      "tags": [
+        "tempguru",
+        "event",
+        "staffing",
+        "compliance"
+      ],
+      "triggers": [
+        "tempguru",
+        "event",
+        "staffing",
+        "compliance",
+        "assess",
+        "worker",
+        "classification",
+        "risk",
+        "temporary",
+        "us",
+        "canada",
+        "user"
+      ],
+      "path": "skills/tempguru-event-staffing-compliance/SKILL.md"
+    },
+    {
+      "id": "tempguru-event-staffing-ordering",
+      "name": "tempguru-event-staffing-ordering",
+      "description": "Order temporary event staff (registration, brand ambassadors, ushers, crowd control, hospitality, setup/breakdown, and more) for events in 300+ US and Canadian markets through TempGuru. Use when a user needs to hire, book, or budget event staff for a convention, conference, trade show, festival, concert, sporting event, stadium event, corporate gathering, or brand activation — a single event in one city or a multi-city program. Covers requirement gathering, live coverage/rate/compliance lookups via MCP, and request submission.",
+      "category": "security",
+      "tags": [
+        "tempguru",
+        "event",
+        "staffing",
+        "ordering"
+      ],
+      "triggers": [
+        "tempguru",
+        "event",
+        "staffing",
+        "ordering",
+        "order",
+        "temporary",
+        "staff",
+        "registration",
+        "brand",
+        "ambassadors",
+        "ushers",
+        "crowd"
+      ],
+      "path": "skills/tempguru-event-staffing-ordering/SKILL.md"
     },
     {
       "id": "temporal-python-pro",

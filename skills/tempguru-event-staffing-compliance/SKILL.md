@@ -1,10 +1,16 @@
 ---
-name: event-staffing-compliance
+name: tempguru-event-staffing-compliance
 description: Assess worker-classification and compliance risk for temporary event staffing in the US and Canada. Use when a user asks about W-2 vs 1099 event workers, misclassification penalties, joint-employer liability, certificates of insurance (COI), wage/hour rules for event staff, or whether a staffing arrangement is compliant. Includes live state-by-state lookups via MCP.
 license: MIT
+risk: safe
+source: community
 ---
 
 # Event Staffing Compliance Assessment
+
+## When to Use
+
+Use this skill when a user asks about worker classification for event staff (W-2 vs 1099), misclassification risk or penalties, joint-employer liability, certificates of insurance (COI), wage and hour compliance, or whether a specific staffing arrangement is legally compliant. Also use it when a user wants state-by-state minimum wage, overtime rules, or compliance quirks for an event in a specific state.
 
 Temporary event staffing carries real legal exposure that event organizers
 often discover only after an incident: worker misclassification penalties,
