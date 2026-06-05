@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-06-05T12:30:58.545Z
 
-Total skills: 794
+Total skills: 795
 
 ## architecture (64)
 
@@ -116,7 +116,7 @@ Total skills: 794
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (179)
+## data-ai (180)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -212,6 +212,7 @@ Total skills: 794
 | `hypothesis-generation` | Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predi... | hypothesis, generation | hypothesis, generation, structured, formulation, observations, experimental, data, formulate, testable, hypotheses, predictions, propose |
 | `imaging-data-commons` | Query and download public cancer imaging data from NCI Imaging Data Commons using idc-index. Use for accessing large-scale radiology (CT, MR, PET) and pathol... | imaging, data, commons | imaging, data, commons, query, download, public, cancer, nci, idc, index, accessing, large |
 | `infographics` | Create professional infographics using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Integrates research-lookup a... | infographics | infographics, professional, nano, banana, pro, ai, smart, iterative, refinement, uses, gemini, quality |
+| `infolobby` | Use when the user wants to read, query, or modify their InfoLobby workspace data — list spaces and tables, get a table schema, create/update/delete/query rec... | infolobby | infolobby, user, wants, read, query, modify, workspace, data, list, spaces, tables, get |
 | `ios-developer` | Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization. Use PROACT... | ios | ios, developer, develop, native, applications, swift, swiftui, masters, 18, uikit, integration, core |
 | `kegg-database` | Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python ... | kegg, database | kegg, database, direct, rest, api, access, academic, pathway, analysis, gene, mapping, metabolic |
 | `langchain-architecture` | Design LLM applications using the LangChain framework with agents, memory, and tool integration patterns. Use when building LangChain applications, implement... | langchain, architecture | langchain, architecture, llm, applications, framework, agents, memory, integration, building, implementing, ai, creating |

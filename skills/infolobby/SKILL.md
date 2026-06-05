@@ -2,14 +2,19 @@
 name: infolobby
 description: Use when the user wants to read, query, or modify their InfoLobby workspace data — list spaces and tables, get a table schema, create/update/delete/query records, post comments, or upload/download record attachments. Requires the user's InfoLobby API key, which the skill prompts for once and caches at ~/.infolobby/key.
 license: MIT
+risk: safe
+source: https://infolobby.com/skill
 metadata:
-  source: https://infolobby.com/skill
   vendor: Globi Web Solutions
 ---
 
 # InfoLobby
 
 Access an InfoLobby account from any agent using plain `curl`. No SDK.
+
+## When to Use
+
+Use for InfoLobby data operations: discover spaces/tables, inspect schemas, query records, mutate records, comments, and record attachments.
 
 ## Setup
 

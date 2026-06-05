@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-06-05T12:30:58.545Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -9218,6 +9218,30 @@
         "quality"
       ],
       "path": "skills/infographics/SKILL.md"
+    },
+    {
+      "id": "infolobby",
+      "name": "infolobby",
+      "description": "Use when the user wants to read, query, or modify their InfoLobby workspace data — list spaces and tables, get a table schema, create/update/delete/query records, post comments, or upload/download record attachments. Requires the user's InfoLobby API key, which the skill prompts for once and caches at ~/.infolobby/key.",
+      "category": "data-ai",
+      "tags": [
+        "infolobby"
+      ],
+      "triggers": [
+        "infolobby",
+        "user",
+        "wants",
+        "read",
+        "query",
+        "modify",
+        "workspace",
+        "data",
+        "list",
+        "spaces",
+        "tables",
+        "get"
+      ],
+      "path": "skills/infolobby/SKILL.md"
     },
     {
       "id": "inngest",
