@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
+  "generatedAt": "2026-06-05T14:37:46.050Z",
   "aliases": {
     "accessibility-compliance-audit": "accessibility-compliance-accessibility-audit",
     "active directory attacks": "active-directory-attacks",
@@ -119,6 +119,8 @@
     "startup-business-opportunity": "startup-business-analyst-market-opportunity",
     "systems-programming-project": "systems-programming-rust-project",
     "team-collaboration-notes": "team-collaboration-standup-notes",
+    "tempguru-event-compliance": "tempguru-event-staffing-compliance",
+    "tempguru-event-ordering": "tempguru-event-staffing-ordering",
     "top 100 web vulnerabilities reference": "top-web-vulnerabilities",
     "torch-geometric": "torch_geometric",
     "windows privilege escalation": "windows-privilege-escalation",

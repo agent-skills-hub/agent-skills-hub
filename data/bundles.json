@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
+  "generatedAt": "2026-06-05T14:37:46.050Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -279,6 +279,8 @@
         "ssh-penetration-testing",
         "stride-analysis-patterns",
         "stripe-integration",
+        "tempguru-event-staffing-compliance",
+        "tempguru-event-staffing-ordering",
         "terraform-specialist",
         "threat-mitigation-mapping",
         "threat-modeling-expert",

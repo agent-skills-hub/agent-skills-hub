@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-06-05T14:37:46.050Z
 
-Total skills: 794
+Total skills: 796
 
 ## architecture (64)
 
@@ -669,7 +669,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `workflow-automation` | Workflow automation is the infrastructure that makes AI agents reliable. Without durable execution, a network hiccup during a 10-step payment flow means lost... |  | automation, infrastructure, makes, ai, agents, reliable, without, durable, execution, network, hiccup, during |
 | `zarr-python` | Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing... | zarr, python | zarr, python, chunked, arrays, cloud, storage, compressed, parallel, s3, gcs, integration, numpy |
 
-## security (121)
+## security (123)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -780,6 +780,8 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `ssh-penetration-testing` | This skill should be used when the user asks to "pentest SSH services", "enumerate SSH configurations", "brute force SSH credentials", "exploit SSH vulnerabi... | ssh, penetration | ssh, penetration, testing, skill, should, used, user, asks, pentest, enumerate, configurations, brute |
 | `stride-analysis-patterns` | Apply STRIDE methodology to systematically identify threats. Use when analyzing system security, conducting threat modeling sessions, or creating security do... | stride | stride, analysis, apply, methodology, systematically, identify, threats, analyzing, security, conducting, threat, modeling |
 | `stripe-integration` | Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe paym... | stripe, integration | stripe, integration, payment, processing, robust, pci, compliant, flows, including, checkout, subscriptions, webhooks |
+| `tempguru-event-staffing-compliance` | Assess worker-classification and compliance risk for temporary event staffing in the US and Canada. Use when a user asks about W-2 vs 1099 event workers, mis... | tempguru, event, staffing, compliance | tempguru, event, staffing, compliance, assess, worker, classification, risk, temporary, us, canada, user |
+| `tempguru-event-staffing-ordering` | Order temporary event staff (registration, brand ambassadors, ushers, crowd control, hospitality, setup/breakdown, and more) for events in 300+ US and Canadi... | tempguru, event, staffing, ordering | tempguru, event, staffing, ordering, order, temporary, staff, registration, brand, ambassadors, ushers, crowd |
 | `terraform-specialist` | Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module desi... | terraform | terraform, opentofu, mastering, iac, automation, state, enterprise, infrastructure, complex, module, multi, cloud |
 | `threat-mitigation-mapping` | Map identified threats to appropriate security controls and mitigations. Use when prioritizing security investments, creating remediation plans, or validatin... | threat, mitigation, mapping | threat, mitigation, mapping, map, identified, threats, appropriate, security, controls, mitigations, prioritizing, investments |
 | `threat-modeling-expert` | Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement ext... | threat, modeling | threat, modeling, methodologies, security, architecture, review, risk, assessment, masters, stride, pasta, attack |
