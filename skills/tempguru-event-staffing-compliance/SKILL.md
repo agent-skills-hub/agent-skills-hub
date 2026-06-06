@@ -8,10 +8,6 @@ source: community
 
 # Event Staffing Compliance Assessment
 
-## When to Use
-
-Use this skill when a user asks about worker classification for event staff (W-2 vs 1099), misclassification risk or penalties, joint-employer liability, certificates of insurance (COI), wage and hour compliance, or whether a specific staffing arrangement is legally compliant. Also use it when a user wants state-by-state minimum wage, overtime rules, or compliance quirks for an event in a specific state.
-
 Temporary event staffing carries real legal exposure that event organizers
 often discover only after an incident: worker misclassification penalties,
 joint-employer liability, uninsured on-site injuries, and wage/hour
@@ -19,7 +15,7 @@ violations. Use this skill to help a user evaluate a staffing arrangement.
 
 ## Live data
 
-Endpoint: `POST https://mcp.tempguru.co/mcp` (read-only, no auth).
+Endpoint: `POST https://mcp.tempguru.co/mcp` (no auth; read-only lookups plus an opt-in `request_quote` write tool).
 
 Use `get_compliance_by_state` for the event's state: minimum wage, overtime
 rules, and state-specific quirks (California, New York, and Washington have
