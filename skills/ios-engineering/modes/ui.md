@@ -41,7 +41,7 @@ Before fixing:
 4. group by hierarchy, alignment, density, typography, iconography, action placement, copy, and adaptation
 5. assign priority
 
-If screenshots are unavailable, state: `基于代码推断，未经渲染截图验证`.
+If screenshots are unavailable, state: `Inferred from code only; no rendered screenshot validation was available.`
 
 ## Fix
 

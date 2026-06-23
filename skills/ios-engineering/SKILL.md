@@ -121,5 +121,5 @@ Natural-language requests are valid equivalents when the user does not use slash
 ## Limitations
 
 - This skill does not supply repository-specific build commands, module names, or product semantics.
-- Some references include mixed English and Chinese guidance; teams expecting a fully English-only skill may want a localized follow-up pass.
 - The skill is optimized for native iOS and SwiftUI workflows, not React Native or Flutter implementation.
+- Final behavior quality still depends on the active repository exposing truthful requirements, ownership boundaries, and validation entry points.

@@ -2,7 +2,7 @@
 
 ## Verdict
 
-通过 / 有条件通过 / 不通过
+Pass / Conditional Pass / Fail
 
 ## Criteria and evidence
 

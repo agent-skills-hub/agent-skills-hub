@@ -1,27 +1,27 @@
-# iOS Swift 开发防遗漏规则：数据一致性与状态同步
+# iOS Swift Guardrails: Data Consistency and State Synchronization
 
-## 目标
+## Objective
 
-在使用 Codex / AI Agent 开发 iOS Swift 项目时，避免只完成当前页面逻辑，却遗漏跨页面、跨状态源、跨生命周期的数据一致性问题。
+When using Codex or another AI agent to build iOS Swift features, avoid stopping at the current screen while missing cross-screen, cross-owner, or cross-lifecycle data consistency issues.
 
-凡是涉及新增、编辑、删除、状态切换、撤销、调度设置、余额或库存修改、导入、迁移等写入型功能，都必须按本文规则检查。
+Any write-oriented task involving create, edit, delete, status changes, undo, scheduling, balance or inventory updates, import, or migration must be checked against these rules.
 
 ---
 
-## 1. 单一事实源原则
+## 1. Single Source of Truth
 
-核心业务数据必须来自统一的数据源，例如：
+Core business data must come from one authoritative source, such as:
 
 * Repository
 * Store
 * SwiftData / SQLite
-* App-level Observable State
+* App-level observable state
 
-禁止多个页面或多个 ViewModel 长期各自维护同一份核心数据副本。
+Do not let multiple pages or multiple view models maintain long-lived independent copies of the same core data.
 
-ViewModel 可以保存 UI 状态，但不能成为长期事实源。
+View models may store UI state, but they must not become the long-term source of truth.
 
-错误倾向：
+Common bad tendency:
 
 ```swift
 HomeViewModel.items
@@ -29,7 +29,7 @@ CalendarViewModel.items
 StatsViewModel.items
 ```
 
-正确倾向：
+Preferred direction:
 
 ```text
 Database / Repository / Store
@@ -42,303 +42,303 @@ DetailViewModel
 
 ---
 
-## 2. 写入后必须检查全链路影响
+## 2. Check the Full Write Impact Chain
 
-任何新增、编辑、删除操作完成后，必须检查所有引用该实体的地方是否同步更新。
+After any create, edit, or delete operation, verify that every surface referencing the entity updates correctly.
 
-至少检查：
+At minimum, check:
 
-* 首页
-* 列表页
-* 详情页
-* 编辑页
-* 搜索页
-* 筛选 / 分组页
-* 日历页
-* 统计页
-* 通知
-* Widget / Live Activity，如有
-* 缓存
-* 空状态
-* 错误状态
+* home screen
+* list screens
+* detail screens
+* edit screens
+* search
+* filter / grouping
+* calendar
+* statistics
+* notifications
+* widgets / Live Activities, if present
+* cache
+* empty states
+* error states
 
-不能只在当前页面保存成功后 `dismiss()` 就认为功能完成。
-
----
-
-## 3. 派生数据不得作为长期事实源
-
-以下数据属于派生数据，不能长期单独保存为事实源：
-
-* 排序结果
-* 分组结果
-* 筛选结果
-* 搜索结果
-* 今日状态
-* 下一次提醒
-* 统计数据
-* 趋势数据
-* 库存余量
-* 完成率
-* 日历展示数据
-
-相关字段变化后，必须从最新事实源重新计算派生数据。
+Saving successfully and dismissing the current page is not enough to call the feature complete.
 
 ---
 
-## 4. 删除必须处理失效引用
+## 3. Derived Data Must Not Become the Long-Term Truth
 
-删除核心实体时，必须处理其他页面或数据中仍持有旧 ID 的情况。
+The following are derived data and should not be stored as the long-term source of truth:
 
-删除后必须检查：
+* sorted results
+* grouped results
+* filtered results
+* search results
+* "today" status
+* next reminder
+* statistics
+* trend data
+* inventory remaining
+* completion rate
+* calendar presentation data
 
-* 详情页是否安全返回或显示不可用状态
-* 编辑页是否禁止继续保存失效对象
-* 搜索结果是否移除
-* 统计页是否跳过失效引用
-* 关联提醒是否取消
-* 关联记录是否保留、归档、置空或级联处理
-* UI 是否避免强制解包崩溃
-
-禁止假设数据库查询结果一定存在。
-
----
-
-## 5. 历史记录必须保存必要快照
-
-历史数据不能完全依赖当前实体字段展示。
-
-例如执行记录、状态记录、订单记录、审计日志等，应保存当时必要快照，避免未来编辑实体后污染历史。
-
-至少考虑保存：
-
-* 当时名称
-* 当时剂量 / 数量 / 单位
-* 当时分类
-* 当时计划时间
-* 当时实际状态
-* 当时备注
+When the underlying fields change, derived data must be recomputed from the latest authoritative source.
 
 ---
 
-## 6. 通知必须和业务数据同步
+## 4. Deletion Must Handle Invalid References
 
-只要提醒相关字段发生变化，就必须同步系统通知。
+When deleting a core entity, handle the case where other screens or data structures still hold the old identifier.
 
-修改提醒时必须：
+After deletion, check:
 
-1. 取消该实体旧通知
-2. 基于最新数据重新创建通知
-3. 使用稳定、可追踪的 notification identifier
-4. 处理通知权限关闭
-5. 避免重复通知
-6. 处理删除、停用、时间修改、名称修改等场景
+* whether the detail screen exits safely or shows an unavailable state
+* whether the edit screen prevents saving an invalid object
+* whether search results remove the deleted item
+* whether stats skip invalid references
+* whether related reminders are cancelled
+* whether related records are retained, archived, nulled out, or cascaded intentionally
+* whether the UI avoids crashes from force-unwrapping missing data
 
-禁止只新增通知，不取消旧通知。
-
----
-
-## 7. 页面刷新不能只依赖 onAppear
-
-`onAppear` 不能作为核心数据刷新的唯一机制。
-
-必须考虑：
-
-* TabView 页面不会频繁销毁
-* Sheet 关闭后父页面不一定自动刷新
-* Navigation 返回后数据可能已变化
-* App 从后台回到前台时数据可能过期
-* 数据在其他页面被修改
-
-核心页面应通过统一 Store、数据库查询、Observable 状态、Publisher、回调或显式刷新机制响应变化。
+Never assume a database lookup result must exist.
 
 ---
 
-## 8. Sheet / Navigation 写入后必须通知上游
+## 5. Historical Records Must Preserve Necessary Snapshots
 
-通过 sheet、fullScreenCover、NavigationLink 打开的新增或编辑页面，保存成功后必须确保父级页面能够感知变化。
+Historical data must not rely entirely on the current mutable entity fields for display.
 
-可采用：
+For example, execution logs, status records, order history, and audit events should preserve the necessary snapshot fields from the time of the event, so future edits do not rewrite history.
 
-* 共享 Store
-* SwiftData Query
-* ObservableObject / Observable
-* onSave 回调
-* Repository 发布变化
-* NotificationCenter，仅在合适场景使用
+At minimum, consider storing:
 
-禁止只保存后 `dismiss()`，却不保证上级页面更新。
-
----
-
-## 9. 异步操作必须防止竞态
-
-异步加载、保存、刷新时必须考虑竞态问题。
-
-要求：
-
-* UI 更新必须在 MainActor
-* 旧请求不能覆盖新状态
-* 保存时不能用旧对象整体覆盖数据库最新记录
-* 长时间打开的编辑页保存前必须确认实体仍存在
-* 快速连续操作不能产生重复写入、重复通知或状态错乱
+* name at the time
+* dosage / quantity / unit at the time
+* category at the time
+* planned time at the time
+* actual status at the time
+* note at the time
 
 ---
 
-## 10. 错误处理必须用户可见
+## 6. Notifications Must Stay in Sync with Business Data
 
-用户触发的写入型操作失败时，不能只 `print(error)`。
+If reminder-related fields change, the system notifications must be updated as well.
 
-必须提供用户可见反馈，例如：
+When a reminder changes, the flow must:
 
-* Alert
-* Toast
-* Inline error
-* 表单字段错误提示
-* 重试入口
+1. cancel the old notifications for that entity
+2. recreate notifications from the latest data
+3. use stable, traceable notification identifiers
+4. handle notification permissions being disabled
+5. avoid duplicate notifications
+6. handle delete, disable, time changes, name changes, and similar scenarios
 
-涉及保存、删除、提醒、权限、导入、迁移、数据库写入失败时，必须明确处理错误状态。
-
-持久化成功前，不得表现为最终保存成功。
-
----
-
-## 11. 时间敏感页面必须处理日期变化
-
-涉及以下内容的页面必须处理跨天、时区、前后台变化：
-
-* 今日任务
-* 本周统计
-* 下一次提醒
-* 日历视图
-* 连续打卡
-* 过期状态
-* 库存提醒
-* 趋势统计
-
-必须考虑：
-
-* App 进入前台
-* 跨过 0 点
-* 系统时区变化
-* 夏令时变化
-* 长时间后台后恢复
+Do not only add new notifications without removing the old ones.
 
 ---
 
-## 12. 库存 / 余量必须和记录联动
+## 7. Page Refresh Cannot Depend Only on `onAppear`
 
-库存、余量、消耗、补充等数据必须和业务记录保持一致。
+`onAppear` must not be the only refresh mechanism for core data.
 
-不能在多个地方随意手动修改当前库存。
+Account for cases such as:
 
-优先采用：
+* `TabView` pages not being destroyed frequently
+* the parent page not refreshing automatically after a sheet closes
+* navigation back returning to a screen whose data has changed
+* app foregrounding after stale background time
+* data being modified on another screen
+
+Core screens should react to change through a store, query, observable state, publisher, callback, or an explicit refresh path.
+
+---
+
+## 8. Sheet / Navigation Writes Must Notify Upstream Owners
+
+When a create or edit page is presented via `sheet`, `fullScreenCover`, or `NavigationLink`, saving successfully must ensure the parent surface observes the change.
+
+Common valid approaches:
+
+* shared store
+* SwiftData query
+* `ObservableObject` / `Observable`
+* `onSave` callback
+* repository-published change
+* `NotificationCenter` only when it is the right tool for the context
+
+Do not just save and dismiss while leaving the parent stale.
+
+---
+
+## 9. Async Operations Must Prevent Races
+
+Async loading, saving, and refreshing must account for race conditions.
+
+Requirements:
+
+* UI updates must occur on `MainActor`
+* old requests must not overwrite newer intent
+* saves must not overwrite the latest database record with a stale in-memory object
+* a long-open edit screen must confirm the entity still exists before saving
+* rapid repeated interactions must not produce duplicate writes, duplicate notifications, or corrupted state
+
+---
+
+## 10. Error Handling Must Be Visible to the User
+
+When a user-triggered write fails, do not rely on `print(error)` alone.
+
+Provide visible user feedback such as:
+
+* alert
+* toast
+* inline error
+* form field validation error
+* retry action
+
+Save, delete, reminder, permission, import, migration, and database write failures must all expose an explicit error path.
+
+Do not represent the operation as finally successful before persistence actually succeeds.
+
+---
+
+## 11. Time-Sensitive Screens Must Handle Date Changes
+
+Pages involving the following concepts must handle day rollover, timezone changes, and foreground/background transitions:
+
+* today's tasks
+* weekly statistics
+* next reminder
+* calendar views
+* streaks
+* expiry state
+* inventory reminders
+* trend statistics
+
+Consider at minimum:
+
+* app entering foreground
+* crossing midnight
+* system timezone changes
+* daylight saving time changes
+* long background suspension
+
+---
+
+## 12. Inventory / Remaining Amount Must Stay Linked to Records
+
+Inventory, remaining quantity, consumption, and replenishment data must stay consistent with the underlying business records.
+
+Do not freely edit the current inventory number from multiple unrelated places.
+
+Prefer a model such as:
 
 ```text
-初始库存 + 补充记录 - 消耗记录 = 当前库存
+starting inventory + replenishment records - consumption records = current inventory
 ```
 
-如果采用缓存字段，也必须保证：
+If a cached field is used, it still must guarantee:
 
-* 产生消耗记录后减少
-* 撤销后恢复
-* 删除记录后重算
-* 修改剂量后重算
-* 保存失败后回滚
-
----
-
-## 13. 新增和编辑必须路径清晰
-
-表单保存时必须明确当前操作是 create 还是 update。
-
-编辑时禁止用默认值覆盖已有字段。
-
-保存前必须确认：
-
-* 是否存在 entityId
-* 是新增还是编辑
-* update 是部分字段更新还是整体替换
-* 未修改字段是否会被错误清空
-* 默认表单值是否会污染已有数据
+* decrease after a consumption record is created
+* restoration after undo
+* recomputation after record deletion
+* recomputation after dosage changes
+* rollback after save failure
 
 ---
 
-## 14. 持久化模型变更必须考虑迁移
+## 13. Create and Edit Paths Must Be Unambiguous
 
-修改 SwiftData / SQLite / Codable 持久化结构时，必须考虑旧用户数据兼容。
+When saving a form, the code must clearly know whether the operation is a create or an update.
 
-需要检查：
+On edit, do not let default values overwrite existing fields unintentionally.
 
-* 新增字段是否有默认值
-* 字段重命名是否有迁移方案
-* enum 新增或改名是否兼容旧数据
-* 关系结构变化是否会导致启动崩溃
-* 旧版本数据是否还能读取
+Before saving, confirm:
 
-禁止随意删除或重命名持久化字段。
-
----
-
-## 15. Preview / Mock 必须覆盖异常状态
-
-UI 不能只在理想 Mock 数据下验证。
-
-至少覆盖：
-
-* 空数据
-* 单条数据
-* 多条数据
-* 超长文本
-* 删除 / 失效引用
-* 加载中
-* 保存失败
-* 权限关闭
-* 通知不可用
-* 数据库异常
-* 跨天状态
+* whether an `entityId` exists
+* whether the action is create or edit
+* whether update means partial field mutation or full replacement
+* whether untouched fields might be cleared by mistake
+* whether default form values could pollute existing data
 
 ---
 
-## 16. 写入型功能完成后的强制自检
+## 14. Persisted Model Changes Must Consider Migration
 
-每个涉及数据写入的任务完成后，Agent 必须输出简短自检：
+When changing persisted SwiftData, SQLite, or Codable structures, consider compatibility with older user data.
+
+Check items such as:
+
+* whether new fields have defaults
+* whether renamed fields have a migration path
+* whether enum additions or renames remain compatible with old data
+* whether relationship changes could crash app launch
+* whether old-version data can still be read
+
+Do not casually delete or rename persisted fields.
+
+---
+
+## 15. Previews / Mocks Must Cover Failure States
+
+UI validation must not rely only on ideal mock data.
+
+At minimum, cover:
+
+* empty data
+* a single record
+* multiple records
+* long text
+* deletion / invalid references
+* loading
+* save failure
+* permission denied
+* notifications unavailable
+* database error
+* cross-day state
+
+---
+
+## 16. Required Post-Write Self-Check
+
+After every task involving data writes, the agent should output a brief self-check:
 
 ```md
-### 写入影响面自检
+### Write Impact Check
 
-- 影响的核心实体：
-- 影响的页面：
-- 需要刷新的派生数据：
-- 是否涉及通知：
-- 是否涉及缓存：
-- 是否涉及历史记录快照：
-- 是否涉及删除 / 失效引用：
-- 是否涉及跨天 / 时间变化：
-- 错误处理是否用户可见：
-- 已覆盖的测试场景：
+- Core entities affected:
+- Screens affected:
+- Derived data needing refresh:
+- Notifications involved:
+- Cache involved:
+- Historical snapshots involved:
+- Delete / invalid references involved:
+- Cross-day / time change sensitivity:
+- User-visible error handling:
+- Test scenarios covered:
 ```
 
-如果无法确认某一项，必须明确说明，而不是默认完成。
+If any item cannot be confirmed, say so explicitly rather than silently assuming it is complete.
 
 ---
 
-## 17. 总体原则
+## 17. Overall Principle
 
-写入型功能不能只验证当前页面是否成功。
+Write-oriented functionality is not complete just because the current screen appears to work.
 
-必须验证完整链路：
+Validate the full chain:
 
 ```text
-用户操作
-→ 数据校验
-→ 持久化写入
-→ 状态刷新
-→ 派生数据重算
-→ 引用页面同步
-→ 通知 / 缓存同步
-→ 错误反馈
-→ 异常场景测试
+user action
+→ validation
+→ persistence write
+→ state refresh
+→ derived data recomputation
+→ dependent surface sync
+→ notification / cache sync
+→ user-visible error feedback
+→ failure-path testing
 ```
 
-只要这条链路没有检查完，就不能认为功能完成。
+If this chain has not been checked end to end, the feature is not complete.

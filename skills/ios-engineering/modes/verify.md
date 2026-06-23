@@ -16,9 +16,9 @@ Determine whether a requirement is complete using product, code, test, runtime, 
 8. Check edge states, localization, accessibility, migration/old data, and critical regression paths as relevant.
 9. Check that issue status and durable project documentation match reality.
 10. Produce exactly one verdict:
-   - `通过`
-   - `有条件通过`
-   - `不通过`
+   - `Pass`
+   - `Conditional Pass`
+   - `Fail`
 
 ## Evidence standard
 
@@ -39,14 +39,14 @@ A checked box, implementation note, comment, mock-only test, or successful compi
 
 Use:
 
-- `✅ 通过` — include evidence
-- `❌ 未通过` — include impact and blocker status
-- `⚠️ 部分通过` — distinguish completed and missing parts
+- `✅ Pass` — include evidence
+- `❌ Fail` — include impact and blocker status
+- `⚠️ Partial` — distinguish completed and missing parts
 - `N/A` — explain why it does not apply
 
 ## Conditional pass
 
-Use `有条件通过` only when:
+Use `Conditional Pass` only when:
 
 - core behavior is correct
 - remaining work is bounded and explicit
