@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
+  "generatedAt": "2026-06-23T01:48:40.936Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -85,6 +85,7 @@
         "hubspot-integration",
         "hugging-face-jobs",
         "ios-developer",
+        "ios-engineering",
         "java-pro",
         "javascript-mastery",
         "javascript-pro",

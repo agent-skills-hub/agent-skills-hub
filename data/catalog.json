@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-06-23T01:48:40.936Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -9343,6 +9343,31 @@
         "core"
       ],
       "path": "skills/ios-developer/SKILL.md"
+    },
+    {
+      "id": "ios-engineering",
+      "name": "ios-engineering",
+      "description": "End-to-end SwiftUI and iOS engineering skill for planning, implementation, review, debugging, UI validation, XCTest generation, app audits, and evidence-based verification. Use when working on native iOS product requirements, bug fixes, UI changes, release validation, or code review.",
+      "category": "development",
+      "tags": [
+        "ios",
+        "engineering"
+      ],
+      "triggers": [
+        "ios",
+        "engineering",
+        "swiftui",
+        "skill",
+        "planning",
+        "review",
+        "debugging",
+        "ui",
+        "validation",
+        "xctest",
+        "generation",
+        "app"
+      ],
+      "path": "skills/ios-engineering/SKILL.md"
     },
     {
       "id": "iso-13485-certification",

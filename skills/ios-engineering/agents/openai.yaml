@@ -1,0 +1,5 @@
+version: 1
+interface:
+  display_name: iOS Engineering
+  short_description: Plan, implement, review, debug, test, and verify iOS product work
+  default_prompt: Use $ios-engineering to select the correct iOS workflow: plan product and UX decisions, implement scoped behavior, review for omissions, debug root causes, replicate or review rendered UI, add focused XCTest coverage, audit the full app, or verify completion with evidence.
