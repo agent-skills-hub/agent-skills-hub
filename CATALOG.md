@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-06-23T01:48:40.936Z
 
-Total skills: 794
+Total skills: 795
 
 ## architecture (64)
 
@@ -300,7 +300,7 @@ Total skills: 794
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 | `zinc-database` | Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual scre... | zinc, database | zinc, database, access, 230m, purchasable, compounds, search, id, smiles, similarity, searches, 3d |
 
-## development (92)
+## development (93)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -338,6 +338,7 @@ Total skills: 794
 | `go-concurrency-patterns` | Master Go concurrency with goroutines, channels, sync primitives, and context. Use when building concurrent Go applications, implementing worker pools, or de... | go, concurrency | go, concurrency, goroutines, channels, sync, primitives, context, building, concurrent, applications, implementing, worker |
 | `golang-pro` | Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem i... | golang | golang, pro, go, 21, concurrency, performance, optimization, microservices, latest, ecosystem, including, generics |
 | `hubspot-integration` | Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, associations, batch operations, webhooks, and custom objects. Covers... | hubspot, integration | hubspot, integration, crm, including, oauth, authentication, objects, associations, batch, operations, webhooks, custom |
+| `ios-engineering` | End-to-end SwiftUI and iOS engineering skill for planning, implementation, review, debugging, UI validation, XCTest generation, app audits, and evidence-base... | ios, engineering | ios, engineering, swiftui, skill, planning, review, debugging, ui, validation, xctest, generation, app |
 | `javascript-mastery` | Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced pa... | javascript, mastery | javascript, mastery, reference, covering, 33, essential, concepts, every, developer, should, know, fundamentals |
 | `javascript-pro` | Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PROACTIVELY for Java... | javascript | javascript, pro, es6, async, node, js, apis, promises, event, loops, browser, compatibility |
 | `javascript-testing-patterns` | Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fi... | javascript | javascript, testing, jest, vitest, library, unit, tests, integration, mocking, fixtures, test, driven |

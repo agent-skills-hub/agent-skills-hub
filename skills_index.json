@@ -3375,6 +3375,15 @@
     "source": "unknown"
   },
   {
+    "id": "ios-engineering",
+    "path": "skills/ios-engineering",
+    "category": "uncategorized",
+    "name": "ios-engineering",
+    "description": "End-to-end SwiftUI and iOS engineering skill for planning, implementation, review, debugging, UI validation, XCTest generation, app audits, and evidence-based verification. Use when working on native iOS product requirements, bug fixes, UI changes, release validation, or code review.",
+    "risk": "safe",
+    "source": "https://github.com/greysonOuyang/ios-engineering-skill"
+  },
+  {
     "id": "iso-13485-certification",
     "path": "skills/iso-13485-certification",
     "category": "uncategorized",
