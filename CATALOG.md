@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-06-26T10:30:30.365Z
 
-Total skills: 794
+Total skills: 795
 
 ## architecture (64)
 
@@ -569,7 +569,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `writing-skills` | Use when creating, updating, or improving agent skills. | writing, skills | writing, skills, creating, updating, improving, agent |
 | `x-article-publisher-skill` | Publish articles to X/Twitter | x, article, publisher, skill | x, article, publisher, skill, publish, articles, twitter |
 
-## infrastructure (95)
+## infrastructure (96)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -628,6 +628,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `kpi-dashboard-design` | Design effective KPI dashboards with metrics selection, visualization best practices, and real-time monitoring patterns. Use when building business dashboard... | kpi, dashboard | kpi, dashboard, effective, dashboards, metrics, selection, visualization, real, time, monitoring, building, business |
 | `lamindb` | This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable, traceable, reproducible, and FAIR. ... | lamindb | lamindb, skill, should, used, working, open, source, data, framework, biology, makes, queryable |
 | `langfuse` | Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt management, evaluation, datasets, and integration with LangChain, Lla... | langfuse | langfuse, open, source, llm, observability, platform, covers, tracing, prompt, evaluation, datasets, integration |
+| `linkedin-growth` | Two-phase LinkedIn lead pipeline driven by linkedin-cli. Phase A imports leads from a search URL or filters, qualifies them against a configurable ICP via su... | linkedin, growth | linkedin, growth, two, phase, lead, pipeline, driven, cli, imports, leads, search, url |
 | `llm-app-patterns` | Production-ready patterns for building LLM applications. Covers RAG pipelines, agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI... | llm, app | llm, app, building, applications, covers, rag, pipelines, agent, architectures, prompt, ides, llmops |
 | `machine-learning-ops-ml-pipeline` | Design and implement a complete ML pipeline for: $ARGUMENTS | machine, learning, ops, ml, pipeline | machine, learning, ops, ml, pipeline, complete, arguments |
 | `microservices-patterns` | Design microservices architectures with service boundaries, event-driven communication, and resilience patterns. Use when building distributed systems, decom... | microservices | microservices, architectures, boundaries, event, driven, communication, resilience, building, distributed, decomposing, monoliths, implementing |

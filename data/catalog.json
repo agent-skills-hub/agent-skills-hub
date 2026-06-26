@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-06-26T10:30:30.365Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -10004,6 +10004,31 @@
         "teams"
       ],
       "path": "skills/linear-claude-skill/SKILL.md"
+    },
+    {
+      "id": "linkedin-growth",
+      "name": "linkedin-growth",
+      "description": "Two-phase LinkedIn lead pipeline driven by linkedin-cli. Phase A imports leads from a search URL or filters, qualifies them against a configurable ICP via sub-agent, and stores them in a local SQLite database with round-robin assignment across one or more LinkedIn accounts. Phase B runs on a schedule per account — sends connection invites up to a daily limit and withdraws stale pending requests. Use when the user wants to grow their network from LinkedIn searches, manage outgoing invites at scale, ask status questions (counts, conversion, pending older than N days, last imports), pause/resume an account, change ICP, or install the recurring scheduler.",
+      "category": "infrastructure",
+      "tags": [
+        "linkedin",
+        "growth"
+      ],
+      "triggers": [
+        "linkedin",
+        "growth",
+        "two",
+        "phase",
+        "lead",
+        "pipeline",
+        "driven",
+        "cli",
+        "imports",
+        "leads",
+        "search",
+        "url"
+      ],
+      "path": "skills/linkedin-growth/SKILL.md"
     },
     {
       "id": "linkerd-patterns",
