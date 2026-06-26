@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
+  "generatedAt": "2026-06-26T12:25:40.281Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -406,6 +406,7 @@
         "kpi-dashboard-design",
         "lamindb",
         "legal-advisor",
+        "linkedin-growth",
         "loki-mode",
         "market-research-reports",
         "matlab",
@@ -527,6 +528,7 @@
         "kubernetes-architect",
         "lamindb",
         "langfuse",
+        "linkedin-growth",
         "llm-app-patterns",
         "loki-mode",
         "machine-learning-ops-ml-pipeline",

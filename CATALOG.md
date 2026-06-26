@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-06-26T12:25:40.281Z
 
-Total skills: 794
+Total skills: 796
 
 ## architecture (64)
 
@@ -569,7 +569,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `writing-skills` | Use when creating, updating, or improving agent skills. | writing, skills | writing, skills, creating, updating, improving, agent |
 | `x-article-publisher-skill` | Publish articles to X/Twitter | x, article, publisher, skill | x, article, publisher, skill, publish, articles, twitter |
 
-## infrastructure (95)
+## infrastructure (96)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -628,6 +628,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `kpi-dashboard-design` | Design effective KPI dashboards with metrics selection, visualization best practices, and real-time monitoring patterns. Use when building business dashboard... | kpi, dashboard | kpi, dashboard, effective, dashboards, metrics, selection, visualization, real, time, monitoring, building, business |
 | `lamindb` | This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable, traceable, reproducible, and FAIR. ... | lamindb | lamindb, skill, should, used, working, open, source, data, framework, biology, makes, queryable |
 | `langfuse` | Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt management, evaluation, datasets, and integration with LangChain, Lla... | langfuse | langfuse, open, source, llm, observability, platform, covers, tracing, prompt, evaluation, datasets, integration |
+| `linkedin-growth` | Two-phase LinkedIn lead pipeline driven by linkedin-cli. Phase A imports leads from a search URL or filters, qualifies them against a configurable ICP via su... | linkedin, growth | linkedin, growth, two, phase, lead, pipeline, driven, cli, imports, leads, search, url |
 | `llm-app-patterns` | Production-ready patterns for building LLM applications. Covers RAG pipelines, agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI... | llm, app | llm, app, building, applications, covers, rag, pipelines, agent, architectures, prompt, ides, llmops |
 | `machine-learning-ops-ml-pipeline` | Design and implement a complete ML pipeline for: $ARGUMENTS | machine, learning, ops, ml, pipeline | machine, learning, ops, ml, pipeline, complete, arguments |
 | `microservices-patterns` | Design microservices architectures with service boundaries, event-driven communication, and resilience patterns. Use when building distributed systems, decom... | microservices | microservices, architectures, boundaries, event, driven, communication, resilience, building, distributed, decomposing, monoliths, implementing |
@@ -821,7 +822,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `unit-testing-test-generate` | Generate comprehensive, maintainable unit tests across languages with strong coverage and edge case focus. | unit, generate | unit, generate, testing, test, maintainable, tests, languages, strong, coverage, edge, case |
 | `web3-testing` | Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, and mainnet forking. Use when testing Solidity contracts, ... | web3 | web3, testing, test, smart, contracts, comprehensively, hardhat, foundry, unit, tests, integration, mainnet |
 
-## workflow (18)
+## workflow (19)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -838,6 +839,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `git-pushing` | Stage, commit, and push git changes with conventional commit messages. Use when user wants to commit and push changes, mentions pushing to remote, or asks to... | git, pushing | git, pushing, stage, commit, push, changes, conventional, messages, user, wants, mentions, remote |
 | `kaizen` | Guide for continuous improvement, error proofing, and standardization. Use this skill when the user wants to improve code quality, refactor, or discuss proce... | kaizen | kaizen, continuous, improvement, error, proofing, standardization, skill, user, wants, improve, code, quality |
 | `latchbio-integration` | Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nex... | latchbio, integration | latchbio, integration, latch, platform, bioinformatics, pipelines, sdk, task, decorators, deploy, serverless, latchfile |
+| `linkedin` | General-purpose LinkedIn automation – fetch profiles, search people and companies, send messages, manage connections, create posts, and more. Use when the us... | linkedin | linkedin, general, purpose, automation, fetch, profiles, search, people, companies, send, messages, connections |
 | `mermaid-expert` | Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling. Use PROACTIVELY for visual docu... | mermaid | mermaid, diagrams, flowcharts, sequences, erds, architectures, masters, syntax, all, diagram, types, styling |
 | `pdf-official` | Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs ... | pdf, official | pdf, official, manipulation, toolkit, extracting, text, tables, creating, new, pdfs, merging, splitting |
 | `scientific-writing` | Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) sect... | scientific, writing | scientific, writing, core, skill, deep, research, write, manuscripts, full, paragraphs, never, bullet |
