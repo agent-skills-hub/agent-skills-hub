@@ -3618,6 +3618,15 @@
     "source": "https://github.com/wrsmith108/linear-claude-skill"
   },
   {
+    "id": "linkedin",
+    "path": "skills/linkedin",
+    "category": "uncategorized",
+    "name": "linkedin",
+    "description": "General-purpose LinkedIn automation \u2013 fetch profiles, search people and companies, send messages, manage connections, create posts, and more. Use when the user wants to interact with LinkedIn.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "linkerd-patterns",
     "path": "skills/linkerd-patterns",
     "category": "uncategorized",

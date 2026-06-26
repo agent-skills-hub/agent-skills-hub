@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-06-26T10:30:20.730Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -10004,6 +10004,30 @@
         "teams"
       ],
       "path": "skills/linear-claude-skill/SKILL.md"
+    },
+    {
+      "id": "linkedin",
+      "name": "linkedin",
+      "description": "General-purpose LinkedIn automation – fetch profiles, search people and companies, send messages, manage connections, create posts, and more. Use when the user wants to interact with LinkedIn.",
+      "category": "workflow",
+      "tags": [
+        "linkedin"
+      ],
+      "triggers": [
+        "linkedin",
+        "general",
+        "purpose",
+        "automation",
+        "fetch",
+        "profiles",
+        "search",
+        "people",
+        "companies",
+        "send",
+        "messages",
+        "connections"
+      ],
+      "path": "skills/linkedin/SKILL.md"
     },
     {
       "id": "linkerd-patterns",
