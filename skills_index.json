@@ -3618,6 +3618,24 @@
     "source": "https://github.com/wrsmith108/linear-claude-skill"
   },
   {
+    "id": "linkedin",
+    "path": "skills/linkedin",
+    "category": "uncategorized",
+    "name": "linkedin",
+    "description": "General-purpose LinkedIn automation \u2013 fetch profiles, search people and companies, send messages, manage connections, create posts, and more. Use when the user wants to interact with LinkedIn.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "linkedin-growth",
+    "path": "skills/linkedin-growth",
+    "category": "uncategorized",
+    "name": "linkedin-growth",
+    "description": "Two-phase LinkedIn lead pipeline driven by linkedin-cli. Phase A imports leads from a search URL or filters, qualifies them against a configurable ICP via sub-agent, and stores them in a local SQLite database with round-robin assignment across one or more LinkedIn accounts. Phase B runs on a schedule per account \u2014 sends connection invites up to a daily limit and withdraws stale pending requests. Use when the user wants to grow their network from LinkedIn searches, manage outgoing invites at scale, ask status questions (counts, conversion, pending older than N days, last imports), pause/resume an account, change ICP, or install the recurring scheduler.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "linkerd-patterns",
     "path": "skills/linkerd-patterns",
     "category": "uncategorized",
