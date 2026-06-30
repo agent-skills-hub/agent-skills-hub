@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-06-30T17:15:47.021Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -1252,6 +1252,30 @@
         "teensy"
       ],
       "path": "skills/arm-cortex-expert/SKILL.md"
+    },
+    {
+      "id": "arrowspace",
+      "name": "arrowspace",
+      "description": "Spectral vector search using graph Laplacian eigenstructure. Use when cosine/L2 similarity misses latent structure, or you need λτ-indexed retrieval with spectral awareness.",
+      "category": "data-ai",
+      "tags": [
+        "arrowspace"
+      ],
+      "triggers": [
+        "arrowspace",
+        "spectral",
+        "vector",
+        "search",
+        "graph",
+        "laplacian",
+        "eigenstructure",
+        "cosine",
+        "l2",
+        "similarity",
+        "misses",
+        "latent"
+      ],
+      "path": "skills/arrowspace/SKILL.md"
     },
     {
       "id": "astropy",

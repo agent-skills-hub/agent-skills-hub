@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-06-30T17:15:47.021Z
 
-Total skills: 794
+Total skills: 795
 
 ## architecture (64)
 
@@ -116,7 +116,7 @@ Total skills: 794
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (179)
+## data-ai (180)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -135,6 +135,7 @@ Total skills: 794
 | `anndata` | Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files or integrating with the scverse ecosystem. This is the data ... | anndata | anndata, data, structure, annotated, matrices, single, cell, analysis, working, h5ad, files, integrating |
 | `api-documenter` | Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build com... | api, documenter | api, documenter, documentation, openapi, ai, powered, developer, experience, interactive, docs, generate, sdks |
 | `arboreto` | Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3). Use when analyzing transcriptomics data (bulk ... | arboreto | arboreto, infer, gene, regulatory, networks, grns, expression, data, scalable, algorithms, grnboost2, genie3 |
+| `arrowspace` | Spectral vector search using graph Laplacian eigenstructure. Use when cosine/L2 similarity misses latent structure, or you need λτ-indexed retrieval with spe... | arrowspace | arrowspace, spectral, vector, search, graph, laplacian, eigenstructure, cosine, l2, similarity, misses, latent |
 | `astropy` | Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, p... | astropy | astropy, python, library, astronomy, astrophysics, skill, should, used, working, astronomical, data, including |
 | `autonomous-agent-patterns` | Design patterns for building autonomous coding agents. Covers tool integration, permission systems, browser automation, and human-in-the-loop workflows. Use ... | autonomous, agent | autonomous, agent, building, coding, agents, covers, integration, permission, browser, automation, human, loop |
 | `autonomous-agents` | Autonomous agents are AI systems that can independently decompose goals, plan actions, execute tools, and self-correct without constant human guidance. The c... | autonomous, agents | autonomous, agents, ai, independently, decompose, goals, plan, actions, execute, self, correct, without |

@@ -459,6 +459,15 @@
     "source": "unknown"
   },
   {
+    "id": "arrowspace",
+    "path": "skills/arrowspace",
+    "category": "uncategorized",
+    "name": "arrowspace",
+    "description": "Spectral vector search using graph Laplacian eigenstructure. Use when cosine/L2 similarity misses latent structure, or you need \u03bb\u03c4-indexed retrieval with spectral awareness.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
     "id": "astropy",
     "path": "skills/astropy",
     "category": "uncategorized",
