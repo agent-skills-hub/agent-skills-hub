@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-07-11T00:45:05.846Z
 
-Total skills: 794
+Total skills: 795
 
 ## architecture (64)
 
@@ -116,7 +116,7 @@ Total skills: 794
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (179)
+## data-ai (180)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -298,6 +298,7 @@ Total skills: 794
 | `voice-ai-engine-development` | Build real-time conversational AI voice engines using async worker pipelines, streaming transcription, LLM agents, and TTS synthesis with interrupt handling ... | voice, ai, engine | voice, ai, engine, development, real, time, conversational, engines, async, worker, pipelines, streaming |
 | `web-artifacts-builder` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use ... | web, artifacts, builder | web, artifacts, builder, suite, creating, elaborate, multi, component, claude, ai, html, frontend |
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
+| `xquik-social-research` | Research public X data with bounded Xquik API reads. Use when searching posts, reading profiles or threads, checking trends, or preparing an X data integration. | xquik, social, research | xquik, social, research, public, data, bounded, api, reads, searching, posts, reading, profiles |
 | `zinc-database` | Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual scre... | zinc, database | zinc, database, access, 230m, purchasable, compounds, search, id, smiles, similarity, searches, 3d |
 
 ## development (92)

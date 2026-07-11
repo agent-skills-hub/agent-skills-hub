@@ -7119,6 +7119,15 @@
     "source": "unknown"
   },
   {
+    "id": "xquik-social-research",
+    "path": "skills/xquik-social-research",
+    "category": "uncategorized",
+    "name": "xquik-social-research",
+    "description": "Research public X data with bounded Xquik API reads. Use when searching posts, reading profiles or threads, checking trends, or preparing an X data integration.",
+    "risk": "safe",
+    "source": "https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/xquik-social-research"
+  },
+  {
     "id": "zapier-make-patterns",
     "path": "skills/zapier-make-patterns",
     "category": "uncategorized",

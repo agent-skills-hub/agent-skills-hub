@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-07-11T00:45:05.846Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -19287,6 +19287,32 @@
         "work"
       ],
       "path": "skills/xlsx-official/SKILL.md"
+    },
+    {
+      "id": "xquik-social-research",
+      "name": "xquik-social-research",
+      "description": "Research public X data with bounded Xquik API reads. Use when searching posts, reading profiles or threads, checking trends, or preparing an X data integration.",
+      "category": "data-ai",
+      "tags": [
+        "xquik",
+        "social",
+        "research"
+      ],
+      "triggers": [
+        "xquik",
+        "social",
+        "research",
+        "public",
+        "data",
+        "bounded",
+        "api",
+        "reads",
+        "searching",
+        "posts",
+        "reading",
+        "profiles"
+      ],
+      "path": "skills/xquik-social-research/SKILL.md"
     },
     {
       "id": "xss-html-injection",
