@@ -7123,7 +7123,7 @@
     "path": "skills/xquik-social-research",
     "category": "uncategorized",
     "name": "xquik-social-research",
-    "description": "Research public X data with bounded Xquik API reads. Use when searching posts, reading profiles or threads, checking trends, or preparing an X data integration.",
+    "description": "Research public X data with Xquik. Use for tweet search, tweet lookup, user discovery, profile timelines, threads, followers, trends, exports, monitoring plans, or MCP setup. Keep public reads bounded. Require explicit approval before private reads, writes, persistent resources, or bulk jobs. Not affiliated with X Corp.",
     "risk": "safe",
     "source": "https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/xquik-social-research"
   },

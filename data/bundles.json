@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T00:45:05.846Z",
+  "generatedAt": "2026-07-18T03:02:19.117Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -189,7 +189,6 @@
         "voice-ai-development",
         "web-artifacts-builder",
         "webapp-testing",
-        "xquik-social-research",
         "zarr-python"
       ]
     },
@@ -557,7 +556,8 @@
         "unity-developer",
         "vercel-deploy-claimable",
         "vercel-deployment",
-        "voice-agents"
+        "voice-agents",
+        "xquik-social-research"
       ]
     }
   },

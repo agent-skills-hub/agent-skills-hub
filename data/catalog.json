@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T00:45:05.846Z",
+  "generatedAt": "2026-07-18T03:02:19.117Z",
   "total": 795,
   "skills": [
     {
@@ -19291,8 +19291,8 @@
     {
       "id": "xquik-social-research",
       "name": "xquik-social-research",
-      "description": "Research public X data with bounded Xquik API reads. Use when searching posts, reading profiles or threads, checking trends, or preparing an X data integration.",
-      "category": "data-ai",
+      "description": "Research public X data with Xquik. Use for tweet search, tweet lookup, user discovery, profile timelines, threads, followers, trends, exports, monitoring plans, or MCP setup. Keep public reads bounded. Require explicit approval before private reads, writes, persistent resources, or bulk jobs. Not affiliated with X Corp.",
+      "category": "infrastructure",
       "tags": [
         "xquik",
         "social",
@@ -19304,13 +19304,13 @@
         "research",
         "public",
         "data",
-        "bounded",
-        "api",
-        "reads",
-        "searching",
-        "posts",
-        "reading",
-        "profiles"
+        "tweet",
+        "search",
+        "lookup",
+        "user",
+        "discovery",
+        "profile",
+        "timelines"
       ],
       "path": "skills/xquik-social-research/SKILL.md"
     },
