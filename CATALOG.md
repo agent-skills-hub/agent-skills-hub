@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-05-20T06:48:40.204Z
+Generated at: 2026-07-18T03:02:19.117Z
 
-Total skills: 794
+Total skills: 795
 
 ## architecture (64)
 
@@ -569,7 +569,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `writing-skills` | Use when creating, updating, or improving agent skills. | writing, skills | writing, skills, creating, updating, improving, agent |
 | `x-article-publisher-skill` | Publish articles to X/Twitter | x, article, publisher, skill | x, article, publisher, skill, publish, articles, twitter |
 
-## infrastructure (95)
+## infrastructure (96)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -667,6 +667,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `voice-agents` | Voice agents represent the frontier of AI interaction - humans speaking naturally with AI systems. The challenge isn't just speech recognition and synthesis,... | voice, agents | voice, agents, represent, frontier, ai, interaction, humans, speaking, naturally, challenge, isn, just |
 | `wireshark-analysis` | This skill should be used when the user asks to "analyze network traffic with Wireshark", "capture packets for troubleshooting", "filter PCAP files", "follow... | wireshark | wireshark, network, traffic, analysis, skill, should, used, user, asks, analyze, capture, packets |
 | `workflow-automation` | Workflow automation is the infrastructure that makes AI agents reliable. Without durable execution, a network hiccup during a 10-step payment flow means lost... |  | automation, infrastructure, makes, ai, agents, reliable, without, durable, execution, network, hiccup, during |
+| `xquik-social-research` | Research public X data with Xquik. Use for tweet search, tweet lookup, user discovery, profile timelines, threads, followers, trends, exports, monitoring pla... | xquik, social, research | xquik, social, research, public, data, tweet, search, lookup, user, discovery, profile, timelines |
 | `zarr-python` | Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing... | zarr, python | zarr, python, chunked, arrays, cloud, storage, compressed, parallel, s3, gcs, integration, numpy |
 
 ## security (121)

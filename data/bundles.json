@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
+  "generatedAt": "2026-07-18T03:02:19.117Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -472,6 +472,7 @@
         "vaex",
         "vector-database-engineer",
         "xlsx-official",
+        "xquik-social-research",
         "zinc-database"
       ]
     },
@@ -555,7 +556,8 @@
         "unity-developer",
         "vercel-deploy-claimable",
         "vercel-deployment",
-        "voice-agents"
+        "voice-agents",
+        "xquik-social-research"
       ]
     }
   },

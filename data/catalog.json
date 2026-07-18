@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-20T06:48:40.204Z",
-  "total": 794,
+  "generatedAt": "2026-07-18T03:02:19.117Z",
+  "total": 795,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -19287,6 +19287,32 @@
         "work"
       ],
       "path": "skills/xlsx-official/SKILL.md"
+    },
+    {
+      "id": "xquik-social-research",
+      "name": "xquik-social-research",
+      "description": "Research public X data with Xquik. Use for tweet search, tweet lookup, user discovery, profile timelines, threads, followers, trends, exports, monitoring plans, or MCP setup. Keep public reads bounded. Require explicit approval before private reads, writes, persistent resources, or bulk jobs. Not affiliated with X Corp.",
+      "category": "infrastructure",
+      "tags": [
+        "xquik",
+        "social",
+        "research"
+      ],
+      "triggers": [
+        "xquik",
+        "social",
+        "research",
+        "public",
+        "data",
+        "tweet",
+        "search",
+        "lookup",
+        "user",
+        "discovery",
+        "profile",
+        "timelines"
+      ],
+      "path": "skills/xquik-social-research/SKILL.md"
     },
     {
       "id": "xss-html-injection",
