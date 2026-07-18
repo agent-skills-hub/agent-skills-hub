@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/legendaryabhi/agent-skills-hub.git"
+    "url": "git+https://github.com/agent-skills-hub/agent-skills-hub.git"
   },
   "bin": {
     "agent-skills-hub": "bin/install.js"
