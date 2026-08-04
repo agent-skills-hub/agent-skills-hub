@@ -1,0 +1,30 @@
+.sdf-liquid-glass {
+  --glass-tint: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.28);
+  --glass-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-tint);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34), var(--glass-shadow);
+  backdrop-filter: blur(8px) saturate(140%);
+}
+
+.sdf-liquid-glass__effect {
+  position: absolute !important;
+  inset: 0;
+}
+
+.sdf-liquid-glass [data-vaso] {
+  background: var(--glass-tint);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36) !important;
+}
+
+.sdf-liquid-glass__content {
+  position: relative;
+  z-index: 2;
+  min-height: inherit;
+  padding: 14px 16px;
+}
