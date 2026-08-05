@@ -855,6 +855,24 @@
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
   {
+    "id": "build-sdf-liquid-glass",
+    "path": "skills/build-sdf-liquid-glass",
+    "category": "uncategorized",
+    "name": "build-sdf-liquid-glass",
+    "description": "Build lightweight SDF/canvas displacement glass with Vaso. Use for responsive refractive cards, no-WebGL fallbacks, many compact surfaces, or explicit SDF requests.",
+    "risk": "safe",
+    "source": "https://github.com/woodfishhhh/glass-material-skills"
+  },
+  {
+    "id": "build-webgl-liquid-glass",
+    "path": "skills/build-webgl-liquid-glass",
+    "category": "uncategorized",
+    "name": "build-webgl-liquid-glass",
+    "description": "Build production-ready GPU liquid-glass surfaces with liquid-gl for React or DOM UIs. Default for refractive cards, notifications, panels, GPU bevels, and WebGL glass.",
+    "risk": "safe",
+    "source": "https://github.com/woodfishhhh/glass-material-skills"
+  },
+  {
     "id": "bullmq-specialist",
     "path": "skills/bullmq-specialist",
     "category": "uncategorized",

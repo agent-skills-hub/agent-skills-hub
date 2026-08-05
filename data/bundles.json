@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T03:02:19.117Z",
+  "generatedAt": "2026-08-05T04:54:32.512Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -31,6 +31,7 @@
         "bilig-workpaper",
         "bioservices",
         "brenda-database",
+        "build-webgl-liquid-glass",
         "bullmq-specialist",
         "bun-development",
         "cc-skill-backend-patterns",

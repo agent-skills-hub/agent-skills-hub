@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-07-18T03:02:19.117Z
+Generated at: 2026-08-05T04:54:32.512Z
 
-Total skills: 795
+Total skills: 797
 
 ## architecture (64)
 
@@ -300,7 +300,7 @@ Total skills: 795
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 | `zinc-database` | Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual scre... | zinc, database | zinc, database, access, 230m, purchasable, compounds, search, id, smiles, similarity, searches, 3d |
 
-## development (92)
+## development (93)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -314,6 +314,7 @@ Total skills: 795
 | `async-python-patterns` | Master Python asyncio, concurrent programming, and async/await patterns for high-performance applications. Use when building async APIs, concurrent systems, ... | async, python | async, python, asyncio, concurrent, programming, await, high, performance, applications, building, apis, bound |
 | `azure-functions` | Expert patterns for Azure Functions development including isolated worker model, Durable Functions orchestration, cold start optimization, and production pat... | azure, functions | azure, functions, development, including, isolated, worker, model, durable, orchestration, cold, start, optimization |
 | `backend-dev-guidelines` | Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architecture, BaseController pattern, dependency i... | backend, dev, guidelines | backend, dev, guidelines, opinionated, development, standards, node, js, express, typescript, microservices, covers |
+| `build-webgl-liquid-glass` | Build production-ready GPU liquid-glass surfaces with liquid-gl for React or DOM UIs. Default for refractive cards, notifications, panels, GPU bevels, and We... | build, webgl, liquid, glass | build, webgl, liquid, glass, gpu, surfaces, gl, react, dom, uis, default, refractive |
 | `bullmq-specialist` | BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull que... | bullmq | bullmq, redis, backed, job, queues, background, processing, reliable, async, execution, node, js |
 | `bun-development` | Modern JavaScript/TypeScript development with Bun runtime. Covers package management, bundling, testing, and migration from Node.js. Use when working with Bu... | bun | bun, development, javascript, typescript, runtime, covers, package, bundling, testing, migration, node, js |
 | `cc-skill-coding-standards` | Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development. | cc, skill, coding, standards | cc, skill, coding, standards, universal, typescript, javascript, react, node, js, development |
@@ -398,7 +399,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personality tests, and calculator tools. Covers t... | viral, generator, builder | viral, generator, builder, building, shareable, go, name, generators, quiz, makers, avatar, creators |
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 
-## general (166)
+## general (167)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -418,6 +419,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `blockchain-developer` | Build production-ready Web3 applications, smart contracts, and decentralized systems. Implements DeFi protocols, NFT platforms, DAOs, and enterprise blockcha... | blockchain | blockchain, developer, web3, applications, smart, contracts, decentralized, implements, defi, protocols, nft, platforms |
 | `brand-guidelines-anthropic` | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand co... | brand, guidelines, anthropic | brand, guidelines, anthropic, applies, official, colors, typography, any, sort, artifact, may, benefit |
 | `brand-guidelines-community` | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand co... | brand, guidelines, community | brand, guidelines, community, applies, anthropic, official, colors, typography, any, sort, artifact, may |
+| `build-sdf-liquid-glass` | Build lightweight SDF/canvas displacement glass with Vaso. Use for responsive refractive cards, no-WebGL fallbacks, many compact surfaces, or explicit SDF re... | build, sdf, liquid, glass | build, sdf, liquid, glass, lightweight, canvas, displacement, vaso, responsive, refractive, cards, no |
 | `busybox-on-windows` | How to use a Win32 build of BusyBox to run many of the standard UNIX command line tools on Windows. | busybox, on, windows | busybox, on, windows, how, win32, run, many, standard, unix, command, line |
 | `c-pro` | Write efficient C code with proper memory management, pointer arithmetic, and system calls. Handles embedded systems, kernel modules, and performance-critica... | c | c, pro, write, efficient, code, proper, memory, pointer, arithmetic, calls, embedded, kernel |
 | `canvas-design` | Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art... | canvas | canvas, beautiful, visual, art, png, pdf, documents, philosophy, should, skill, user, asks |

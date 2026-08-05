@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-18T03:02:19.117Z",
-  "total": 795,
+  "generatedAt": "2026-08-05T04:54:32.512Z",
+  "total": 797,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -2310,6 +2310,60 @@
         "covers"
       ],
       "path": "skills/browser-extension-builder/SKILL.md"
+    },
+    {
+      "id": "build-sdf-liquid-glass",
+      "name": "build-sdf-liquid-glass",
+      "description": "Build lightweight SDF/canvas displacement glass with Vaso. Use for responsive refractive cards, no-WebGL fallbacks, many compact surfaces, or explicit SDF requests.",
+      "category": "general",
+      "tags": [
+        "build",
+        "sdf",
+        "liquid",
+        "glass"
+      ],
+      "triggers": [
+        "build",
+        "sdf",
+        "liquid",
+        "glass",
+        "lightweight",
+        "canvas",
+        "displacement",
+        "vaso",
+        "responsive",
+        "refractive",
+        "cards",
+        "no"
+      ],
+      "path": "skills/build-sdf-liquid-glass/SKILL.md"
+    },
+    {
+      "id": "build-webgl-liquid-glass",
+      "name": "build-webgl-liquid-glass",
+      "description": "Build production-ready GPU liquid-glass surfaces with liquid-gl for React or DOM UIs. Default for refractive cards, notifications, panels, GPU bevels, and WebGL glass.",
+      "category": "development",
+      "tags": [
+        "build",
+        "webgl",
+        "liquid",
+        "glass"
+      ],
+      "triggers": [
+        "build",
+        "webgl",
+        "liquid",
+        "glass",
+        "gpu",
+        "surfaces",
+        "gl",
+        "react",
+        "dom",
+        "uis",
+        "default",
+        "refractive"
+      ],
+      "path": "skills/build-webgl-liquid-glass/SKILL.md"
     },
     {
       "id": "bullmq-specialist",
