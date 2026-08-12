@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-08-05T04:54:32.512Z
+Generated at: 2026-08-12T18:42:53.233Z
 
-Total skills: 797
+Total skills: 798
 
 ## architecture (64)
 
@@ -824,7 +824,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `unit-testing-test-generate` | Generate comprehensive, maintainable unit tests across languages with strong coverage and edge case focus. | unit, generate | unit, generate, testing, test, maintainable, tests, languages, strong, coverage, edge, case |
 | `web3-testing` | Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, and mainnet forking. Use when testing Solidity contracts, ... | web3 | web3, testing, test, smart, contracts, comprehensively, hardhat, foundry, unit, tests, integration, mainnet |
 
-## workflow (18)
+## workflow (19)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -846,3 +846,4 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `scientific-writing` | Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) sect... | scientific, writing | scientific, writing, core, skill, deep, research, write, manuscripts, full, paragraphs, never, bullet |
 | `team-collaboration-issue` | You are a GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development workflows. Your ... | team, collaboration, issue | team, collaboration, issue, github, resolution, specializing, systematic, bug, investigation, feature, collaborative, development |
 | `track-management` | Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan... | track | track, skill, creating, managing, working, conductor, tracks, logical, work, units, features, bugs |
+| `tweetclaw` | Use TweetClaw for safety-reviewed X/Twitter automation from agent workflows: search tweets, post tweets, manage replies, export followers, monitor accounts, ... | tweetclaw | tweetclaw, safety, reviewed, twitter, automation, agent, search, tweets, post, replies, export, followers |
