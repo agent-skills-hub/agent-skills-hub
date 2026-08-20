@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T04:54:32.512Z",
-  "total": 797,
+  "generatedAt": "2026-08-20T00:53:59.864Z",
+  "total": 798,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -11317,6 +11317,32 @@
         "api"
       ],
       "path": "skills/multi-platform-apps-multi-platform/SKILL.md"
+    },
+    {
+      "id": "multi-source-search",
+      "name": "multi-source-search",
+      "description": "Research claims across independent sources, surface contradictions, and return a confidence-scored evidence ledger with adjacent citations.",
+      "category": "general",
+      "tags": [
+        "multi",
+        "source",
+        "search"
+      ],
+      "triggers": [
+        "multi",
+        "source",
+        "search",
+        "research",
+        "claims",
+        "independent",
+        "sources",
+        "surface",
+        "contradictions",
+        "return",
+        "confidence",
+        "scored"
+      ],
+      "path": "skills/multi-source-search/SKILL.md"
     },
     {
       "id": "n8n-code-python",

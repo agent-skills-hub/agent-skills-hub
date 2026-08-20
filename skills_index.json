@@ -4104,6 +4104,15 @@
     "source": "unknown"
   },
   {
+    "id": "multi-source-search",
+    "path": "skills/multi-source-search",
+    "category": "uncategorized",
+    "name": "multi-source-search",
+    "description": "Research claims across independent sources, surface contradictions, and return a confidence-scored evidence ledger with adjacent citations.",
+    "risk": "safe",
+    "source": "https://github.com/sandbaseai/sandbase-skills/tree/main/research/multi-source-search"
+  },
+  {
     "id": "multiplayer",
     "path": "skills/game-development/multiplayer",
     "category": "game-development",
