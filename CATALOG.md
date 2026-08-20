@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-08-05T04:54:32.512Z
+Generated at: 2026-08-20T00:53:59.864Z
 
-Total skills: 797
+Total skills: 798
 
 ## architecture (64)
 
@@ -399,7 +399,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personality tests, and calculator tools. Covers t... | viral, generator, builder | viral, generator, builder, building, shareable, go, name, generators, quiz, makers, avatar, creators |
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 
-## general (167)
+## general (168)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -508,6 +508,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `memory-systems` | Design short-term, long-term, and graph-based memory architectures | memory | memory, short, term, long, graph, architectures |
 | `micro-saas-launcher` | Expert in launching small, focused SaaS products fast - the indie hacker approach to building profitable software. Covers idea validation, MVP development, p... | micro, saas, launcher | micro, saas, launcher, launching, small, products, fast, indie, hacker, approach, building, profitable |
 | `monorepo-management` | Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, scalable multi-package repositories with optimized builds and dependen... | monorepo | monorepo, turborepo, nx, pnpm, workspaces, efficient, scalable, multi, package, repositories, optimized, dependency |
+| `multi-source-search` | Research claims across independent sources, surface contradictions, and return a confidence-scored evidence ledger with adjacent citations. | multi, source, search | multi, source, search, research, claims, independent, sources, surface, contradictions, return, confidence, scored |
 | `nft-standards` | Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strategies, and marketplace integration. Use when creating NFT contracts, ... | nft, standards | nft, standards, erc, 721, 1155, proper, metadata, handling, minting, marketplace, integration, creating |
 | `nosql-expert` | Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling, single-table design, and avoiding hot ... | nosql | nosql, guidance, distributed, databases, cassandra, dynamodb, mental, models, query, first, modeling, single |
 | `obsidian-clipper-template-creator` | Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a new clipping template, understand available variables, or format cli... | obsidian, clipper, creator | obsidian, clipper, creator, creating, web, want, new, clipping, understand, available, variables, format |
