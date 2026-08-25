@@ -5697,6 +5697,78 @@
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
   {
+    "id": "sendmux-cli",
+    "path": "skills/sendmux-cli",
+    "category": "uncategorized",
+    "name": "sendmux-cli",
+    "description": "Use the Sendmux CLI for profiles, key-scope checks, JSON output, and generated operation commands.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-cli"
+  },
+  {
+    "id": "sendmux-email-for-agents",
+    "path": "skills/sendmux-email-for-agents",
+    "category": "uncategorized",
+    "name": "sendmux-email-for-agents",
+    "description": "Route agent email workflows across Sendmux setup, self-registration, mailbox runtime, sending, and approval.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-email-for-agents"
+  },
+  {
+    "id": "sendmux-getting-started",
+    "path": "skills/sendmux-getting-started",
+    "category": "uncategorized",
+    "name": "sendmux-getting-started",
+    "description": "Set up Sendmux, choose key scopes, verify first harmless calls, and route agent registration.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-getting-started"
+  },
+  {
+    "id": "sendmux-mailbox-agent",
+    "path": "skills/sendmux-mailbox-agent",
+    "category": "uncategorized",
+    "name": "sendmux-mailbox-agent",
+    "description": "Read, search, sync, triage, mutate, or reply from one Sendmux mailbox efficiently.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-mailbox-agent"
+  },
+  {
+    "id": "sendmux-management",
+    "path": "skills/sendmux-management",
+    "category": "uncategorized",
+    "name": "sendmux-management",
+    "description": "Manage Sendmux domains, mailboxes, keys, providers, webhooks, billing, logs, and metrics.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-management"
+  },
+  {
+    "id": "sendmux-mcp-setup",
+    "path": "skills/sendmux-mcp-setup",
+    "category": "uncategorized",
+    "name": "sendmux-mcp-setup",
+    "description": "Configure hosted or local Sendmux MCP servers for mailbox, management, and sending tools.",
+    "risk": "safe",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-mcp-setup"
+  },
+  {
+    "id": "sendmux-send-email",
+    "path": "skills/sendmux-send-email",
+    "category": "uncategorized",
+    "name": "sendmux-send-email",
+    "description": "Send outbound email through Sendmux with confirmation, idempotency, batch, CLI, SDK, and HTTP patterns.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-send-email"
+  },
+  {
+    "id": "sendmux-token-efficient-usage",
+    "path": "skills/sendmux-token-efficient-usage",
+    "category": "uncategorized",
+    "name": "sendmux-token-efficient-usage",
+    "description": "Choose low-token Sendmux routes with batching, snippets, sync deltas, pagination, ETags, and idempotency.",
+    "risk": "critical",
+    "source": "https://github.com/Sendmux/skills/tree/main/skills/sendmux-token-efficient-usage"
+  },
+  {
     "id": "senior-architect",
     "path": "skills/senior-architect",
     "category": "uncategorized",
