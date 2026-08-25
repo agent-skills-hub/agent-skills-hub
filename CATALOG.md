@@ -1,10 +1,10 @@
 # Skill Catalog
 
-Generated at: 2026-08-05T04:54:32.512Z
+Generated at: 2026-08-25T12:28:25.706Z
 
-Total skills: 797
+Total skills: 805
 
-## architecture (64)
+## architecture (65)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -61,6 +61,7 @@ Total skills: 797
 | `radix-ui-design-system` | Build accessible design systems with Radix UI primitives. Headless component customization, theming strategies, and compound component patterns for productio... | radix, ui | radix, ui, accessible, primitives, headless, component, customization, theming, compound, grade, libraries |
 | `saga-orchestration` | Implement saga patterns for distributed transactions and cross-aggregate workflows. Use when coordinating multi-step business processes, handling compensatin... | saga | saga, orchestration, distributed, transactions, cross, aggregate, coordinating, multi, step, business, processes, handling |
 | `salesforce-development` | Expert patterns for Salesforce platform development including Lightning Web Components (LWC), Apex triggers and classes, REST/Bulk APIs, Connected Apps, and ... | salesforce | salesforce, development, platform, including, lightning, web, components, lwc, apex, triggers, classes, rest |
+| `sendmux-send-email` | Send outbound email through Sendmux with confirmation, idempotency, batch, CLI, SDK, and HTTP patterns. | sendmux, send, email | sendmux, send, email, outbound, through, confirmation, idempotency, batch, cli, sdk, http |
 | `skill-developer` | Create and manage Claude Code skills following Anthropic best practices. Use when creating new skills, modifying skill-rules.json, understanding trigger patt... | skill | skill, developer, claude, code, skills, following, anthropic, creating, new, modifying, rules, json |
 | `software-architecture` | Guide for quality focused software architecture. This skill should be used when users want to write code, design architecture, analyze code, in any case that... | software, architecture | software, architecture, quality, skill, should, used, users, want, write, code, analyze, any |
 | `tailwind-design-system` | Build scalable design systems with Tailwind CSS, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implemen... | tailwind | tailwind, scalable, css, tokens, component, libraries, responsive, creating, implementing, standardizing, ui |
@@ -399,7 +400,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personality tests, and calculator tools. Covers t... | viral, generator, builder | viral, generator, builder, building, shareable, go, name, generators, quiz, makers, avatar, creators |
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 
-## general (167)
+## general (174)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -542,6 +543,13 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `scientific-visualization` | Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, c... | scientific, visualization | scientific, visualization, meta, skill, publication, figures, creating, journal, submission, requiring, multi, panel |
 | `seaborn` | Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive def... | seaborn | seaborn, statistical, visualization, pandas, integration, quick, exploration, distributions, relationships, categorical, comparisons, attractive |
 | `search-specialist` | Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verification. Handles comp... | search | search, web, researcher, techniques, synthesis, masters, operators, result, filtering, multi, source, verification |
+| `sendmux-cli` | Use the Sendmux CLI for profiles, key-scope checks, JSON output, and generated operation commands. | sendmux, cli | sendmux, cli, profiles, key, scope, checks, json, output, generated, operation, commands |
+| `sendmux-email-for-agents` | Route agent email workflows across Sendmux setup, self-registration, mailbox runtime, sending, and approval. | sendmux, email, for, agents | sendmux, email, for, agents, route, agent, setup, self, registration, mailbox, runtime, sending |
+| `sendmux-getting-started` | Set up Sendmux, choose key scopes, verify first harmless calls, and route agent registration. | sendmux, getting, started | sendmux, getting, started, set, up, choose, key, scopes, verify, first, harmless, calls |
+| `sendmux-mailbox-agent` | Read, search, sync, triage, mutate, or reply from one Sendmux mailbox efficiently. | sendmux, mailbox, agent | sendmux, mailbox, agent, read, search, sync, triage, mutate, reply, one, efficiently |
+| `sendmux-management` | Manage Sendmux domains, mailboxes, keys, providers, webhooks, billing, logs, and metrics. | sendmux | sendmux, domains, mailboxes, keys, providers, webhooks, billing, logs, metrics |
+| `sendmux-mcp-setup` | Configure hosted or local Sendmux MCP servers for mailbox, management, and sending tools. | sendmux, mcp, setup | sendmux, mcp, setup, configure, hosted, local, servers, mailbox, sending |
+| `sendmux-token-efficient-usage` | Choose low-token Sendmux routes with batching, snippets, sync deltas, pagination, ETags, and idempotency. | sendmux, token, efficient, usage | sendmux, token, efficient, usage, choose, low, routes, batching, snippets, sync, deltas, pagination |
 | `sharp-edges` | Identify error-prone APIs and dangerous configurations | sharp, edges | sharp, edges, identify, error, prone, apis, dangerous, configurations |
 | `shellcheck-configuration` | Master ShellCheck static analysis configuration and usage for shell script quality. Use when setting up linting infrastructure, fixing code issues, or ensuri... | shellcheck, configuration | shellcheck, configuration, static, analysis, usage, shell, script, quality, setting, up, linting, infrastructure |
 | `signup-flow-cro` | When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "reg... | signup, flow, cro | signup, flow, cro, user, wants, optimize, registration, account, creation, trial, activation, flows |

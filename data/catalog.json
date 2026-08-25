@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T04:54:32.512Z",
-  "total": 797,
+  "generatedAt": "2026-08-25T12:28:25.706Z",
+  "total": 805,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -15599,6 +15599,204 @@
         "plans"
       ],
       "path": "skills/segment-cdp/SKILL.md"
+    },
+    {
+      "id": "sendmux-cli",
+      "name": "sendmux-cli",
+      "description": "Use the Sendmux CLI for profiles, key-scope checks, JSON output, and generated operation commands.",
+      "category": "general",
+      "tags": [
+        "sendmux",
+        "cli"
+      ],
+      "triggers": [
+        "sendmux",
+        "cli",
+        "profiles",
+        "key",
+        "scope",
+        "checks",
+        "json",
+        "output",
+        "generated",
+        "operation",
+        "commands"
+      ],
+      "path": "skills/sendmux-cli/SKILL.md"
+    },
+    {
+      "id": "sendmux-email-for-agents",
+      "name": "sendmux-email-for-agents",
+      "description": "Route agent email workflows across Sendmux setup, self-registration, mailbox runtime, sending, and approval.",
+      "category": "general",
+      "tags": [
+        "sendmux",
+        "email",
+        "for",
+        "agents"
+      ],
+      "triggers": [
+        "sendmux",
+        "email",
+        "for",
+        "agents",
+        "route",
+        "agent",
+        "setup",
+        "self",
+        "registration",
+        "mailbox",
+        "runtime",
+        "sending"
+      ],
+      "path": "skills/sendmux-email-for-agents/SKILL.md"
+    },
+    {
+      "id": "sendmux-getting-started",
+      "name": "sendmux-getting-started",
+      "description": "Set up Sendmux, choose key scopes, verify first harmless calls, and route agent registration.",
+      "category": "general",
+      "tags": [
+        "sendmux",
+        "getting",
+        "started"
+      ],
+      "triggers": [
+        "sendmux",
+        "getting",
+        "started",
+        "set",
+        "up",
+        "choose",
+        "key",
+        "scopes",
+        "verify",
+        "first",
+        "harmless",
+        "calls"
+      ],
+      "path": "skills/sendmux-getting-started/SKILL.md"
+    },
+    {
+      "id": "sendmux-mailbox-agent",
+      "name": "sendmux-mailbox-agent",
+      "description": "Read, search, sync, triage, mutate, or reply from one Sendmux mailbox efficiently.",
+      "category": "general",
+      "tags": [
+        "sendmux",
+        "mailbox",
+        "agent"
+      ],
+      "triggers": [
+        "sendmux",
+        "mailbox",
+        "agent",
+        "read",
+        "search",
+        "sync",
+        "triage",
+        "mutate",
+        "reply",
+        "one",
+        "efficiently"
+      ],
+      "path": "skills/sendmux-mailbox-agent/SKILL.md"
+    },
+    {
+      "id": "sendmux-management",
+      "name": "sendmux-management",
+      "description": "Manage Sendmux domains, mailboxes, keys, providers, webhooks, billing, logs, and metrics.",
+      "category": "general",
+      "tags": [
+        "sendmux"
+      ],
+      "triggers": [
+        "sendmux",
+        "domains",
+        "mailboxes",
+        "keys",
+        "providers",
+        "webhooks",
+        "billing",
+        "logs",
+        "metrics"
+      ],
+      "path": "skills/sendmux-management/SKILL.md"
+    },
+    {
+      "id": "sendmux-mcp-setup",
+      "name": "sendmux-mcp-setup",
+      "description": "Configure hosted or local Sendmux MCP servers for mailbox, management, and sending tools.",
+      "category": "general",
+      "tags": [
+        "sendmux",
+        "mcp",
+        "setup"
+      ],
+      "triggers": [
+        "sendmux",
+        "mcp",
+        "setup",
+        "configure",
+        "hosted",
+        "local",
+        "servers",
+        "mailbox",
+        "sending"
+      ],
+      "path": "skills/sendmux-mcp-setup/SKILL.md"
+    },
+    {
+      "id": "sendmux-send-email",
+      "name": "sendmux-send-email",
+      "description": "Send outbound email through Sendmux with confirmation, idempotency, batch, CLI, SDK, and HTTP patterns.",
+      "category": "architecture",
+      "tags": [
+        "sendmux",
+        "send",
+        "email"
+      ],
+      "triggers": [
+        "sendmux",
+        "send",
+        "email",
+        "outbound",
+        "through",
+        "confirmation",
+        "idempotency",
+        "batch",
+        "cli",
+        "sdk",
+        "http"
+      ],
+      "path": "skills/sendmux-send-email/SKILL.md"
+    },
+    {
+      "id": "sendmux-token-efficient-usage",
+      "name": "sendmux-token-efficient-usage",
+      "description": "Choose low-token Sendmux routes with batching, snippets, sync deltas, pagination, ETags, and idempotency.",
+      "category": "general",
+      "tags": [
+        "sendmux",
+        "token",
+        "efficient",
+        "usage"
+      ],
+      "triggers": [
+        "sendmux",
+        "token",
+        "efficient",
+        "usage",
+        "choose",
+        "low",
+        "routes",
+        "batching",
+        "snippets",
+        "sync",
+        "deltas",
+        "pagination"
+      ],
+      "path": "skills/sendmux-token-efficient-usage/SKILL.md"
     },
     {
       "id": "senior-architect",

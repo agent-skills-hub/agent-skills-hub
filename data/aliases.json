@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T04:54:32.512Z",
+  "generatedAt": "2026-08-25T12:28:25.706Z",
   "aliases": {
     "accessibility-compliance-audit": "accessibility-compliance-accessibility-audit",
     "active directory attacks": "active-directory-attacks",
@@ -109,6 +109,7 @@
     "security-scanning-dependencies": "security-scanning-security-dependencies",
     "security-scanning-hardening": "security-scanning-security-hardening",
     "security-scanning-sast": "security-scanning-security-sast",
+    "sendmux-token-usage": "sendmux-token-efficient-usage",
     "shodan reconnaissance and pentesting": "shodan-reconnaissance",
     "smtp penetration testing": "smtp-penetration-testing",
     "sql injection testing": "sql-injection-testing",
