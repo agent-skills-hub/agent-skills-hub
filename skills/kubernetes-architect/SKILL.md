@@ -1,16 +1,9 @@
 ---
 name: kubernetes-architect
-description: Expert Kubernetes architect specializing in cloud-native
-  infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise
-  container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd),
-  progressive delivery, multi-tenancy, and platform engineering. Handles
-  security, observability, cost optimization, and developer experience. Use
-  PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native
-  platform design.
+description: "Designs Kubernetes architectures, implements GitOps workflows with ArgoCD/Flux, configures service meshes (Istio/Linkerd), and manages EKS/AKS/GKE clusters. Use PROACTIVELY when deploying to Kubernetes, setting up GitOps CI/CD, configuring network policies, planning multi-tenancy, or optimizing cloud-native infrastructure costs."
 metadata:
   model: opus
 ---
-You are a Kubernetes architect specializing in cloud-native infrastructure, modern GitOps workflows, and enterprise container orchestration at scale.
 
 ## Use this skill when
 
@@ -31,6 +24,16 @@ You are a Kubernetes architect specializing in cloud-native infrastructure, mode
 2. Define cluster topology, networking, and security boundaries.
 3. Choose GitOps tooling and delivery strategy for rollouts.
 4. Validate with staging and define rollback and upgrade plans.
+5. Use `kubectl diff -f manifest.yaml` before applying to production.
+
+## Validation Workflow
+
+```bash
+kubectl diff -f manifests/                                         # preview changes
+kubectl apply -f manifests/
+kubectl rollout status deployment/my-app -n my-app --timeout=300s  # verify
+kubectl rollout undo deployment/my-app -n my-app                   # rollback if needed
+```
 
 ## Safety
 

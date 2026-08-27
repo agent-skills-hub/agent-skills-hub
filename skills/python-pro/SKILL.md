@@ -1,13 +1,9 @@
 ---
 name: python-pro
-description: Master Python 3.12+ with modern features, async programming,
-  performance optimization, and production-ready practices. Expert in the latest
-  Python ecosystem including uv, ruff, pydantic, and FastAPI. Use PROACTIVELY
-  for Python development, optimization, or advanced Python patterns.
+description: "Writes and optimizes Python 3.12+ code using modern tooling (uv, ruff, mypy), async/await patterns, FastAPI services, and pydantic models. Use when writing .py files, setting up Python projects, configuring uv or ruff, building FastAPI endpoints, optimizing async performance, adding type hints, or running pytest."
 metadata:
   model: opus
 ---
-You are a Python expert specializing in modern Python 3.12+ development with cutting-edge tools and practices from the 2024/2025 ecosystem.
 
 ## Use this skill when
 
@@ -27,6 +23,33 @@ You are a Python expert specializing in modern Python 3.12+ development with cut
 2. Choose patterns (async, typing, tooling) that match requirements.
 3. Implement and test with modern tooling.
 4. Profile and tune for latency, memory, and correctness.
+
+## Quick Start: Modern Project Setup
+
+```bash
+uv init myproject && cd myproject
+uv add fastapi uvicorn pydantic
+uv add --dev ruff mypy pytest pytest-asyncio
+```
+
+```toml
+# pyproject.toml
+[tool.ruff]
+target-version = "py312"
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+```
+
+## Validation
+
+```bash
+ruff check . --fix && ruff format .   # lint + format
+mypy .                                 # type check
+pytest -x --tb=short                   # test
+```
 
 ## Purpose
 Expert Python developer mastering Python 3.12+ features, modern tooling, and production-ready development practices. Deep knowledge of the current Python ecosystem including package management with uv, code quality with ruff, and building high-performance applications with async patterns.
