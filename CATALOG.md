@@ -1,10 +1,10 @@
 # Skill Catalog
 
-Generated at: 2026-08-25T12:28:25.706Z
+Generated at: 2026-09-16T07:08:47.614Z
 
-Total skills: 805
+Total skills: 812
 
-## architecture (65)
+## architecture (66)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -68,13 +68,14 @@ Total skills: 805
 | `tailwind-patterns` | Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture. | tailwind | tailwind, css, v4, principles, first, configuration, container, queries, token, architecture |
 | `testing-patterns` | Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing unit tests, creating test factories, or following TDD red-gr... |  | testing, jest, factory, functions, mocking, tdd, writing, unit, tests, creating, test, factories |
 | `tool-design` | Build tools that agents can use effectively, including architectural reduction patterns |  | agents, effectively, including, architectural, reduction |
+| `understand-project-yylo` | Inspect the current product architecture, dependencies, and validation loops before planning or implementing a requested change. | understand, yylo | understand, yylo, inspect, current, product, architecture, dependencies, validation, loops, before, planning, implementing |
 | `unreal-engine-cpp-pro` | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. | unreal, engine, cpp | unreal, engine, cpp, pro, development, covering, uobject, hygiene, performance |
 | `wcag-audit-patterns` | Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fi... | wcag, audit | wcag, audit, conduct, accessibility, audits, automated, testing, manual, verification, remediation, guidance, auditing |
 | `workflow-orchestration-patterns` | Design durable workflows with Temporal for distributed systems. Covers workflow vs activity separation, saga patterns, state management, and determinism cons... |  | orchestration, durable, temporal, distributed, covers, vs, activity, separation, saga, state, determinism, constraints |
 | `workflow-patterns` | Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding th... |  | skill, implementing, tasks, according, conductor, tdd, handling, phase, checkpoints, managing, git, commits |
 | `zapier-make-patterns` | No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) let non-developers automate business processes without writing code.... | zapier, make | zapier, make, no, code, automation, democratizes, building, formerly, integromat, let, non, developers |
 
-## business (38)
+## business (39)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -97,6 +98,7 @@ Total skills: 805
 | `notion-template-business` | Expert in building and selling Notion templates as a business - not just making templates, but building a sustainable digital product business. Covers templa... | notion, business | notion, business, building, selling, just, making, sustainable, digital, product, covers, pricing, marketplaces |
 | `page-cro` | When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature pages, or... | page, cro | page, cro, user, wants, optimize, improve, increase, conversions, any, marketing, including, homepage |
 | `paywall-upgrade-cro` | When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgr... | paywall, upgrade, cro | paywall, upgrade, cro, user, wants, optimize, app, paywalls, screens, upsell, modals, feature |
+| `plan-ledger-tasks-yylo` | Create a concise Product Development Requirement and one or more implementation-sized YYLO Ledger tasks when the user explicitly asks to plan or register work. | plan, ledger, tasks, yylo | plan, ledger, tasks, yylo, concise, product, development, requirement, one, sized, user, explicitly |
 | `product-marketing-context` | When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'se... | product, marketing | product, marketing, context, user, wants, update, document, mentions, set, up, positioning, avoid |
 | `sales-automator` | Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts. Use PROACTIVELY for sales outreach or lead nur... | sales, automator | sales, automator, draft, cold, emails, follow, ups, proposal, creates, pricing, pages, case |
 | `screenshots` | Generate marketing screenshots of your app using Playwright. Use when the user wants to create screenshots for Product Hunt, social media, landing pages, or ... | screenshots | screenshots, generate, marketing, app, playwright, user, wants, product, hunt, social, media, landing |
@@ -400,7 +402,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personality tests, and calculator tools. Covers t... | viral, generator, builder | viral, generator, builder, building, shareable, go, name, generators, quiz, makers, avatar, creators |
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 
-## general (174)
+## general (178)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -413,6 +415,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `app-builder` | Main application building orchestrator. Creates full-stack applications from natural language requests. Determines project type, selects tech stack, coordina... | app, builder | app, builder, main, application, building, orchestrator, creates, full, stack, applications, natural, language |
 | `app-builder/templates` | Project scaffolding templates for new applications. Use when creating new projects from scratch. Contains 12 templates for various tech stacks. | app, builder/templates | app, builder/templates, scaffolding, new, applications, creating, scratch, contains, 12, various, tech, stacks |
 | `arm-cortex-expert` | Senior embedded software engineer specializing in firmware and driver development for ARM Cortex-M microcontrollers (Teensy, STM32, nRF52, SAMD). Decades of ... | arm, cortex | arm, cortex, senior, embedded, software, engineer, specializing, firmware, driver, development, microcontrollers, teensy |
+| `artifact-yylo` | Capture and retrieve durable YYLO Ledger artifact Records with intentional profiles, payload modes, provenance, retention, and secret-safe immutable evidence. | artifact, yylo | artifact, yylo, capture, retrieve, durable, ledger, records, intentional, profiles, payload, modes, provenance |
 | `avalonia-layout-zafiro` | Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles, generic components, and avoiding XAML redundancy. | avalonia, layout, zafiro | avalonia, layout, zafiro, guidelines, ui, emphasizing, shared, styles, generic, components, avoiding, xaml |
 | `avalonia-zafiro-development` | Mandatory skills, conventions, and behavioral rules for Avalonia UI development using the Zafiro toolkit. | avalonia, zafiro | avalonia, zafiro, development, mandatory, skills, conventions, behavioral, rules, ui, toolkit |
 | `backtesting-frameworks` | Build robust backtesting systems for trading strategies with proper handling of look-ahead bias, survivorship bias, and transaction costs. Use when developin... | backtesting, frameworks | backtesting, frameworks, robust, trading, proper, handling, look, ahead, bias, survivorship, transaction, costs |
@@ -496,6 +499,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `iso-13485-certification` | Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Quality Management Systems. Use when users need help with ISO 13... | iso, 13485, certification | iso, 13485, certification, toolkit, preparing, documentation, medical, device, quality, users, qms, including |
 | `last30days` | Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for the user's target tool. | last30days | last30days, research, topic, last, 30, days, reddit, web, become, write, copy, paste |
 | `latex-posters` | Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presentations, academic posters, and scient... | latex, posters | latex, posters, professional, research, beamerposter, tikzposter, baposter, conference, presentations, academic, scientific, communication |
+| `ledger-tasks-yylo` | YYLO Ledger task management. Create, list, search, get, mark, update, archive, deps, ready, order, and merge workflows without editing Ledger storage directly. | ledger, tasks, yylo | ledger, tasks, yylo, task, list, search, get, mark, update, archive, deps, order |
 | `legacy-modernizer` | Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compati... | legacy, modernizer | legacy, modernizer, refactor, codebases, migrate, outdated, frameworks, gradual, modernization, technical, debt, dependency |
 | `linear-claude-skill` | Manage Linear issues, projects, and teams | linear, claude, skill | linear, claude, skill, issues, teams |
 | `lint-and-validate` | Automatic quality control, linting, and static analysis procedures. Use after every code modification to ensure syntax correctness and project standards. Tri... | lint, and, validate | lint, and, validate, automatic, quality, control, linting, static, analysis, procedures, after, every |
@@ -533,6 +537,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `pymc` | Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programm... | pymc | pymc, bayesian, modeling, hierarchical, models, mcmc, nuts, variational, inference, loo, waic, comparison |
 | `pymoo` | Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, DTLZ), for engineering design and opt... | pymoo | pymoo, multi, objective, optimization, framework, nsga, ii, iii, moea, pareto, fronts, constraint |
 | `qutip` | Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QE... | qutip | qutip, quantum, physics, simulation, library, open, studying, equations, lindblad, dynamics, decoherence, optics |
+| `ralph-loop-yylo` | Execute exactly one explicitly assigned YYLO Ledger task through the Ralph loop to a validated queued commit. Use only when the user explicitly requests ralp... | ralph, loop, yylo | ralph, loop, yylo, execute, exactly, one, explicitly, assigned, ledger, task, through, validated |
 | `rdkit` | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D genera... | rdkit | rdkit, cheminformatics, toolkit, fine, grained, molecular, control, smiles, sdf, parsing, descriptors, mw |
 | `receiving-code-review` | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technic... | receiving, code | receiving, code, review, feedback, before, implementing, suggestions, especially, seems, unclear, technically, questionable |
 | `referral-program` | When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referr... | referral, program | referral, program, user, wants, optimize, analyze, affiliate, word, mouth, mentions, ambassador, viral |
@@ -574,6 +579,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `venue-templates` | Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publication venues (Nature, Science, PLOS, IEEE... | venue | venue, access, latex, formatting, requirements, submission, guidelines, major, scientific, publication, venues, nature |
 | `verification-before-completion` | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output... | verification, before, completion | verification, before, completion, about, claim, work, complete, fixed, passing, committing, creating, prs |
 | `web-performance-optimization` | Optimize website and web application performance including loading speed, Core Web Vitals, bundle size, caching strategies, and runtime performance | web, performance, optimization | web, performance, optimization, optimize, website, application, including, loading, speed, core, vitals, bundle |
+| `wiki-yylo` | Use YYLO Ledger wiki Records as durable project knowledge. Search before creating, classify information correctly, and make revision-safe Markdown updates wi... | wiki, yylo | wiki, yylo, ledger, records, durable, knowledge, search, before, creating, classify, information, correctly |
 | `windows-privilege-escalation` | This skill should be used when the user asks to "escalate privileges on Windows," "find Windows privesc vectors," "enumerate Windows for privilege escalation... | windows, privilege, escalation | windows, privilege, escalation, skill, should, used, user, asks, escalate, privileges, find, privesc |
 | `writing-plans` | Use when you have a spec or requirements for a multi-step task, before touching code | writing, plans | writing, plans, spec, requirements, multi, step, task, before, touching, code |
 | `writing-skills` | Use when creating, updating, or improving agent skills. | writing, skills | writing, skills, creating, updating, improving, agent |
@@ -832,7 +838,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `unit-testing-test-generate` | Generate comprehensive, maintainable unit tests across languages with strong coverage and edge case focus. | unit, generate | unit, generate, testing, test, maintainable, tests, languages, strong, coverage, edge, case |
 | `web3-testing` | Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, and mainnet forking. Use when testing Solidity contracts, ... | web3 | web3, testing, test, smart, contracts, comprehensively, hardhat, foundry, unit, tests, integration, mainnet |
 
-## workflow (18)
+## workflow (19)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -854,3 +860,4 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `scientific-writing` | Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) sect... | scientific, writing | scientific, writing, core, skill, deep, research, write, manuscripts, full, paragraphs, never, bullet |
 | `team-collaboration-issue` | You are a GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development workflows. Your ... | team, collaboration, issue | team, collaboration, issue, github, resolution, specializing, systematic, bug, investigation, feature, collaborative, development |
 | `track-management` | Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan... | track | track, skill, creating, managing, working, conductor, tracks, logical, work, units, features, bugs |
+| `workflow-yylo` | Create and maintain validated YYLO Ledger workflow Records while keeping storage, execution, and run evidence as separate explicit boundaries. | yylo | yylo, maintain, validated, ledger, records, while, keeping, storage, execution, run, evidence, separate |
