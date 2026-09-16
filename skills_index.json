@@ -459,6 +459,15 @@
     "source": "unknown"
   },
   {
+    "id": "artifact-yylo",
+    "path": "skills/artifact-yylo",
+    "category": "uncategorized",
+    "name": "artifact-yylo",
+    "description": "Capture and retrieve durable YYLO Ledger artifact Records with intentional profiles, payload modes, provenance, retention, and secret-safe immutable evidence.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/artifact-yylo"
+  },
+  {
     "id": "astropy",
     "path": "skills/astropy",
     "category": "uncategorized",
@@ -3609,6 +3618,15 @@
     "source": "unknown"
   },
   {
+    "id": "ledger-tasks-yylo",
+    "path": "skills/ledger-tasks-yylo",
+    "category": "uncategorized",
+    "name": "ledger-tasks-yylo",
+    "description": "YYLO Ledger task management. Create, list, search, get, mark, update, archive, deps, ready, order, and merge workflows without editing Ledger storage directly.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/ledger-tasks-yylo"
+  },
+  {
     "id": "legacy-modernizer",
     "path": "skills/legacy-modernizer",
     "category": "uncategorized",
@@ -4653,6 +4671,15 @@
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
   {
+    "id": "plan-ledger-tasks-yylo",
+    "path": "skills/plan-ledger-tasks-yylo",
+    "category": "uncategorized",
+    "name": "plan-ledger-tasks-yylo",
+    "description": "Create a concise Product Development Requirement and one or more implementation-sized YYLO Ledger tasks when the user explicitly asks to plan or register work.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/plan-ledger-tasks-yylo"
+  },
+  {
     "id": "plan-writing",
     "path": "skills/plan-writing",
     "category": "uncategorized",
@@ -5164,6 +5191,15 @@
     "description": "Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q&A systems, or integrating LLMs with external knowledge bases.",
     "risk": "unknown",
     "source": "unknown"
+  },
+  {
+    "id": "ralph-loop-yylo",
+    "path": "skills/ralph-loop-yylo",
+    "category": "uncategorized",
+    "name": "ralph-loop-yylo",
+    "description": "Execute exactly one explicitly assigned YYLO Ledger task through the Ralph loop to a validated queued commit. Use only when the user explicitly requests ralph-loop-yylo.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/ralph-loop-yylo"
   },
   {
     "id": "rdkit",
@@ -6786,6 +6822,15 @@
     "source": "unknown"
   },
   {
+    "id": "understand-project-yylo",
+    "path": "skills/understand-project-yylo",
+    "category": "uncategorized",
+    "name": "understand-project-yylo",
+    "description": "Inspect the current product architecture, dependencies, and validation loops before planning or implementing a requested change.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/understand-project-yylo"
+  },
+  {
     "id": "uniprot-database",
     "path": "skills/uniprot-database",
     "category": "uncategorized",
@@ -7110,6 +7155,15 @@
     "source": "unknown"
   },
   {
+    "id": "wiki-yylo",
+    "path": "skills/wiki-yylo",
+    "category": "uncategorized",
+    "name": "wiki-yylo",
+    "description": "Use YYLO Ledger wiki Records as durable project knowledge. Search before creating, classify information correctly, and make revision-safe Markdown updates without editing Ledger storage directly.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/wiki-yylo"
+  },
+  {
     "id": "windows-privilege-escalation",
     "path": "skills/windows-privilege-escalation",
     "category": "uncategorized",
@@ -7162,6 +7216,15 @@
     "description": "Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding the verification protocol.",
     "risk": "unknown",
     "source": "unknown"
+  },
+  {
+    "id": "workflow-yylo",
+    "path": "skills/workflow-yylo",
+    "category": "uncategorized",
+    "name": "workflow-yylo",
+    "description": "Create and maintain validated YYLO Ledger workflow Records while keeping storage, execution, and run evidence as separate explicit boundaries.",
+    "risk": "safe",
+    "source": "https://github.com/yylo-dev/yylo-skills/tree/main/skills/workflow-yylo"
   },
   {
     "id": "writing-plans",
