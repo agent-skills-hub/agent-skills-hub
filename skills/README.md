@@ -91,6 +91,7 @@ Skills for task planning and workflow optimization:
 - `@executing-plans` - Execute plans with checkpoints and reviews
 - `@using-git-worktrees` - Create isolated Git worktrees for parallel work
 - `@verification-before-completion` - Verify work before claiming completion
+- `@ai-antislop` - Anti-slop discipline: no unasked work, no fabrication, evidence before claims
 - `@using-superpowers` - Discover and use advanced skills
 
 ### System Extension

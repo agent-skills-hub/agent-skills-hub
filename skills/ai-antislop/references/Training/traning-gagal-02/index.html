@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HANA — pengalaman sinematik 3D interaktif untuk Kaoruko Waguri. Scroll mengendalikan kamera, cahaya, dan kelopak.">
+<link rel="icon" href="data:,">
+<title>HANA · 花 — Kaoruko Waguri Cinematic 3D Experience</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js" } }
+</script>
+</head>
+<body>
+
+<a class="skip" href="#cerita">Lewati ke konten</a>
+<canvas id="gl" aria-label="Adegan 3D: artefak bunga abstrak melayang di ruang sinematik"></canvas>
+<div id="gl-fallback" aria-hidden="true"></div>
+<div id="vignette" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<nav aria-label="Navigasi utama">
+  <div class="wrap">
+    <div class="logo">HANA <em>·</em> 花</div>
+    <div>
+      <a class="link" href="#cerita">Cerita</a>
+      <a class="link" href="#artefak">Artefak</a>
+      <a class="link" href="#galeri">Galeri</a>
+      <a class="link" href="#sumber">Sumber</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- 1 · CINEMATIC HERO -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <p class="hero-kicker">薫る花は凛と咲く · THE FRAGRANT FLOWER BLOOMS WITH DIGNITY</p>
+      <h1 class="hero-ja" id="heroName">和栗薫子</h1>
+      <p class="hero-sub">Kaoruko Waguri — heroine yang lembut, tulus, dan apa adanya.</p>
+      <p class="hero-meta">Siswi Akademi Kikyo · Pengisi suara: Honoka Inoue · Scroll untuk mendekat</p>
+      <p class="scroll-cue">SCROLL ↓</p>
+    </div>
+  </header>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="mtrack">
+    <span>和栗薫子 <i>✦</i></span><span>KAORUKO WAGURI <i>✦</i></span>
+    <span>薫る花は凛と咲く <i>✦</i></span><span>LEMBUT · TULUS · APA ADANYA <i>✦</i></span>
+  </div></div>
+
+  <!-- 2 · INTRODUCTION / STORY -->
+  <section class="block" id="cerita" aria-labelledby="cerita-h">
+    <div class="wrap">
+      <p class="sec-index reveal">01 — CERITA</p>
+      <h2 class="sec reveal" id="cerita-h">Bunga yang Mekar dengan Martabat</h2>
+      <p class="sub reveal d1">Scroll — kata-katanya menyala mengikutimu.</p>
+      <div class="story-grid">
+        <p class="story-words reveal" id="wordPara">Rambut bergelombang panjang. Senyum hangat yang menenangkan. Menilai orang dari ketulusannya — bukan dari penampilan. Di hadapannya, dinding antar dunia runtuh satu per satu.</p>
+        <div class="story-side reveal d1">
+          <p>Kaoruko Waguri adalah heroine utama «Kaoru Hana wa Rin to Saku». Siswi Akademi Kikyo yang dikenal baik dan manis — dan serius soal makanan enak.</p>
+          <div class="fact-row">
+            <span class="fact-chip"><b>Peran</b> · Heroine utama</span>
+            <span class="fact-chip"><b>Sekolah</b> · Akademi Kikyo</span>
+            <span class="fact-chip"><b>Sifat</b> · Baik, manis, suka makan</span>
+            <span class="fact-chip"><b>Suara</b> · Honoka Inoue</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · FULL-SCREEN 3D EXPERIENCE -->
+  <section id="artefak" aria-labelledby="artefak-h">
+    <div class="wrap">
+      <p class="sec-index reveal">02 — ARTEFAK 3D</p>
+      <h2 class="sec reveal" id="artefak-h">Benih Hana</h2>
+      <p class="sub reveal d1">Scroll — kamera mendekat, artefak berputar, cahaya berubah. Arahkan kursor untuk menggeser cahaya. Seret ruang kosong untuk memutar artefak.</p>
+    </div>
+    <div class="chapters">
+      <div class="chapter"><div class="wrap" style="width:100%"><div class="card">
+        <p class="k">BABAK I — PENDEKATAN</p><h3>Kamera Menemukan Bentuk</h3>
+        <p>Dari jauh hanya cahaya ungu di kegelapan. Semakin kamu scroll, semakin dekat — geometri mulai terbaca, kelopak menari lebih liar mengikuti kecepatan scroll-mu.</p>
+      </div></div></div>
+      <div class="chapter"><div class="wrap" style="width:100%"><div class="card">
+        <p class="k">BABAK II — ORBIT</p><h3>360 Derajat Ketulusan</h3>
+        <p>Kamera mengorbit penuh. Artefak berputar dua setengah putaran, cahayanya memanas dari ungu ke krem. Coba seret mouse — artefak menurut, lalu kembali sendiri ke pose scroll-nya.</p>
+        <p class="hint">↔ seret di ruang kosong untuk memutar</p>
+      </div></div></div>
+      <div class="chapter"><div class="wrap" style="width:100%"><div class="card">
+        <p class="k">BABAK III — MEKAR</p><h3>Cahaya Penuh</h3>
+        <p>Di titik terdekat, emissive menyala maksimal dan kelopak berputar dalam badai lembut. Lalu kamera mundur — memberi ruang untuk transformasi berikutnya.</p>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 4 · SCROLL-DRIVEN TRANSFORMATION -->
+  <section class="block" id="transformasi" aria-labelledby="trans-h">
+    <div class="wrap">
+      <p class="sec-index reveal">03 — TRANSFORMASI</p>
+      <h2 class="sec reveal" id="trans-h">Dari Geometri ke Manusia</h2>
+      <p class="sub reveal d1">Scroll — still resmi membesar dan tersibak dari kegelapan.</p>
+      <div class="trans-stage wipe reveal" id="transStage">
+        <img id="transImg" src="assets/ep1.jpg" alt="Still resmi episode 1: Kaoruko Waguri tersenyum malu, profil samping">
+        <div class="trans-cap">
+          <h3>Abstraksi selesai. Yang tersisa: dia.</h3>
+          <p>Still resmi episode 1 · sumber: Kaoru Hana Wiki (Fandom)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · INTERACTIVE GALLERY -->
+  <section id="galeri" aria-labelledby="galeri-h">
+    <div class="hwrap" id="hwrap">
+      <div class="hsticky">
+        <div class="hhead">
+          <p class="sec-index">04 — GALERI</p>
+          <h2 class="sec" id="galeri-h">Momen-momen</h2>
+          <p class="sub">Scroll untuk geser · klik gambar untuk inspeksi.</p>
+        </div>
+        <div class="htrack" id="htrack">
+          <figure class="hcard"><img src="assets/ep1b.jpg" alt="Still episode 1: close-up wajah Waguri"><figcaption class="cap"><small>STILL · EP 1</small>Tatapan yang jujur — tanpa kepura-puraan.</figcaption></figure>
+          <figure class="hcard"><img src="assets/ep2.jpg" alt="Still episode 2: Waguri bersama suasana hangat"><figcaption class="cap"><small>STILL · EP 2</small>Ketulusan yang meluluhkan sekitarnya.</figcaption></figure>
+          <figure class="hcard"><img src="assets/ep3.jpg" alt="Still episode 3: Waguri dalam cahaya lembut"><figcaption class="cap"><small>STILL · EP 3</small>Lembut di luar, kuat di dalam.</figcaption></figure>
+          <figure class="hcard"><img src="assets/ep4.jpg" alt="Still episode 4: Waguri tersenyum"><figcaption class="cap"><small>STILL · EP 4</small>Bunga yang mekar dengan martabat.</figcaption></figure>
+          <figure class="hcard"><img src="assets/illust.jpg" alt="Ilustrasi perayaan chapter 202 menampilkan Waguri"><figcaption class="cap"><small>ILUSTRASI · CHAPTER 202</small>Perayaan dari ilustrator resmi.</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · FINAL STATEMENT -->
+  <section class="block" id="penutup" aria-labelledby="sumber-h">
+    <div class="wrap closing">
+      <p class="sec-index reveal">05 — PENUTUP</p>
+      <p class="big reveal">薫る花は<em>凛と咲く</em></p>
+      <p class="reveal d1">Kelembutan bukan kelemahan. Ketulusan bukan kepolosan.<br>Waguri mekar — dengan martabat.</p>
+      <div class="cta-row reveal d2">
+        <a class="btn" href="#top">↑ Tonton Ulang dari Awal</a>
+        <a class="btn ghost" href="https://kaoruhana-anime.com/character/">Situs Official ↗</a>
+      </div>
+      <div class="sources reveal d2" id="sumber">
+        <h2 class="sec" id="sumber-h" style="font-size:22px">Sumber</h2>
+        <ul>
+          <li>Gambar: stills &amp; ilustrasi dari <a href="https://kaoruhana.fandom.com/wiki/Kaoruko_Waguri/Gallery">Kaoru Hana Wiki (Fandom) — Galeri Kaoruko Waguri</a></li>
+          <li>Profil &amp; pengisi suara: <a href="https://kaoruhana-anime.com/character/">kaoruhana-anime.com/character</a> (official)</li>
+          <li>3D: Three.js r160 (di-vendor lokal) · WebGL real-time, bukan CSS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · FOOTER -->
+  <footer><div class="wrap">HANA · 花 — fan showcase non-komersial untuk latihan · gambar milik pemegang hak masing-masing · dibangun dengan skill AI-ANTISLOP</div></footer>
+</main>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Inspeksi gambar">
+  <button id="lbClose" aria-label="Tutup inspeksi">✕</button>
+  <img id="lbImg" alt="">
+  <p class="lcap" id="lbCap"></p>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
