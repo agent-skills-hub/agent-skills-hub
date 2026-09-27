@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:,">
+<title>和栗薫子 — Kaoruko Waguri · Cinematic Showcase</title>
+<style>
+  :root {
+    --ink: #0e0a12;
+    --panel: rgba(24,17,30,.72);
+    --border: #3a2b4d;
+    --text: #f3ecf7;
+    --muted: #a89bb8;
+    --wisteria: #c084fc;
+    --blush: #f9a8d4;
+    --cream: #fde9d3;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--ink); color: var(--text);
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif; line-height: 1.7; overflow-x: hidden; }
+  .sans { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+
+  #progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; z-index: 100;
+    background: linear-gradient(90deg, var(--wisteria), var(--blush), var(--cream)); }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 90;
+    backdrop-filter: blur(14px); background: rgba(14,10,18,.55); border-bottom: 1px solid var(--border); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+  nav .logo { font-weight: 700; letter-spacing: 2px; font-size: 15px; }
+  nav a.link { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 22px; transition: color .25s; }
+  nav a.link:hover { color: var(--text); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- hero ---------- */
+  header.hero { position: relative; height: 100vh; min-height: 640px; overflow: hidden;
+    display: flex; align-items: flex-end; }
+  .hero-bg { position: absolute; inset: -6%; background: url('assets/ep1.jpg') center 30% / cover no-repeat;
+    animation: kenburns 24s ease-in-out infinite alternate; will-change: transform; }
+  @keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1.0); } }
+  .hero-shade { position: absolute; inset: 0;
+    background: linear-gradient(to top, var(--ink) 4%, rgba(14,10,18,.25) 45%, rgba(14,10,18,.45) 100%); }
+  .petal { position: absolute; top: -40px; border-radius: 60% 0 60% 0; opacity: .7; pointer-events: none;
+    animation: fall linear infinite; }
+  @keyframes fall { to { transform: translateY(110vh) rotate(340deg); } }
+  .hero-inner { position: relative; z-index: 2; padding-bottom: 12vh; }
+  .hero-kicker { letter-spacing: 5px; font-size: 13px; color: var(--blush); margin-bottom: 14px;
+    animation: rise 1s .1s cubic-bezier(.2,.8,.2,1) both; }
+  h1.ja { font-size: clamp(56px, 11vw, 130px); line-height: 1; letter-spacing: 6px; font-weight: 700;
+    text-shadow: 0 4px 40px rgba(0,0,0,.6); }
+  h1.ja .ch { display: inline-block; opacity: 0; animation: charin .7s cubic-bezier(.2,.8,.2,1) forwards; }
+  @keyframes charin { from { opacity: 0; transform: translateY(60px) rotate(4deg); } to { opacity: 1; transform: none; } }
+  .hero-sub { font-size: clamp(17px, 2.4vw, 24px); color: var(--cream); margin-top: 12px;
+    animation: rise 1s .8s cubic-bezier(.2,.8,.2,1) both; }
+  .hero-meta { margin-top: 10px; color: var(--muted); font-size: 14px;
+    animation: rise 1s 1s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+  .scroll-cue { position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%); z-index: 2;
+    color: var(--muted); font-size: 12px; letter-spacing: 4px; animation: bob 2.2s ease-in-out infinite; }
+  @keyframes bob { 0%,100% { transform: translate(-50%,0); opacity: .55; } 50% { transform: translate(-50%,10px); opacity: 1; } }
+
+  .marquee { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    overflow: hidden; white-space: nowrap; padding: 13px 0; background: #120c18; }
+  .marquee .track { display: inline-block; animation: slide 30s linear infinite; }
+  .marquee span { font-size: 14px; letter-spacing: 4px; color: var(--muted); padding: 0 30px; }
+  .marquee span i { color: var(--wisteria); font-style: normal; }
+  @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  section { padding: 84px 0 12px; position: relative; }
+  h2.sec { font-size: clamp(30px, 4.5vw, 46px); letter-spacing: 2px; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 34px; }
+  .reveal { opacity: 0; transform: translateY(38px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal.d1 { transition-delay: .1s; } .reveal.d2 { transition-delay: .2s; } .reveal.d3 { transition-delay: .3s; }
+
+  /* ---------- profile ---------- */
+  .profile { display: grid; grid-template-columns: 380px 1fr; gap: 48px; align-items: center; }
+  .portrait { perspective: 1100px; }
+  .portrait .frame { border-radius: 22px; overflow: hidden; border: 1px solid var(--border);
+    box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 60px rgba(192,132,252,.18);
+    transition: transform .35s ease; transform-style: preserve-3d; aspect-ratio: 3/4; background: #1a1322; }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;
+    transform: scale(1.02); }
+  .facts { display: grid; gap: 14px; margin-top: 26px; }
+  .fact { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px;
+    backdrop-filter: blur(8px); }
+  .fact b { color: var(--blush); display: block; font-size: 13px; letter-spacing: 2px; margin-bottom: 4px; }
+  .fact span { font-size: 17px; }
+  .words { font-size: clamp(22px, 3.4vw, 34px); line-height: 1.5; }
+  .words .w { display: inline-block; opacity: .14; transition: opacity .4s; margin-right: .35em; }
+  .words .w.lit { opacity: 1; }
+
+  /* ---------- horizontal gallery ---------- */
+  .hwrap { height: 320vh; position: relative; }
+  .hsticky { position: sticky; top: 0; height: 100vh; overflow: hidden; display: flex; align-items: center; }
+  .htrack { display: flex; gap: 28px; padding: 0 8vw; will-change: transform; }
+  .hcard { flex: 0 0 62vw; max-width: 780px; border-radius: 20px; overflow: hidden; position: relative;
+    border: 1px solid var(--border); box-shadow: 0 30px 80px rgba(0,0,0,.5); background: #1a1322; }
+  .hcard img { width: 100%; height: 62vh; object-fit: cover; display: block; }
+  .hcard .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 28px 22px;
+    background: linear-gradient(transparent, rgba(10,6,14,.85)); font-size: 17px; }
+  .hcard .cap small { display: block; color: var(--blush); letter-spacing: 3px; font-size: 12px; margin-bottom: 4px; }
+  .hhead { position: absolute; top: 12vh; left: 8vw; z-index: 2; }
+  .hhead h2 { text-shadow: 0 2px 24px rgba(0,0,0,.7); }
+
+  /* ---------- closing ---------- */
+  .closing { text-align: center; padding: 120px 0 40px; }
+  .closing .big { font-size: clamp(40px, 8vw, 96px); line-height: 1.15; letter-spacing: 4px; }
+  .closing .big em { font-style: normal; color: var(--blush); }
+  .src { margin-top: 34px; color: var(--muted); font-size: 13px; }
+  .src a { color: #8fb8ff; text-decoration: none; }
+  .src a:hover { text-decoration: underline; }
+  footer { margin-top: 40px; padding: 26px 0 44px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 13px; text-align: center; }
+
+  @media (max-width: 860px) {
+    .profile { grid-template-columns: 1fr; }
+    .portrait { max-width: 340px; }
+    .hcard { flex-basis: 82vw; }
+    nav a.link { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal, h1.ja .ch { opacity: 1 !important; transform: none !important; }
+    .words .w { opacity: 1; }
+  }
+</style>
+</head>
+<body class="sans">
+
+<div id="progress"></div>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">和栗薫子 · WAGURI</div>
+    <div>
+      <a class="link" href="#profil">Profil</a>
+      <a class="link" href="#galeri">Galeri</a>
+      <a class="link" href="#sumber">Sumber</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-shade"></div>
+  <div id="petals"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-kicker">薫る花は凛と咲く · THE FRAGRANT FLOWER BLOOMS WITH DIGNITY</div>
+    <h1 class="ja" id="heroName">和栗薫子</h1>
+    <div class="hero-sub">Kaoruko Waguri — heroine yang lembut, tulus, dan apa adanya.</div>
+    <div class="hero-meta" id="heroMeta">Siswi Akademi Kikyo · Pengisi suara: Honoka Inoue</div>
+  </div>
+  <div class="scroll-cue">SCROLL ↓</div>
+</header>
+
+<div class="marquee"><div class="track" id="mtrack">
+  <span>和栗薫子 <i>✦</i></span><span>KAORUKO WAGURI <i>✦</i></span><span>薫る花は凛と咲く <i>✦</i></span><span>LEMBUT · TULUS · APA ADANYA <i>✦</i></span>
+</div></div>
+
+<section id="profil">
+  <div class="wrap">
+    <h2 class="sec reveal">Profil</h2>
+    <p class="sub reveal d1">Fakta inti — tanpa tambahan karangan.</p>
+    <div class="profile">
+      <div class="portrait reveal"><div class="frame" id="tiltFrame"><img src="assets/illust.jpg" alt="Ilustrasi Kaoruko Waguri"></div></div>
+      <div>
+        <p class="words reveal d1" id="wordPara">Rambut bergelombang panjang. Senyum hangat yang menenangkan. Menilai orang dari ketulusannya — bukan dari penampilan.</p>
+        <div class="facts">
+          <div class="fact reveal d1"><b>PERAN</b><span>Heroine utama «Kaoru Hana wa Rin to Saku»</span></div>
+          <div class="fact reveal d2"><b>SEKOLAH</b><span>Akademi Kikyo — seragam rose-pink khasnya</span></div>
+          <div class="fact reveal d2"><b>SIFAT</b><span>Baik, manis, dan suka makan</span></div>
+          <div class="fact reveal d3"><b>SUARA</b><span>Honoka Inoue (井上ほの花)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeri" style="padding-left:0;padding-right:0;">
+  <div class="hwrap" id="hwrap">
+    <div class="hsticky">
+      <div class="hhead"><h2 class="sec">Galeri Momen</h2><p class="sub">Scroll — stills resmi dari episode anime.</p></div>
+      <div class="htrack" id="htrack">
+        <div class="hcard"><img src="assets/ep1b.jpg" alt="Still episode 1"><div class="cap"><small>STILL · EP 1</small>Tatapan yang jujur — tanpa kepura-puraan.</div></div>
+        <div class="hcard"><img src="assets/ep2.jpg" alt="Still episode 2"><div class="cap"><small>STILL · EP 2</small>Ketulusan yang bikin orang di sekitarnya luluh.</div></div>
+        <div class="hcard"><img src="assets/ep3.jpg" alt="Still episode 3"><div class="cap"><small>STILL · EP 3</small>Lembut di luar, kuat di dalam.</div></div>
+        <div class="hcard"><img src="assets/ep4.jpg" alt="Still episode 4"><div class="cap"><small>STILL · EP 4</small>Bunga yang mekar dengan martabat.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sumber">
+  <div class="wrap closing">
+    <div class="big reveal">薫る花は<em>凛と咲く</em></div>
+    <p class="src reveal d1">Gambar: stills &amp; ilustrasi dari
+      <a href="https://kaoruhana.fandom.com/wiki/Kaoruko_Waguri/Gallery">Kaoru Hana Wiki (Fandom) — Galeri Kaoruko Waguri</a>
+      · Situs official: <a href="https://kaoruhana-anime.com/character/">kaoruhana-anime.com</a></p>
+  </div>
+</section>
+
+<footer><div class="wrap">Fan showcase non-komersial untuk latihan · gambar milik pemegang hak masing-masing · dibangun dengan skill AI-ANTISLOP</div></footer>
+
+<script>
+// progress bar + hero parallax
+const heroBg = document.getElementById('heroBg');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  document.getElementById('progress').style.width =
+    (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  heroBg.style.translate = '0 ' + (h.scrollTop * 0.22) + 'px';
+}, { passive: true });
+
+// hero name: per-character stagger
+const hn = document.getElementById('heroName');
+hn.innerHTML = [...hn.textContent].map((c, i) =>
+  `<span class="ch" style="animation-delay:${0.25 + i * 0.09}s">${c}</span>`).join('');
+
+// falling petals (lightweight, transform-only)
+const pc = document.getElementById('petals');
+const COLORS = ['#c084fc', '#f9a8d4', '#fde9d3'];
+for (let i = 0; i < 16; i++) {
+  const p = document.createElement('div');
+  p.className = 'petal';
+  const s = 8 + Math.random() * 14;
+  p.style.cssText = `left:${Math.random() * 100}vw;width:${s}px;height:${s}px;` +
+    `background:${COLORS[i % 3]};animation-duration:${7 + Math.random() * 8}s;` +
+    `animation-delay:${-Math.random() * 12}s;`;
+  pc.appendChild(p);
+}
+
+// marquee seamless loop
+const track = document.getElementById('mtrack');
+track.innerHTML += track.innerHTML;
+
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// word-by-word light-up on scroll (scrubbed)
+const wp = document.getElementById('wordPara');
+wp.innerHTML = wp.textContent.trim().split(/\s+/).map(w => `<span class="w">${w}</span>`).join('');
+const words = [...wp.querySelectorAll('.w')];
+function lightWords() {
+  const r = wp.getBoundingClientRect(), vh = innerHeight;
+  const p = Math.min(1, Math.max(0, (vh * 0.85 - r.top) / (vh * 0.6)));
+  const n = Math.floor(p * words.length);
+  words.forEach((w, i) => w.classList.toggle('lit', i < n));
+}
+addEventListener('scroll', lightWords, { passive: true }); lightWords();
+
+// horizontal gallery: vertical scroll drives horizontal track
+const hwrap = document.getElementById('hwrap'), htrack = document.getElementById('htrack');
+function slideGallery() {
+  const r = hwrap.getBoundingClientRect(), vh = innerHeight;
+  const total = r.height - vh;
+  const p = Math.min(1, Math.max(0, -r.top / total));
+  const maxX = htrack.scrollWidth - innerWidth + innerWidth * 0.08;
+  htrack.style.transform = `translate3d(${-p * maxX}px,0,0)`;
+}
+addEventListener('scroll', slideGallery, { passive: true }); slideGallery();
+
+// 3D tilt on portrait
+const frame = document.getElementById('tiltFrame');
+frame.addEventListener('mousemove', e => {
+  const r = frame.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width - 0.5;
+  const y = (e.clientY - r.top) / r.height - 0.5;
+  frame.style.transform = `perspective(1000px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg)`;
+});
+frame.addEventListener('mouseleave', () => { frame.style.transform = ''; });
+</script>
+
+</body>
+</html>

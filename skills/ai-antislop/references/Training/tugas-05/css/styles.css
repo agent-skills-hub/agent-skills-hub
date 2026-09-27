@@ -1,0 +1,145 @@
+/* Bukit Wisteria — split editorial + diorama. One theme color:
+   wisteria + cream on warm plum. Transform-only motion. */
+:root {
+  --ink: #14101d;
+  --panel: rgba(22, 16, 30, 0.82);
+  --border: #3c2c52;
+  --text: #f4edf8;
+  --muted: #a89bb8;
+  --wisteria: #c084fc;
+  --cream: #fde9d3;
+  --gold: #e8b64c;
+  --serif: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, Georgia, serif;
+  --sans: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--ink); }
+html.js .reveal { opacity: 0; }
+body { background: transparent; color: var(--text);
+  font-family: var(--sans); line-height: 1.7; overflow-x: hidden; }
+::selection { background: var(--wisteria); color: #160a24; }
+
+#gl { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; display: block; }
+#vignette { position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(5, 2, 9, 0.5) 100%); }
+#progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; z-index: 120;
+  background: var(--wisteria); }
+
+main { position: relative; z-index: 2; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 110;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  background: rgba(20, 16, 29, 0.6); border-bottom: 1px solid var(--border); }
+nav .wrap { display: flex; align-items: center; justify-content: space-between;
+  padding-top: 13px; padding-bottom: 13px; }
+nav .logo { font-family: var(--serif); letter-spacing: 3px; font-size: 15px; }
+nav .logo em { font-style: normal; color: var(--wisteria); }
+nav a.link { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 22px;
+  transition: color 0.25s; }
+nav a.link:hover, nav a.link:focus-visible { color: var(--text); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--wisteria); outline-offset: 3px; }
+.skip { position: absolute; left: -9999px; top: 0; z-index: 300; background: var(--wisteria);
+  color: #160a24; padding: 10px 20px; border-radius: 0 0 10px 0; font-size: 14px; }
+.skip:focus { left: 0; }
+
+/* ---------- split hero: editorial left, diorama right ---------- */
+header.hero { min-height: 100vh; min-height: 100svh; display: flex; align-items: center;
+  padding: 110px 0 60px; }
+.split { display: grid; grid-template-columns: minmax(0, 560px) 1fr; gap: 24px;
+  align-items: center; width: 100%; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 20px;
+  padding: 44px 46px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.hero-kicker { letter-spacing: 5px; font-size: 12px; color: var(--wisteria); margin-bottom: 16px; }
+h1.hero-ja { font-family: var(--serif); font-size: clamp(56px, 7.5vw, 108px);
+  line-height: 1.02; letter-spacing: 6px; }
+h1.hero-ja .ch { display: inline-block; }
+.hero-sub { font-size: clamp(17px, 2vw, 21px); color: var(--cream); margin-top: 16px; }
+.hero-meta { margin-top: 10px; color: var(--muted); font-size: 14px; }
+.scroll-cue { margin-top: 34px; color: var(--muted); font-size: 12px; letter-spacing: 4px; }
+/* playful hand annotation (Bruno school) */
+.note { display: inline-block; font-family: var(--serif); font-style: italic;
+  color: var(--gold); font-size: 16px; transform: rotate(-2deg); margin-top: 22px; }
+
+/* ---------- sections ---------- */
+section.block { padding: 100px 0 30px; position: relative; }
+h2.sec { font-family: var(--serif); font-size: clamp(30px, 4.4vw, 50px);
+  letter-spacing: 2px; margin-bottom: 8px; }
+.sec-index { color: var(--wisteria); font-size: 13px; letter-spacing: 4px; margin-bottom: 10px; }
+.sub { color: var(--muted); margin-bottom: 30px; max-width: 600px; }
+section.block, header.hero { text-shadow: 0 2px 20px rgba(5, 2, 9, 0.85); }
+.panel, .fact-chip, .trans-cap, .gcard .cap, nav, .marquee { text-shadow: none; }
+
+html.js .reveal { transform: translateY(38px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+html.js .reveal.in { opacity: 1; transform: none; }
+html.js .reveal.d1 { transition-delay: 0.1s; }
+html.js .reveal.d2 { transition-delay: 0.2s; }
+
+.story-words { font-family: var(--serif); font-size: clamp(23px, 3.2vw, 36px); line-height: 1.55; }
+.story-words .w { opacity: 0.13; transition: opacity 0.35s; }
+.story-words .w.lit { opacity: 1; }
+.fact-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.fact-chip { border: 1px solid var(--border); background: rgba(22, 16, 30, 0.7);
+  border-radius: 999px; padding: 8px 18px; font-size: 14px; }
+.fact-chip b { color: var(--wisteria); font-weight: 600; }
+
+/* ---------- interactive band (tall: scroll orbits the diorama) ---------- */
+.play-band { min-height: 220vh; position: relative; }
+.play-sticky { position: sticky; top: 0; min-height: 100vh; min-height: 100svh;
+  display: flex; align-items: center; }
+.play-card { max-width: 440px; }
+.play-meter { margin-top: 18px; height: 6px; border-radius: 999px; background: rgba(255,255,255,.12);
+  overflow: hidden; }
+.play-meter i { display: block; height: 100%; width: 0%; background: var(--wisteria); }
+#lanternState { color: var(--gold); font-size: 14px; margin-top: 12px; letter-spacing: 1px; }
+
+/* ---------- gallery stack ---------- */
+.gstack { display: grid; gap: 28px; }
+.gcard { border-radius: 20px; overflow: hidden; position: relative;
+  border: 1px solid var(--border); background: #1a1322; }
+.gcard img { width: 100%; height: 62vh; min-height: 380px; object-fit: cover; display: block; }
+.gcard:nth-child(odd) { transform: rotate(-0.6deg); }
+.gcard:nth-child(even) { transform: rotate(0.6deg); }
+.gcard .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 46px 28px 22px;
+  background: linear-gradient(transparent, rgba(8, 4, 12, 0.88)); font-size: 17px; }
+.gcard .cap small { display: block; color: var(--wisteria); letter-spacing: 3px;
+  font-size: 12px; margin-bottom: 4px; }
+
+/* ---------- final ---------- */
+.closing { text-align: center; padding: 120px 0 50px; }
+.closing .big { font-family: var(--serif); font-size: clamp(42px, 8vw, 100px);
+  line-height: 1.12; letter-spacing: 4px; }
+.closing .big em { font-style: normal; color: var(--wisteria); }
+.closing p { color: var(--muted); margin-top: 22px; }
+.cta-row { margin-top: 36px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; text-decoration: none; color: var(--text); font-size: 15px;
+  letter-spacing: 1px; border: 1px solid var(--wisteria); border-radius: 999px;
+  padding: 14px 38px; transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  will-change: transform; background: transparent; font: inherit; cursor: pointer;
+  appearance: none; -webkit-appearance: none; }
+.btn:hover { box-shadow: 0 0 28px rgba(192, 132, 252, 0.32); background: rgba(192, 132, 252, 0.1); }
+.btn.ghost { border-color: var(--border); color: var(--muted); }
+.btn.small { padding: 9px 24px; font-size: 13px; margin-top: 12px; }
+.sources { margin: 40px auto 0; max-width: 720px; text-align: left; font-size: 13px; color: var(--muted); }
+.sources a { color: #8fb8ff; text-decoration: none; }
+.sources a:hover { text-decoration: underline; }
+footer { margin-top: 46px; padding: 26px 0 46px; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: 13px; text-align: center; position: relative; z-index: 2;
+  background: rgba(20, 16, 29, 0.85); }
+
+#gl-fallback { position: fixed; inset: 0; z-index: 0; display: none;
+  background: radial-gradient(ellipse at 70% 40%, #2b1d4d 0%, var(--ink) 70%); }
+body.no-gl #gl { display: none; }
+body.no-gl #gl-fallback { display: block; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; }
+  .panel { padding: 30px 26px; }
+  nav a.link { display: none; }
+  section.block { padding: 76px 0 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
+  html.js .reveal { opacity: 1; transform: none; }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bukit Wisteria — diorama 3D interaktif Kaoruko Waguri. Seret untuk mengorbit, klik lentera, scroll untuk sinematik.">
+<link rel="icon" href="data:,">
+<title>Bukit Wisteria · Kaoruko Waguri Diorama Experience</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js" } }
+</script>
+</head>
+<body>
+
+<a class="skip" href="#cerita">Lewati ke konten</a>
+<canvas id="gl" aria-label="Diorama 3D: bukit wisteria dengan lentera batu"></canvas>
+<div id="gl-fallback" aria-hidden="true"></div>
+<div id="vignette" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<nav aria-label="Navigasi utama">
+  <div class="wrap">
+    <div class="logo">BUKIT <em>·</em> WISTERIA</div>
+    <div>
+      <a class="link" href="#cerita">Cerita</a>
+      <a class="link" href="#main">Main</a>
+      <a class="link" href="#galeri">Galeri</a>
+      <a class="link" href="#sumber">Sumber</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO split -->
+  <header class="hero" id="top">
+    <div class="wrap split">
+      <div class="panel">
+        <p class="hero-kicker">薫る花は凛と咲く · DIORAMA INTERAKTIF</p>
+        <h1 class="hero-ja" id="heroName">和栗薫子</h1>
+        <p class="hero-sub">Kaoruko Waguri — dan bukit wisteria miliknya, di sebelah kananmu.</p>
+        <p class="hero-meta">Siswi Akademi Kikyo · Pengisi suara: Honoka Inoue</p>
+        <p class="scroll-cue">SCROLL ↓ — DIORAMA MENGORBIT</p>
+        <span class="note">← bukitnya bisa diseret &amp; lenteranya bisa diklik, beneran!</span>
+      </div>
+      <div><!-- diorama lives here (right side) --></div>
+    </div>
+  </header>
+
+  <!-- STORY -->
+  <section class="block" id="cerita" aria-labelledby="cerita-h">
+    <div class="wrap split">
+      <div class="panel">
+        <p class="sec-index reveal">CERITA</p>
+        <h2 class="sec reveal" id="cerita-h">Lembut yang Tumbuh</h2>
+        <p class="story-words reveal d1" id="wordPara">Rambut bergelombang panjang. Senyum hangat yang menenangkan. Menilai orang dari ketulusannya — bukan dari penampilan.</p>
+        <div class="fact-row reveal d2">
+          <span class="fact-chip"><b>Peran</b> · Heroine utama</span>
+          <span class="fact-chip"><b>Sekolah</b> · Akademi Kikyo</span>
+          <span class="fact-chip"><b>Sifat</b> · Baik, manis, suka makan</span>
+          <span class="fact-chip"><b>Suara</b> · Honoka Inoue</span>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <!-- PLAY BAND -->
+  <section id="main" aria-labelledby="main-h">
+    <div class="play-band" id="playBand">
+      <div class="play-sticky">
+        <div class="wrap split">
+          <div class="panel play-card">
+            <p class="sec-index reveal">MAIN — 3D INTERAKTIF</p>
+            <h2 class="sec reveal" id="main-h">Orbitkan Sesukamu</h2>
+            <p class="sub reveal d1">Scroll memutar kamera sinematik. Seret = orbit bebas. Klik lentera batu = senja ↔ fajar.</p>
+            <div class="play-meter reveal d2" aria-hidden="true"><i id="playMeter"></i></div>
+            <p id="lanternState" class="reveal d2">🏮 Lentera: menyala (senja)</p>
+            <p class="reveal d2"><button class="btn small" id="lanternBtn">Padamkan lentera</button></p>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY stack -->
+  <section class="block" id="galeri" aria-labelledby="galeri-h">
+    <div class="wrap split">
+      <div>
+        <p class="sec-index reveal">GALERI</p>
+        <h2 class="sec reveal" id="galeri-h">Stills Resmi</h2>
+        <p class="sub reveal d1">Tiga momen dari episode anime.</p>
+        <div class="gstack">
+          <figure class="gcard reveal"><img src="assets/ep1b.jpg" alt="Still episode 1: close-up wajah Waguri"><figcaption class="cap"><small>STILL · EP 1</small>Tatapan yang jujur.</figcaption></figure>
+          <figure class="gcard reveal d1"><img src="assets/ep3.jpg" alt="Still episode 3: Waguri dalam cahaya lembut"><figcaption class="cap"><small>STILL · EP 3</small>Lembut di luar, kuat di dalam.</figcaption></figure>
+          <figure class="gcard reveal d2"><img src="assets/ep4.jpg" alt="Still episode 4: Waguri tersenyum"><figcaption class="cap"><small>STILL · EP 4</small>Bunga yang mekar dengan martabat.</figcaption></figure>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="block" id="penutup" aria-labelledby="sumber-h">
+    <div class="wrap split">
+      <div class="panel closing" style="text-align:left;padding-top:60px;padding-bottom:60px">
+        <p class="sec-index reveal">PENUTUP</p>
+        <p class="big reveal" style="font-size:clamp(38px,5.5vw,72px)">薫る花は<em>凛と咲く</em></p>
+        <p class="reveal d1" style="margin-top:18px">Kelembutan bukan kelemahan. Ketulusan bukan kepolosan.</p>
+        <div class="cta-row reveal d2" style="justify-content:flex-start">
+          <a class="btn" href="#top">↑ Naik ke Bukit Lagi</a>
+          <a class="btn ghost" href="https://kaoruhana-anime.com/character/">Situs Official ↗</a>
+        </div>
+        <div class="sources reveal d2" id="sumber">
+          <h2 class="sec" id="sumber-h" style="font-size:22px">Sumber</h2>
+          <ul>
+            <li>Gambar: <a href="https://kaoruhana.fandom.com/wiki/Kaoruko_Waguri/Gallery">Kaoru Hana Wiki (Fandom)</a> · Profil: <a href="https://kaoruhana-anime.com/character/">official</a></li>
+            <li>3D: Three.js r160 (di-vendor lokal) · diorama prosedural, WebGL real-time</li>
+          </ul>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <footer><div class="wrap">Bukit Wisteria — fan showcase non-komersial untuk latihan · gambar milik pemegang hak masing-masing · dibangun dengan skill AI-ANTISLOP</div></footer>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
