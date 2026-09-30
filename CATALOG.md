@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-09-16T07:08:47.614Z
+Generated at: 2026-09-30T15:53:15.521Z
 
-Total skills: 812
+Total skills: 813
 
 ## architecture (66)
 
@@ -75,7 +75,7 @@ Total skills: 812
 | `workflow-patterns` | Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding th... |  | skill, implementing, tasks, according, conductor, tdd, handling, phase, checkpoints, managing, git, commits |
 | `zapier-make-patterns` | No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) let non-developers automate business processes without writing code.... | zapier, make | zapier, make, no, code, automation, democratizes, building, formerly, integromat, let, non, developers |
 
-## business (39)
+## business (40)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -118,6 +118,7 @@ Total skills: 812
 | `startup-business-analyst-market-opportunity` | Generate comprehensive market opportunity analysis with TAM/SAM/SOM calculations | startup, business, analyst, market, opportunity | startup, business, analyst, market, opportunity, generate, analysis, tam, sam, som, calculations |
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
+| `webask-results-digest` | Summarise WebAsk survey responses, compare filtered results and explain percentage bases. Use for customer feedback, campaign analysis or report figures via ... | webask, results, digest | webask, results, digest, summarise, survey, responses, compare, filtered, explain, percentage, bases, customer |
 
 ## data-ai (179)
 

@@ -7155,6 +7155,15 @@
     "source": "unknown"
   },
   {
+    "id": "webask-results-digest",
+    "path": "skills/webask-results-digest",
+    "category": "uncategorized",
+    "name": "webask-results-digest",
+    "description": "Summarise WebAsk survey responses, compare filtered results and explain percentage bases. Use for customer feedback, campaign analysis or report figures via the official WebAsk MCP.",
+    "risk": "safe",
+    "source": "https://github.com/WebAskio/webask-mcp/tree/main/en/skills/webask-results-digest"
+  },
+  {
     "id": "wiki-yylo",
     "path": "skills/wiki-yylo",
     "category": "uncategorized",

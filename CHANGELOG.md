@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- WebAsk Results Digest: survey summaries, filtered comparisons and explicit percentage bases through the official hosted WebAsk MCP, with client setup, examples, data-handling limits and original MIT attribution.
+
 ## [4.7.0] - 2026-02-03 - "Installer Fix & OpenCode Docs"
 
 > Critical installer fix for Windows and OpenCode documentation completion.

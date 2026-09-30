@@ -326,6 +326,8 @@ See `LICENSE` for details.
 
 ## Acknowledgement
 
+The [WebAsk Results Digest](skills/webask-results-digest/SKILL.md) workflow is adapted from [WebAskio/webask-mcp](https://github.com/WebAskio/webask-mcp/tree/main/en/skills/webask-results-digest) under MIT. WebAsk attribution and the full license notice are preserved in the skill.
+
 This project is built on top of  
 [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) [MIT license](https://github.com/sickn33/antigravity-awesome-skills?tab=MIT-1-ov-file#readme).
 
