@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jumat Si Umi — pengalaman sinematik 3D interaktif: ikuti hari Umi Asanagi dari papan peringkat pagi hingga waktu rahasia Jumat malam.">
+<link rel="icon" href="data:,">
+<title>Jumat Si Umi · Umi Asanagi Cinematic 3D Experience</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js" } }
+</script>
+</head>
+<body>
+
+<a class="skip" href="#pagi">Lewati ke konten</a>
+<canvas id="gl" aria-label="Adegan 3D: artefak perak melayang di ruang sinematik"></canvas>
+<div id="gl-fallback" aria-hidden="true"></div>
+<div id="vignette" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<nav aria-label="Navigasi utama">
+  <div class="wrap">
+    <div class="logo">JUMAT <em>·</em> SI UMI</div>
+    <div>
+      <a class="link" href="#pagi">Pagi</a>
+      <a class="link" href="#siang">Siang</a>
+      <a class="link" href="#sore">Sore</a>
+      <a class="link" href="#malam">Malam</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <header class="hero hero-duo" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker ticket">🎫 JUMAT · PULANG SEKOLAH · RAHASIA</p>
+        <p class="hero-no" id="heroNo">No.2</p>
+        <h1 class="hero-ja" id="heroName">朝凪海</h1>
+        <p class="hero-sub">Umi Asanagi — ikuti satu harinya, dari papan peringkat pagi hingga waktu rahasia Jumat malam.</p>
+        <p class="hero-meta">CV: Manaka Iwami · Ultah 3 April · Scroll untuk memulai hari</p>
+        <p class="scroll-cue">SCROLL ↓</p>
+      </div>
+      <div class="hero-figure">
+        <img src="assets/stand02.png" alt="Official stand art: Umi Asanagi berseragam abu-abu berdasi biru">
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="mtrack">
+    <span>PAGI <i>✦</i></span><span>SIANG <i>✦</i></span>
+    <span>SORE <i>✦</i></span><span>JUMAT MALAM — RAHASIA <i>✦</i></span>
+  </div></div>
+
+  <!-- PAGI · ranking board -->
+  <section class="block" id="pagi" aria-labelledby="pagi-h">
+    <div class="wrap">
+      <p class="sec-index reveal">PAGI — 07:30</p>
+      <h2 class="sec reveal" id="pagi-h">Papan Peringkat Kelas</h2>
+      <p class="sub reveal d1">Setiap pagi papan itu diperbarui. Satu nama tak pernah turun — dan satu nama tak pernah naik.</p>
+      <div class="rank reveal d1" role="list" aria-label="Peringkat kecantikan kelas">
+        <div class="rank-row" role="listitem"><span class="rk">1</span><span class="nm unknown">? ? ?</span><span class="sc">—</span></div>
+        <div class="rank-row me" role="listitem"><span class="rk">2</span><span class="nm">朝凪海 · UMI ASANAGI</span><span class="sc">★</span></div>
+        <div class="rank-row" role="listitem"><span class="rk">3</span><span class="nm unknown">? ? ?</span><span class="sc">—</span></div>
+      </div>
+      <p class="sub reveal d2" style="margin-top:22px">Nomor satu dan tiga tidak terverifikasi — jadi tidak dikarang. Yang pasti: nomor dua itu dia.</p>
+    </div>
+  </section>
+
+  <!-- SIANG · two sides -->
+  <section class="block" id="siang" aria-labelledby="siang-h">
+    <div class="wrap">
+      <p class="sec-index reveal">SIANG — 12:00</p>
+      <h2 class="sec reveal" id="siang-h">Dua Sisi Satu Umi</h2>
+      <p class="sub reveal d1">Siang hari ia sempurna. Sisi satunya tidak masuk papan peringkat.</p>
+      <p class="story-words reveal" id="wordPara">Ramah ke semua orang. Berprestasi tanpa cela. Dikagumi hampir seisi kelas — dan diam-diam mencintai film B dan game.</p>
+      <div class="compare reveal d1" id="compare">
+        <img class="cmp-base" src="assets/stand02.png" alt="Versi anime: Umi Asanagi full-body">
+        <div class="cmp-top" id="cmpTop">
+          <img src="assets/umi_ln.png" alt="Versi light novel: Umi Asanagi tersenyum dan mengedipkan mata">
+        </div>
+        <div class="cmp-handle" id="cmpHandle" aria-hidden="true"></div>
+        <input class="cmp-range" id="cmpRange" type="range" min="0" max="100" value="50"
+          aria-label="Geser untuk membandingkan versi light novel dan anime">
+        <div class="cmp-labels" aria-hidden="true"><span>LIGHT NOVEL</span><span>ANIME</span></div>
+      </div>
+      <div class="fact-row reveal d2" style="margin-top:26px">
+        <span class="fact-chip"><b>Julukan</b> · Si nomor dua tercantik</span>
+        <span class="fact-chip"><b>Sifat</b> · Percaya diri, supel, dikagumi</span>
+        <span class="fact-chip"><b>Rahasia</b> · Suka B-movie &amp; game</span>
+        <span class="fact-chip"><b>Suara</b> · Manaka Iwami</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SORE · 3D golden scene -->
+  <section id="artefak" aria-labelledby="artefak-h">
+    <div class="wrap">
+      <p class="sec-index reveal">SORE — 17:40</p>
+      <h2 class="sec reveal" id="artefak-h">Golden Hour Pulang Sekolah</h2>
+      <p class="sub reveal d1">Scroll — matahari rendah, bayangan memanjang, serpihan perak menari.</p>
+    </div>
+    <div class="chapters">
+      <div class="chapter"><div class="wrap" style="width:100%"><div class="card">
+        <p class="k">17:40 — KORIDOR KOSONG</p><h3>Bayangan Memanjang</h3>
+        <p>Bel pulang berbunyi. Koridor kosong, cahaya sore masuk miring. Kamera turun mengikuti bayangan — serpihan perak menari lebih liar mengikuti kecepatan scroll-mu.</p>
+      </div></div></div>
+      <div class="chapter"><div class="wrap" style="width:100%"><div class="card">
+        <p class="k">18:05 — TUJUAN RAHASIA</p><h3>Bukan ke Rumah Sendiri</h3>
+        <p>Setiap Jumat sore ada waktu rahasia di rumah Maki — dua teman sehobi yang tak perlu berpura-pura. Coba seret mouse — artefak menurut, lalu kembali sendiri ke pose scroll-nya.</p>
+        <p class="hint">↔ seret di ruang kosong untuk memutar</p>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- MALAM · transformation -->
+  <section class="block" id="malam" aria-labelledby="malam-h">
+    <div class="wrap">
+      <p class="sec-index reveal">MALAM — 19:00 · JUMAT</p>
+      <h2 class="sec reveal" id="malam-h">Waktu Rahasia</h2>
+      <p class="sub reveal d1">Scroll — tanpa seragam sempurna, tanpa tatapan kelas. Cuma dia yang apa adanya.</p>
+      <div class="trans-stage wipe reveal frame-blur" id="transStage" style="--img:url('../assets/umi_ln.png')">
+        <img id="transImg" src="assets/umi_ln.png" alt="Ilustrasi light novel: Umi Asanagi tersenyum dan mengedipkan mata">
+        <div class="trans-cap">
+          <h3>Topeng nomor dua dilepas.</h3>
+          <p>Ilustrasi light novel · sumber: Kura Nika Wiki (Fandom)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="block" id="penutup" aria-labelledby="sumber-h">
+    <div class="wrap closing">
+      <p class="sec-index reveal">PENUTUP</p>
+      <p class="big reveal">第二の<em>輝き</em></p>
+      <p class="reveal d1">Nomor satu milik semua orang. Nomor dua — miliknya sendiri.<br>Umi Asanagi bersinar tanpa perlu mengalahkan siapa pun.</p>
+      <div class="cta-row reveal d2">
+        <a class="btn" href="#top">↑ Ulangi Harinya dari Pagi</a>
+        <a class="btn ghost" href="https://kuranika.asmik-ace.co.jp/chara/">Situs Official ↗</a>
+      </div>
+      <div class="sources reveal d2" id="sumber">
+        <h2 class="sec" id="sumber-h" style="font-size:22px">Sumber</h2>
+        <ul>
+          <li>Stand art &amp; profil: <a href="https://kuranika.asmik-ace.co.jp/chara/">kuranika.asmik-ace.co.jp/chara</a> (official)</li>
+          <li>Ilustrasi LN: <a href="https://kuranika.fandom.com/wiki/Umi_Asanagi">Kura Nika Wiki (Fandom) — Umi Asanagi</a></li>
+          <li>Info karakter: Fandom, MyAnimeList, anihk, Wikipedia (ja) · CV Manaka Iwami</li>
+          <li>3D: Three.js r160 (di-vendor lokal) · WebGL real-time, bukan CSS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="wrap">Jumat Si Umi — fan showcase non-komersial untuk latihan · gambar milik pemegang hak masing-masing · dibangun dengan skill AI-ANTISLOP</div></footer>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
