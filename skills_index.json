@@ -162,6 +162,15 @@
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
   {
+    "id": "ai-antislop",
+    "path": "skills/ai-antislop",
+    "category": "uncategorized",
+    "name": "ai-antislop",
+    "description": "Anti-slop discipline for AI agent behavior across ALL domains \u2014 code, design/UI, security, writing, research, data, creative/media. Use whenever the agent risks doing unasked work, silently skipping part of what was asked, guessing instead of asking or checking, fabricating facts/citations/security claims, laundering unverified tool output as personal fact, hedging vaguely to dodge evidence, or letting an already-sent error stand uncorrected. Triggers: ai slop, slop, ngarang, jangan ngarang, unasked work, jangan kerjain yang belum diminta, kerja setengah, skip diam-diam, bukti bukan klaim, hallucination, halu, proofread, asal kerjain, klaim desain, klaim aman, ngarang sumber, ngarang riset, cacat logika, jawaban ngambang. Always read references/laws.md with this file; read the other references/ files when relevant.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "ai-engineer",
     "path": "skills/ai-engineer",
     "category": "uncategorized",

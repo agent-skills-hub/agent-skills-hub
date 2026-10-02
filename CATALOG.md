@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-09-16T07:08:47.614Z
+Generated at: 2026-10-02T09:16:00.646Z
 
-Total skills: 812
+Total skills: 813
 
 ## architecture (66)
 
@@ -686,13 +686,14 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `xquik-social-research` | Research public X data with Xquik. Use for tweet search, tweet lookup, user discovery, profile timelines, threads, followers, trends, exports, monitoring pla... | xquik, social, research | xquik, social, research, public, data, tweet, search, lookup, user, discovery, profile, timelines |
 | `zarr-python` | Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing... | zarr, python | zarr, python, chunked, arrays, cloud, storage, compressed, parallel, s3, gcs, integration, numpy |
 
-## security (121)
+## security (122)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
 | `accessibility-compliance-accessibility-audit` | You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Conduct audits, identify barriers,... | accessibility, compliance, audit | accessibility, compliance, audit, specializing, wcag, inclusive, assistive, technology, compatibility, conduct, audits, identify |
 | `active-directory-attacks` | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enumeration"... | active, directory, attacks | active, directory, attacks, skill, should, used, user, asks, attack, exploit, ad, kerberoasting |
 | `agent-memory-systems` | Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers the architecture of agent memory: short-te... | agent, memory | agent, memory, cornerstone, intelligent, agents, without, every, interaction, starts, zero, skill, covers |
+| `ai-antislop` | Anti-slop discipline for AI agent behavior across ALL domains — code, design/UI, security, writing, research, data, creative/media. Use whenever the agent ri... | ai, antislop | ai, antislop, anti, slop, discipline, agent, behavior, all, domains, code, ui, security |
 | `ai-product` | Every product will be AI-powered. The question is whether you'll build it right or ship a demo that falls apart in production.  This skill covers LLM integra... | ai, product | ai, product, every, powered, question, whether, ll, right, ship, demo, falls, apart |
 | `ai-seo` | When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,... | ai, seo | ai, seo, user, wants, optimize, content, search, engines, get, cited, llms, appear |
 | `api-fuzzing-bug-bounty` | This skill should be used when the user asks to "test API security", "fuzz APIs", "find IDOR vulnerabilities", "test REST API", "test GraphQL", "API penetrat... | api, fuzzing, bug, bounty | api, fuzzing, bug, bounty, skill, should, used, user, asks, test, security, fuzz |

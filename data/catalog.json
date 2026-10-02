@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-16T07:08:47.614Z",
-  "total": 812,
+  "generatedAt": "2026-10-02T09:16:00.646Z",
+  "total": 813,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -404,6 +404,31 @@
         "orchestration"
       ],
       "path": "skills/ai-agents-architect/SKILL.md"
+    },
+    {
+      "id": "ai-antislop",
+      "name": "ai-antislop",
+      "description": "Anti-slop discipline for AI agent behavior across ALL domains — code, design/UI, security, writing, research, data, creative/media. Use whenever the agent risks doing unasked work, silently skipping part of what was asked, guessing instead of asking or checking, fabricating facts/citations/security claims, laundering unverified tool output as personal fact, hedging vaguely to dodge evidence, or letting an already-sent error stand uncorrected. Triggers: ai slop, slop, ngarang, jangan ngarang, unasked work, jangan kerjain yang belum diminta, kerja setengah, skip diam-diam, bukti bukan klaim, hallucination, halu, proofread, asal kerjain, klaim desain, klaim aman, ngarang sumber, ngarang riset, cacat logika, jawaban ngambang. Always read references/laws.md with this file; read the other references/ files when relevant.",
+      "category": "security",
+      "tags": [
+        "ai",
+        "antislop"
+      ],
+      "triggers": [
+        "ai",
+        "antislop",
+        "anti",
+        "slop",
+        "discipline",
+        "agent",
+        "behavior",
+        "all",
+        "domains",
+        "code",
+        "ui",
+        "security"
+      ],
+      "path": "skills/ai-antislop/SKILL.md"
     },
     {
       "id": "ai-engineer",
