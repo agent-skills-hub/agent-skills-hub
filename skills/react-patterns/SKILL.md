@@ -1,14 +1,10 @@
 ---
 name: react-patterns
-description: Modern React patterns and principles. Hooks, composition, performance, TypeScript best practices.
+description: "Applies modern React patterns: hooks (useState, useEffect, useCallback), component composition, performance optimization, and TypeScript typing for .tsx components. Use when building or refactoring React components, optimizing re-renders, extracting custom hooks, managing state with Context or Zustand, or adopting React 19 features like useActionState."
 allowed-tools: Read, Write, Edit, Glob, Grep
 ---
 
 # React Patterns
-
-> Principles for building production-ready React applications.
-
----
 
 ## 1. Component Design Principles
 
@@ -92,10 +88,25 @@ allowed-tools: Read, Write, Edit, Glob, Grep
 
 ### Compound Components
 
-- Parent provides context
-- Children consume context
-- Flexible slot-based composition
-- Example: Tabs, Accordion, Dropdown
+```tsx
+// Compound component pattern — parent owns state, children consume via context
+const TabsContext = createContext<{ active: string; setActive: (id: string) => void } | null>(null);
+
+function Tabs({ defaultTab, children }: { defaultTab: string; children: ReactNode }) {
+  const [active, setActive] = useState(defaultTab);
+  return <TabsContext value={{ active, setActive }}>{children}</TabsContext>;
+}
+
+function Tab({ id, children }: { id: string; children: ReactNode }) {
+  const ctx = use(TabsContext)!;
+  return <button onClick={() => ctx.setActive(id)} data-active={ctx.active === id}>{children}</button>;
+}
+
+function TabPanel({ id, children }: { id: string; children: ReactNode }) {
+  const ctx = use(TabsContext)!;
+  return ctx.active === id ? <>{children}</> : null;
+}
+```
 
 ### Render Props vs Hooks
 
@@ -195,4 +206,16 @@ allowed-tools: Read, Write, Edit, Glob, Grep
 
 ---
 
-> **Remember:** React is about composition. Build small, combine thoughtfully.
+### Custom Hook Extraction
+
+```tsx
+// Extract reusable logic into custom hooks with proper cleanup
+function useDebounce<T>(value: T, delayMs: number): T {
+  const [debounced, setDebounced] = useState(value);
+  useEffect(() => {
+    const timer = setTimeout(() => setDebounced(value), delayMs);
+    return () => clearTimeout(timer);
+  }, [value, delayMs]);
+  return debounced;
+}
+```
