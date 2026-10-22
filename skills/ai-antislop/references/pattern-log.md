@@ -54,4 +54,17 @@ YYYY-MM-DD | Law # | domain | what happened (one line)
 2026-09-27 | Law 4 | web | typo'd class attribute (`veel`) in shipped
   deliverable HTML — caught in proofread before verify, fixed.
 
+2026-10-11 | Law 7 | skills | claimed `verification-before-completion` not
+  found even though grep output already showed it — re-read output,
+  corrected unprompted, completed the install.
+2026-10-11 | Law 3 | skills | misread eval semantics: treated
+  `should_trigger` (routing) as "text must be slop", judged 7 fixtures
+  divergent — read all assertions first, then patched the engine.
+2026-10-11 | Law 4 | tools | duplicate console print left in the audit
+  engine — caught in proofread before delivery, removed.
+
+2026-10-13 | Law 1 | web | started scaffolding project directory
+  (mkdir + folder structure) before user had named the topic — user
+  interrupted; fixed by asking one question first.
+
 *(tambah entri baru di atas baris ini)*

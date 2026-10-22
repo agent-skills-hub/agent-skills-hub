@@ -89,16 +89,18 @@ wrong fast answer is slower than a right one delivered a bit later.
 
 ## Study before building (web track)
 
-- Before any web deliverable: read `references/Training/example.txt`
-  (owner's premium curation — 3D, scroll animation, GSAP, cinematic)
-  + `references/Training/INSTRUKSI.md` (operational standard distilled
-  from it). Building web without studying them first is a Law 10
-  (skill-find) violation.
-- The passing bar is defined by failure, not by theory:
-  `references/Training/traning-gagal/README.md`. Scroll must drive
-  camera/sequence (pin + scrub + parallax), at least one real
-  spatial/3D moment, paced build-up — static reveals alone ship as
-  GAGAL. Read it before starting, not after failing.
+**Pre-build gate (in order — do not skip):**
+1. **Confirm topic/subject with the user before writing any code or
+   creating any files.** A web deliverable without a named subject
+   locks in a costly direction — this is a Law 1 threshold. One
+   question: what is this page about? Only then proceed.
+2. Read `references/Training/example.txt` (owner's premium curation —
+   3D, scroll animation, GSAP, cinematic) + `references/Training/INSTRUKSI.md`
+   (operational standard distilled from it). Skipping = Law 10 violation.
+3. Read `references/Training/traning-gagal/README.md` before starting.
+   Scroll must drive camera/sequence (pin + scrub + parallax), at least
+   one real spatial/3D moment, paced build-up — static reveals alone
+   ship as GAGAL.
 
 ---
 
