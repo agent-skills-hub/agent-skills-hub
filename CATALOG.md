@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-10-02T09:16:00.646Z
+Generated at: 2026-10-16T23:30:17.747Z
 
-Total skills: 813
+Total skills: 814
 
 ## architecture (66)
 
@@ -303,7 +303,7 @@ Total skills: 813
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 | `zinc-database` | Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual scre... | zinc, database | zinc, database, access, 230m, purchasable, compounds, search, id, smiles, similarity, searches, 3d |
 
-## development (93)
+## development (94)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -324,6 +324,7 @@ Total skills: 813
 | `cc-skill-frontend-patterns` | Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices. | cc, skill, frontend | cc, skill, frontend, development, react, next, js, state, performance, optimization, ui |
 | `context7-auto-research` | Automatically fetch latest library/framework documentation for Claude Code via Context7 API | context7, auto, research | context7, auto, research, automatically, fetch, latest, library, framework, documentation, claude, code, via |
 | `csharp-pro` | Write modern C# code with advanced features like records, pattern matching, and async/await. Optimizes .NET applications, implements enterprise patterns, and... | csharp | csharp, pro, write, code, features, like, records, matching, async, await, optimizes, net |
+| `curlshot` | Capture web pages as PNG/JPEG/WebP screenshots, PDFs or scrolling videos, or render HTML/Markdown, with the CurlShot screenshot API and curl. | curlshot | curlshot, capture, web, pages, png, jpeg, webp, screenshots, pdfs, scrolling, videos, render |
 | `discord-bot-architect` | Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScript) and Pycord (Python), gateway intents, slash commands, interactiv... | discord, bot | discord, bot, architect, specialized, skill, building, bots, covers, js, javascript, pycord, python |
 | `dotnet-architect` | Expert .NET backend architect specializing in C#, ASP.NET Core, Entity Framework, Dapper, and enterprise application patterns. Masters async/await, dependenc... | dotnet | dotnet, architect, net, backend, specializing, asp, core, entity, framework, dapper, enterprise, application |
 | `dotnet-backend-patterns` | Master C#/.NET backend development patterns for building robust APIs, MCP servers, and enterprise applications. Covers async/await, dependency injection, Ent... | dotnet, backend | dotnet, backend, net, development, building, robust, apis, mcp, servers, enterprise, applications, covers |

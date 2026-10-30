@@ -1737,6 +1737,15 @@
     "source": "https://github.com/trailofbits/skills/tree/main/plugins/culture-index"
   },
   {
+    "id": "curlshot",
+    "path": "skills/curlshot",
+    "category": "uncategorized",
+    "name": "curlshot",
+    "description": "Capture web pages as PNG/JPEG/WebP screenshots, PDFs or scrolling videos, or render HTML/Markdown, with the CurlShot screenshot API and curl.",
+    "risk": "safe",
+    "source": "https://github.com/SergiuPogor/curlshot-mcp/tree/main/skills/curlshot"
+  },
+  {
     "id": "customer-support",
     "path": "skills/customer-support",
     "category": "uncategorized",

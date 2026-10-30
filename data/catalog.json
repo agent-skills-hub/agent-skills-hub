@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T09:16:00.646Z",
-  "total": 813,
+  "generatedAt": "2026-10-16T23:30:17.747Z",
+  "total": 814,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -4734,6 +4734,30 @@
         "documentation"
       ],
       "path": "skills/culture-index/SKILL.md"
+    },
+    {
+      "id": "curlshot",
+      "name": "curlshot",
+      "description": "Capture web pages as PNG/JPEG/WebP screenshots, PDFs or scrolling videos, or render HTML/Markdown, with the CurlShot screenshot API and curl.",
+      "category": "development",
+      "tags": [
+        "curlshot"
+      ],
+      "triggers": [
+        "curlshot",
+        "capture",
+        "web",
+        "pages",
+        "png",
+        "jpeg",
+        "webp",
+        "screenshots",
+        "pdfs",
+        "scrolling",
+        "videos",
+        "render"
+      ],
+      "path": "skills/curlshot/SKILL.md"
     },
     {
       "id": "customer-support",

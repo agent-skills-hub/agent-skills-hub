@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:16:00.646Z",
+  "generatedAt": "2026-10-16T23:30:17.747Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -43,6 +43,7 @@
         "clinvar-database",
         "code-documentation-doc-generate",
         "context7-auto-research",
+        "curlshot",
         "discord-bot-architect",
         "django-pro",
         "dnanexus-integration",
