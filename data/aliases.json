@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:16:00.646Z",
+  "generatedAt": "2026-11-15T06:58:15.019Z",
   "aliases": {
     "accessibility-compliance-audit": "accessibility-compliance-accessibility-audit",
     "active directory attacks": "active-directory-attacks",
@@ -75,6 +75,14 @@
     "vr-ar": "game-development/vr-ar",
     "web-games": "game-development/web-games",
     "git-pr-workflow": "git-pr-workflows-git-workflow",
+    "govisit-get-overview": "govisit-get-category-overview",
+    "govisit-get-section": "govisit-get-category-section",
+    "govisit-get-page": "govisit-get-documentation-page",
+    "govisit-get-facts": "govisit-get-place-visit-facts",
+    "govisit-list-places": "govisit-list-category-places",
+    "govisit-list-activities": "govisit-list-destination-activities",
+    "govisit-list-categories": "govisit-list-destination-categories",
+    "govisit-list-highlights": "govisit-list-destination-highlights",
     "html injection testing": "html-injection-testing",
     "idor vulnerability testing": "idor-testing",
     "incident-response": "incident-response-incident-response",

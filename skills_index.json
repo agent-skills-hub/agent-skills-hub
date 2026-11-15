@@ -3096,6 +3096,204 @@
     "source": "unknown"
   },
   {
+    "id": "govisit-get-category-overview",
+    "path": "skills/govisit-get-category-overview",
+    "category": "uncategorized",
+    "name": "govisit-get-category-overview",
+    "description": "Read the published overview for the selected destination category page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-category-overview"
+  },
+  {
+    "id": "govisit-get-category-section",
+    "path": "skills/govisit-get-category-section",
+    "category": "uncategorized",
+    "name": "govisit-get-category-section",
+    "description": "Read one published section for the selected destination category page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-category-section"
+  },
+  {
+    "id": "govisit-get-collection-overview",
+    "path": "skills/govisit-get-collection-overview",
+    "category": "uncategorized",
+    "name": "govisit-get-collection-overview",
+    "description": "Read the published overview for the selected destination collection page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-collection-overview"
+  },
+  {
+    "id": "govisit-get-collection-section",
+    "path": "skills/govisit-get-collection-section",
+    "category": "uncategorized",
+    "name": "govisit-get-collection-section",
+    "description": "Read one published section for the selected destination collection page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-collection-section"
+  },
+  {
+    "id": "govisit-get-destination-overview",
+    "path": "skills/govisit-get-destination-overview",
+    "category": "uncategorized",
+    "name": "govisit-get-destination-overview",
+    "description": "Read the published overview fields for the selected destination. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-destination-overview"
+  },
+  {
+    "id": "govisit-get-destination-section",
+    "path": "skills/govisit-get-destination-section",
+    "category": "uncategorized",
+    "name": "govisit-get-destination-section",
+    "description": "Read one published section of the selected destination. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-destination-section"
+  },
+  {
+    "id": "govisit-get-documentation-page",
+    "path": "skills/govisit-get-documentation-page",
+    "category": "uncategorized",
+    "name": "govisit-get-documentation-page",
+    "description": "Read bounded structured content from the selected published article. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-documentation-page"
+  },
+  {
+    "id": "govisit-get-page-faq",
+    "path": "skills/govisit-get-page-faq",
+    "category": "uncategorized",
+    "name": "govisit-get-page-faq",
+    "description": "Read the published questions and answers on the selected blog or documentation article. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-page-faq"
+  },
+  {
+    "id": "govisit-get-place-overview",
+    "path": "skills/govisit-get-place-overview",
+    "category": "uncategorized",
+    "name": "govisit-get-place-overview",
+    "description": "Read the published overview fields for the selected place. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-place-overview"
+  },
+  {
+    "id": "govisit-get-place-section",
+    "path": "skills/govisit-get-place-section",
+    "category": "uncategorized",
+    "name": "govisit-get-place-section",
+    "description": "Read one published section of the selected place, including spatial details when requested. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-place-section"
+  },
+  {
+    "id": "govisit-get-place-visit-facts",
+    "path": "skills/govisit-get-place-visit-facts",
+    "category": "uncategorized",
+    "name": "govisit-get-place-visit-facts",
+    "description": "Read compact, normalized visit facts for the selected place. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-place-visit-facts"
+  },
+  {
+    "id": "govisit-get-statistics",
+    "path": "skills/govisit-get-statistics",
+    "category": "uncategorized",
+    "name": "govisit-get-statistics",
+    "description": "Use when an agent needs exact GoVisit catalog coverage counts for the physical World or a selected Destination, with observation dates and provenance.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-get-statistics"
+  },
+  {
+    "id": "govisit-list-category-places",
+    "path": "skills/govisit-list-category-places",
+    "category": "uncategorized",
+    "name": "govisit-list-category-places",
+    "description": "Filter the published place cards shown on the selected destination category page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-category-places"
+  },
+  {
+    "id": "govisit-list-collection-places",
+    "path": "skills/govisit-list-collection-places",
+    "category": "uncategorized",
+    "name": "govisit-list-collection-places",
+    "description": "Filter the published place cards shown on the selected destination collection page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-collection-places"
+  },
+  {
+    "id": "govisit-list-destination-activities",
+    "path": "skills/govisit-list-destination-activities",
+    "category": "uncategorized",
+    "name": "govisit-list-destination-activities",
+    "description": "Read the bounded published activities shown on the destination page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-destination-activities"
+  },
+  {
+    "id": "govisit-list-destination-categories",
+    "path": "skills/govisit-list-destination-categories",
+    "category": "uncategorized",
+    "name": "govisit-list-destination-categories",
+    "description": "Read the published category projection shown on the destination page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-destination-categories"
+  },
+  {
+    "id": "govisit-list-destination-highlights",
+    "path": "skills/govisit-list-destination-highlights",
+    "category": "uncategorized",
+    "name": "govisit-list-destination-highlights",
+    "description": "Read the bounded published highlights shown on the destination page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-destination-highlights"
+  },
+  {
+    "id": "govisit-list-destination-places",
+    "path": "skills/govisit-list-destination-places",
+    "category": "uncategorized",
+    "name": "govisit-list-destination-places",
+    "description": "Filter the published place cards already present on the destination page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-destination-places"
+  },
+  {
+    "id": "govisit-list-related-places",
+    "path": "skills/govisit-list-related-places",
+    "category": "uncategorized",
+    "name": "govisit-list-related-places",
+    "description": "Find bounded, page-local related place cards using optional published-field filters. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-list-related-places"
+  },
+  {
+    "id": "govisit-search-destinations",
+    "path": "skills/govisit-search-destinations",
+    "category": "uncategorized",
+    "name": "govisit-search-destinations",
+    "description": "Search GoVisit destinations by name or traveler intent and return canonical destination codes and URLs. Use when a traveler needs to identify or explore a country, region, district, city, or highlight.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-search-destinations"
+  },
+  {
+    "id": "govisit-search-documentation",
+    "path": "skills/govisit-search-documentation",
+    "category": "uncategorized",
+    "name": "govisit-search-documentation",
+    "description": "Search the published documentation links rendered on the selected documentation index page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-search-documentation"
+  },
+  {
+    "id": "govisit-search-places",
+    "path": "skills/govisit-search-places",
+    "category": "uncategorized",
+    "name": "govisit-search-places",
+    "description": "Search GoVisit places by name or traveler intent, optionally constrained by country, destination, or proximity. Use when a traveler needs candidate places and canonical profile URLs.",
+    "risk": "safe",
+    "source": "https://github.com/inhotel-io/govisit-toolkit/tree/v0.2.0/skills/govisit-search-places"
+  },
+  {
     "id": "grafana-dashboards",
     "path": "skills/grafana-dashboards",
     "category": "uncategorized",
