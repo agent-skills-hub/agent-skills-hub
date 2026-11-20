@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-10-02T09:16:00.646Z
+Generated at: 2026-11-20T19:55:44.829Z
 
-Total skills: 813
+Total skills: 814
 
 ## architecture (66)
 
@@ -402,7 +402,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personality tests, and calculator tools. Covers t... | viral, generator, builder | viral, generator, builder, building, shareable, go, name, generators, quiz, makers, avatar, creators |
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 
-## general (178)
+## general (179)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -459,6 +459,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `datamol` | Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardizatio... | datamol | datamol, pythonic, wrapper, around, rdkit, simplified, interface, sensible, defaults, preferred, standard, drug |
 | `debugging-strategies` | Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use ... | debugging, strategies | debugging, strategies, systematic, techniques, profiling, root, cause, analysis, efficiently, track, down, bugs |
 | `debugging-toolkit-smart-debug` | Use when working with debugging toolkit smart debug | debugging, debug | debugging, debug, toolkit, smart, working |
+| `deed-page` | Publish a generated HTML file or static folder to a public https://<slug>.deed.page/ URL after the user approves a preview, then update or delete it. | deed, page | deed, page, publish, generated, html, file, static, folder, public, https, slug, url |
 | `deeptools` | NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualiz... | deeptools | deeptools, ngs, analysis, toolkit, bam, bigwig, conversion, qc, correlation, pca, fingerprints, heatmaps |
 | `design-md` | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files | md | md, analyze, stitch, synthesize, semantic, files |
 | `diffdock` | Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug desig... | diffdock | diffdock, diffusion, molecular, docking, predict, protein, ligand, binding, poses, pdb, smiles, confidence |

@@ -1953,6 +1953,15 @@
     "source": "unknown"
   },
   {
+    "id": "deed-page",
+    "path": "skills/deed-page",
+    "category": "uncategorized",
+    "name": "deed-page",
+    "description": "Publish a generated HTML file or static folder to a public https://<slug>.deed.page/ URL after the user approves a preview, then update or delete it.",
+    "risk": "critical",
+    "source": "https://github.com/f-o-x11/deed-page-skill"
+  },
+  {
     "id": "deep-research",
     "path": "skills/deep-research",
     "category": "uncategorized",

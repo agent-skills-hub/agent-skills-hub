@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T09:16:00.646Z",
-  "total": 813,
+  "generatedAt": "2026-11-20T19:55:44.829Z",
+  "total": 814,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -5311,6 +5311,31 @@
         "working"
       ],
       "path": "skills/debugging-toolkit-smart-debug/SKILL.md"
+    },
+    {
+      "id": "deed-page",
+      "name": "deed-page",
+      "description": "Publish a generated HTML file or static folder to a public https://<slug>.deed.page/ URL after the user approves a preview, then update or delete it.",
+      "category": "general",
+      "tags": [
+        "deed",
+        "page"
+      ],
+      "triggers": [
+        "deed",
+        "page",
+        "publish",
+        "generated",
+        "html",
+        "file",
+        "static",
+        "folder",
+        "public",
+        "https",
+        "slug",
+        "url"
+      ],
+      "path": "skills/deed-page/SKILL.md"
     },
     {
       "id": "deep-research",
